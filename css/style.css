@@ -1,0 +1,197 @@
+
+body {
+	padding-top: 70px;
+	font-family: 'Lato', sans-serif; 
+/*	font-weight: 400;*/
+  font-weight: 300;
+  color: #555;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400px;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* Purple Font */
+.purple {
+  color: #7f4098;
+}
+
+/* --------------------------------------
+   NAVBAR
+-------------------------------------- */
+.navbar-inverse {
+  background-color: #2D002D;
+  /*border-color: #a8a8e5; lighter purple*/
+}
+
+.navbar {
+  min-height: 100px;
+  padding: 15px;
+}
+
+.navbar-header {
+  padding-bottom: 0;
+}
+
+/* accomodate logo*/
+.navbar-brand {
+  height: 100px;
+  padding-top: 0;
+}
+
+.nav > li {
+  padding-top: 30px;
+}
+
+
+
+/* Dropdown menu (from template)
+-------------------------------------------------- */
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+/* -------------------------------------
+MISSION CONTAINER
+ -------------------------------*/
+.home-mission h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.full-logo  {
+  width: 80%;
+  float: left;
+}
+
+#second-col {
+  margin-top: 50px;
+  padding: 50px 20px 60px 20px;
+  font-size: 16px;
+}
+
+.second-par {
+  padding-top: 25px;
+}
+
+.home-mission blockquote > p {
+  margin-top: 30px;
+  padding-top: 30px;
+  font-style: italic;
+}
+
+hr {
+  border-top: 1px solid #E2E2E2 !important;
+}
+
+
+/* Shadow Person Image*/
+.shadow{
+  width: 100%;
+  background-position: no-repeat center;
+  background-size: cover;
+  height: 400px;
+  padding: 0;
+ }
+
+/* -------------------------------------
+ABOUT JUSTIN GORNELL
+ -------------------------------*/
+ .about {
+  margin-top: 70px;
+  padding-top: 30px;
+ }
+
+ .about img {
+    padding-top: 30px;
+ }
+
+ .justin {
+  margin-bottom: 25px;
+ }
+
+/* ------------------------------------------
+TREATMENTS (marketing section from carousel)
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+/*.marketing .col-lg-4 {*/
+  .treatments .col-lg-4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+/*.marketing h2 {*/
+  .treatments h2 {
+  font-weight: normal;
+}
+/*.marketing .col-lg-4 p {*/
+  .treatments .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.treatments h1 {
+  padding-top: 25px;
+  font-family: 'Raleway', sans-serif; 
+}
+
+/*.treatment-types {
+  padding: 20px 0;
+}*/
+
+/* ------------------------------------------
+PHYSICAL THERAPY (marketing section from carousel)
+-------------------------------------------------- */
+
+.physical-therapy, .manual-therapy, .therapeutic h1 {
+  padding-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+img #id {
+  width: 500px;
+}
+
+
+
+
+
+
