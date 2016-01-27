@@ -116,7 +116,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <img class="third-slide" src="img/aerobics.jpg" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>One more for good measure.</h1>
@@ -161,7 +161,7 @@
           <h1 class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
           <h3 class="text-center">Baseball ipsum dolor sit amet wrigley grounder astroturf bleeder. Tapper bases loaded defensive indifference second baseman petey ground ball sacrifice bunt ball bleeder. </h3>
         </div> <!-- container -->
-      </div> <!-- sunset -->
+      </div> <!-- shadow -->
     </div> <!-- parallax window -->
 
     <!--TREATMENTS -->
@@ -170,12 +170,12 @@
         <div class="row">
           <h1 class="text-center purple">TREATMENTS</h1>
             <hr>
-        </div>
-      </div>
-    </div>
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </div> <!-- treatments -->
     <!-- <div class="container marketing"> -->
-    <div class="container treatments">
 
+    <div class="container treatments">
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
@@ -236,49 +236,107 @@
               <p><span class="purple">Paradigm Physical Therapy</span>begins the rehabilitation process with a thorough evaluation for each patient. An individual treatment program will be developed based upon the patients' goals and findings based on the initial evaluation. Patients will be educated abot their diagnosis and how their treatment program will address their deficits and prevent any future complications. The patient will have the anatomy/physiology, pathology and biomechanics of the affected body part explained so that the injury is properly understood. Treatment sessions will include therapeutic and functional exercises, manual therapy, postural education, gait training, stretches and modalities, when necessary. Prior to discharge, a home exercise program will be developed to achieve and maintain maximum function.</p>
               </div> <!-- col-lg-6 -->
           </div> <!-- row -->
-      </div> <!-- container about -->
+      </div> <!-- container physical-therapy -->
 
-      <div class="container manual-therapy">  
+      <!-- TESTIMONIES CAROUSEL -->
+      <div class="container">
+        <div class="row">
+          <h2 id="testimonials" class="purple text-center">TESTIMONIALS</h2>
+          <hr>
+        </div> <!-- row-->
+      </div>  <!-- container -->
+      <!-- CAROUSEL -->
+    <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+        <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!--Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <section class="first-slide">
+            <div class="container">
+              <!-- adding row for smaller columns -->
+              <div class="row"> <!-- not working yet -->
+                <div class="col.md-6"> <!-- not working yet -->
+              <!-- <div class="carousel-caption"> -->
+                <!-- <h1>Example headline.</h1> -->
+                <p>Two injuries in two years! More than anybody wants to deal with but it happened to me. It was immediately apparent that Justin, who came highly recommended, was extremely professional.  But more than that, I could tell from the start that he was highly competent, warm and genuinely concerned about my recovery. Justin is friendly, funny and makes the effort much easier to handle. I wouldn't hesitate for an instant to recommend him to my closest family and friends.</p> 
+                <p class="initials">&mdash; <i class="purple text-right"> A.C.</i></p>
+              <!-- </div>  --><!-- carousel caption -->
+            </div> <!-- col.md-6 -->
+            </div> <!-- row -->
+          </div> <!-- container -->
+        </section>
+        </div>
+        <div class="item">
+          <!-- <img class="second-slide" src="img/bikeracer.jpg" alt="Second slide"> -->
+          <div class="container">
+            <!-- <div class="carousel-caption"> -->
+              <p>I will always remember the clear, crisp winter day in February 2006, when a pristine white snow blanketed Central Park; when I slipped on a slick of ice, fell backwards and broke my arm. The orthopedic surgeon told me I would need physical therapy and the next thing I knew I was being interviewed by Justin. His manner immediately put me at ease, and through a combination of treatment and vigorous exercise, I greadually recovered. Without Justin's expertise, dedication and encouragement, I doubt if I would have regained the use of my arm. Since being treated for the fractured radius, stress-related muscle problems have brought me back to Justin for treatment. Unlike many medical specialists who frequently perceive patients solely as their injuries, Justin sees and engages the whole person. By actively listening and asking questions, he is able to assess and evaluate their condition, thereby formulating a comprehensive course of individualized treatment.</p> 
+              <p>Justin is down-to-earth and without pretense. His vivacious personality and wry sense of humor combine to constantly reassure his patients that they are in good hands.</p> 
+              <p class="initials">&mdash; <i class="purple"> M.R.</i></p>
+            <!-- </div> --> <!--carousel caption -->
+          </div>
+        </div>
+        <div class="item">
+          <!-- <img class="third-slide" src="img/aerobics.jpg" alt="Third slide"> -->
+          <div class="container">
+            <!-- <div class="carousel-caption"> -->
+              <!-- <h1>One more for good measure.</h1> -->
+              <p>Whatever the reason you are seeking a physical therapist, you can do no better than Justin Gornell. His knolwedge of anatomy is outstanding. There are medical doctors that he stands head to head with and he has more patience than most. If you are fortunate enough to be in his care, you are in for a healing, informative, positive and rewarding experience. He has dramatically changed my life and I am positive he can and will do the same for you.</p>
+              <p class="initials">&mdash; <i class="purple"> J.M.</i></p>
+
+            <!-- </div> --> <!--carousel caption -->
+          </div>
+        </div>
+      </div>
+      <!-- Controls -->
+      <!--add ids to remove grey background -->
+      <a id="leftcarousel" class="left carousel-control" href="#testimonialCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a id="rightcarousel"class="right carousel-control" href="#testimonialCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+    <!-- Contact -->
+      <div class="container contact">  
           <div class="row">
-            <h1 class="text-center purple">MANUAL THERAPY</h1>
+            <h2 class=" purple text-center">CONTACT INFORMATION</h2>
             <hr>
-            <div class="col-lg-6">
-              <p>A clinical approach utilizing skilled, specific hands-on techniques used to diagnose and treat soft tissues and joint structures for the purpose of modulating pain; increasing range of motion (ROM); reducing or eliminating soft tissue inflammation; inducing relaxation; improving contractile and non-contractile tissue repair, extensibility and/or stability; facilitating movement; and improving function. These therapeutic procedures inactive trigger points, warms muscles and encourages nutrient rich blood flow. It relieves pain, increases range of motion, promotes flexibility and accelerates recovery. </p>
-              
-                <p><i class="fa fa-check-circle"></i> Soft tissue and/or deep tissue mobilization</p>
-                <p><i class="fa fa-check-circle"></i>Myofascial release </p>
-                <p><i class="fa fa-check-circle"></i> Proprioceptive neuromuscular facilitation (PNF)</p>
-                <p><i class="fa fa-check-circle"></i> Joint Mobilizations</p>
-                <p><i class="fa fa-check-circle"></i> Nerve glides</p>
-                <p><i class="fa fa-check-circle"></i> PROM</p>
-                <p><i class="fa fa-check-circle"></i> Taping</p>
-                <p><i class="fa fa-check-circle"></i> Strain counterstrain</p>
-            </div> <!-- col-lg-6 -->
-            <div class="col-lg-6">
-              <!-- Add IMAGE HERE -->
-
-              <!-- <p></p> -->
-              </div> <!-- col-lg-6 -->
+            <div class="col-md-6">
+              <p>
+                <p><span id="home-icon" class="contact-icons"><i class="fa fa-home"></i></span> 1556 Third Avenue, Suite 211 </p>  
+                <p id="state">New York, NY 10128 </p><br>
+                <span id="phone-icon" class="contact-icons"><i class="fa fa-phone"></i></span><a id="phone" href="tel:2128849401"> 212-884-9401 &verbar;</a>
+                <a id="phone" href="tel:2017809691"> 201-780-9691</a> <br>
+                <span id="fax-icon" class="contact-icons"><i class="fa fa-fax"></i></span><a id="fax" href="fax:6468632650"> 646-863-2650</a> <br>
+                <span id="email-icon" class="contact-icons"><i class="fa fa-envelope"></i></span><a href="mailto:info@paradigmtherapys.com">info@paradigmtherapys.com</a> <br>
+                <span id="fb-icon" class="contact-icons"><a href="http://www.facebook.com/Paradigm-Physical-Therapy-210523072317132/?fref=ts" target="_blank"><i class="contact-icons fa fa-facebook"></i></a></span><a href="http://www.facebook.com/Paradigm-Physical-Therapy-210523072317132/?fref=ts"> Paradigm Physical Therapy</a> <br>
+              </p>
+            </div> <!-- col-md-6 -->
+            <div class="col-md-6">
+              <p> We are located only 1 block from the East 86th St subway stop &lpar;4,5 &amp; 6&rpar; and the M86, M101, M102, M103 &amp; M98 bus stops.</p> <br>
+                <p>The office is located in an elevator building, with a studio gym and private therapy room. Upon rerquest we can meet your needs and provide home physical therapy services.</p>
+            </div><!-- col-md-6 -->
           </div> <!-- row -->
-      </div> <!-- container about -->
+        </div> <!-- container -->
 
-      <div class="container therapeutic">  
-          <div class="row">
-            <h1 class="text-center purple">THERAPEUTIC MODALITIES</h1>
-            <hr>
-            <div class="col-lg-6">
-              <p>These modalities are meant to complement manual physcial therapy and exercise. It may involve a simple technique like applying ice (cryotherapy) for an acute injury or more complex modalities like cold lasers or electrical stimulation to reduce pain and swelling. </p>
-            </div> <!-- col-lg-6 -->
-            <div class="col-lg-6">
-              <p><i class="fa fa-check-circle"></i> Cryotherapy</p>
-                <p><i class="fa fa-check-circle"></i> Moist Heat</p>
-                <p><i class="fa fa-check-circle"></i> US</p>
-                <p><i class="fa fa-check-circle"></i> E-Stim</p>
-                <p><i class="fa fa-check-circle"></i> Cold laser</p>
-              </div> <!-- col-lg-6 -->
-          </div> <!-- row -->
-      </div> <!-- container about -->
+        <!-- Google Map -->
+        <section id="map">
+          <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.1883960332816!2d-73.95579518474315!3d40.77987217932456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258bb578c5eb9%3A0x97a681a203a51ec!2s1556+3rd+Ave%2C+New+York%2C+NY+10128!5e0!3m2!1sen!2sus!4v1453929183938" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </section>
 
+      
     
 
 
