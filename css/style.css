@@ -14,7 +14,7 @@ h4,
 h5,
 h6 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
 }
 
 p {
@@ -55,6 +55,29 @@ p {
   padding-top: 30px;
 }
 
+.navbar-inverse .navbar-nav>li>a {
+  color: #81658C;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #7f4098;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus {
+  color: #7404A0;
+}
+
+.navbar-inverse .navbar-nav>li>a:active {
+  color: #7404A0;
+}
+
+.dropdown-menu>li>a {
+  color: #7f4098;
+}
+
+.dropdown-menu>li>a:hover {
+  color: #330033;
+}
 
 
 /* Dropdown menu (from template)
@@ -65,7 +88,7 @@ p {
   margin-bottom: 20px;
 }
 
-/* CUSTOMIZE THE CAROUSEL
+/* HEADER CAROUSEL
 -------------------------------------------------- */
 
 /* Carousel base class */
@@ -125,13 +148,22 @@ hr {
 }
 
 
-/* Shadow Person Image*/
+/* ------------------------------------
+Shadow Person Image
+------------------------------------*/
 .shadow{
   width: 100%;
   background-position: no-repeat center;
   background-size: cover;
   height: 400px;
   padding: 0;
+ }
+
+ .shadow h2 {
+  padding-top: 100px;
+  /*color: white;*/
+  color: #5E3B71;
+
  }
 
 /* -------------------------------------
@@ -144,6 +176,7 @@ ABOUT JUSTIN GORNELL
 
  .about img {
     padding-top: 30px;
+    border-radius: 50% 20%;
  }
 
  .justin {
@@ -224,6 +257,16 @@ CONCEIRGE VISITS
 }
 
 /* ------------------------------------------
+SPORT-SPECIFIC
+-------------------------------------------------- */
+.sport-specific img {
+  display: block;
+  max-width: 100%;
+  margin-left: 0;
+
+}
+
+/* ------------------------------------------
 TESTIMONIAL CAROUSEL
 -------------------------------------------------- */
 #testimonials {
@@ -249,6 +292,10 @@ TESTIMONIAL CAROUSEL
 /* ------------------------------------------
 CONTACT
 -------------------------------------------------- */
+
+.contact {
+  padding-bottom: 30px;
+}
 .contact-icons {
   padding-right: 5px;
   line-height: 40px;
@@ -268,6 +315,10 @@ CONTACT
 /*  text-decoration: none;*/
 }
 
+.directions {
+  padding-top: 10px;
+}
+
 /* ------------------------------------------
   MAP
 -------------------------------------------------- */
@@ -277,7 +328,7 @@ CONTACT
   position: relative;
   background-position: center center;
   width: 100%;
-  width: cover; 
+/*  width: cover;*/ 
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -291,8 +342,32 @@ CONTACT
     pointer-events: none;
 }
 
+/* ------------------------------------------
+  PATIENT INFO PAGE
+-------------------------------------------------- */
+/* Insurance */
+.insurance {
+  margin-top: 70px;
+  padding-top: 30px;
+}
+
+.privacy li:before {
+  color: #7f4098;
+}
 
 
+/* ------------------------------------------
+  FOOTER
+-------------------------------------------------- */
+#footer {
+  padding: 20px;
+  background-color: #120012;
+  margin-top: 0;
+  padding-right:50px;
+}
 
+#footer p {
+  color: #7f4098;
+}
 
 

@@ -13,3 +13,14 @@ $(function() {
 
 
 });
+
+//Footer
+$(function() {
+
+var today = new Date();
+var year = today.getFullYear();
+
+$('#footer').html('<p>Paradigm Physical Therapy &copy' + year + '</p>');
+
+
+});
