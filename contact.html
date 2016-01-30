@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Paradigm Physical Therapy</title>
+
+	<!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+    <link href="css/font-awesome.min.css" rel="stylesheet"> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,300,400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300|Raleway:400,300' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+	<!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img alt="Paradigm Logo" src="img/nav-logo2.png">
+          </a>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>         
+        </div> <!--navbar-header -->
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li class="active"><a href="#">Home</a></li> -->
+            <!-- <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li> -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Justin B. Gornell, <br>
+                    PT, DPT, OCS
+                  </a></li>
+                  <li><a href="#">Location</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <!-- <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li> -->
+                </ul> <!-- dropdown-menu -->
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Typical Visit</a></li>   
+                <li><a href="#">Concierge Visits</a></li>
+                <li><a href="#">Diagnoses Treated</a></li>
+                <li><a href="#">Sport Specific</a></li>
+              </ul> <!-- dropdown-menu -->
+
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Patient Info <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Insurance Info</a></li>   
+                <li><a href="#">Privacy Practices</a></li>
+                <li><a href="#">Forms</a></li>
+              </ul> <!-- dropdown-menu -->
+
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Contact</a></li>  
+
+            </li> <!-- dropdown -->
+          </ul> <!-- navbar-nav navbar-right -->
+        </div><!--/.nav-collapse -->
+      </div> <!-- container -->
+    </nav>
+
+    <!-- Contact Form -->
+    <section class="appointment-request">
+	    <div class="container">
+	      <div class="row">
+		      <div class="col-md-offset-1 col-md-10">
+		      	<h3 class="text-center purple">Online Appointment Request</h3>
+		      	<hr>
+
+		      	<div class="row">
+		      	<div class="col-md-offset-1 col-md-10">
+
+			      	<div class="col-md-offset-1 col-md-8">	
+			      		<p class="purple">&ast;Required Field</p>
+			      	</div> 
+			      	<!-- Version 1 OF FORM -->
+			      	<form class="form-horizontal" action="http://httpbin.org/post" method="POST" role="form">
+			      		<div class="form-group">
+			      			<div class="col-md-offset-2 col-md-8">
+			      				<label for="name">Name&ast;</label>
+			      				<input type="text" required class="form-control" name="name" placeholder="Your Name">
+			      			</div> <!-- col-md-offset-2 col-md-8 -->
+			      		</div> <!-- form-group -->
+			      		<div class="form-group">
+			      			<div class="col-md-offset-2 col-md-8">
+			      			<label for="email">Email&ast;</label>
+			      			<input type="email" required class="form-control" name="email" placeholder="Your Email">
+			      			</div> <!-- col-md-offset-2 col-md-8 -->
+			      		</div> <!-- form-group -->
+			      		<div class="form-group">
+			      			<div class="col-md-offset-2 col-md-8">
+			      			<label for="telephone">Phone Number&ast;</label>
+			      			<input type="tel" required class="form-control" name="phone-number" placeholder="Phone Number">
+			      			</div> <!-- col-md-offset-2 col-md-8 -->
+			      		</div> <!-- form-group -->
+			      		<div class="form-group">
+			      			<div class="col-md-offset-2 col-md-8">
+			      			<label for="insurance">Insurance</label>
+			      			<input type="text" class="form-control" name="insurance" placeholder="Primary Health Insurance">
+			      			</div> <!-- col-md-offset-2 col-md-8 -->
+			      		</div> <!-- form-group -->
+			      		<div class="form-group">
+			      			<div class="col-md-offset-2 col-md-8">
+			      			<label for="doctor">Referring Doctor</label>
+			      			<input type="text" class="form-control" name="doctor" placeholder="Doctor Who Referred You">
+			      			</div> <!-- col-md-offset-2 col-md-8 -->
+			      		</div> <!-- form-group -->
+			      		<div class="form-group">
+			      			<div class="col-md-offset-2 col-md-8">
+			      			<label for="doctors-number">Doctor's Phone Number</label>
+			      			<input type="tel" class="form-control" name="phone-number" placeholder="Referring Doctor's Phone Number">
+			      			</div> <!-- col-md-offset-2 col-md-8 -->
+			      		</div> <!-- form-group -->
+			      		<div class="form-group">
+			      			<div class="col-md-offset-2 col-md-8">
+			      			<label for="diagnosis">Diagnosis and/or Symptoms</label>
+			      			<textarea name="diagnosis" class="form-control" rows="10" placeholder="Doctor's Diagnosis and/or Your Symptoms"></textarea>
+			      			</div> <!-- col-md-offset-2 col-md-8 -->
+			      		</div> <!-- form-group -->
+			      		<div class="form-group">
+			      			<div class="col-md-offset-2 col-md-8">
+			      				<button class="btn btn-block btn-default" type="submit">Submit</button>
+		      				</div> <!-- col-md-offset-2 col-md-8 -->
+			      		</div> <!-- form-group -->
+		      	</form>
+
+		      	<br> <!-- just for the 2 versions -->
+
+		      	<!-- VERSION 2 OF FORM -->
+		      	<form class="form-horizontal test2" action="http://httpbin.org/post" method="POST" role="form">
+		      		<div class="form-group">
+		      				<label class="control-label col-md-2" for="name">Name&ast;</label>
+		      				<div class="col-md-8">
+			      				<input type="text" required class="form-control" name="name" placeholder="Your Name">
+		      			</div> <!-- col-md-8 -->
+		      		</div> <!-- form-group -->
+		      		<div class="form-group">
+		      			<label class="control-label col-md-2" for="email">Email&ast;</label>
+		      			<div class="col-md-8">
+			      			<input type="email" required class="form-control" name="email" placeholder="Your Email">
+ 		      			</div> <!-- col-col-md-8 -->
+		      		</div> <!-- form-group -->
+		      		<div class="form-group">
+		      			<label class="control-label col-md-2" for="telephone">Phone Number&ast;</label>
+		      			<div class="col-md-8">
+			      			<input type="tel" required class="form-control" name="phone-number" placeholder="Phone Number">
+		      			</div> <!-- col-md-8 -->
+		      		</div> <!-- form-group -->
+		      		<div class="form-group">
+		      			<label class="control-label col-md-2" for="insurance">Insurance</label>
+		      			<div class="col-md-8">
+			      			<input type="text" class="form-control" name="insurance" placeholder="Primary Health Insurance">
+		      			</div> <!-- col-md-8 -->
+		      		</div> <!-- form-group -->
+		      		<div class="form-group">
+		      			<label class="control-label col-md-2" for="doctor">Referring Doctor</label>
+		      			<div class="col-md-8">
+			      			<input type="text" class="form-control" name="doctor" placeholder="Doctor Who Referred You">
+		      			</div> <!-- col-md-8 -->
+		      		</div> <!-- form-group -->
+		      		<div class="form-group">
+		      			<label class="control-label col-md-2" for="doctors-number">Doctor's Phone Number</label>
+		      			<div class="col-md-8">
+			      			<input type="tel" class="form-control" name="phone-number" placeholder="Referring Doctor's Phone Number">
+		      			</div> <!-- col-md-8 -->
+		      		</div> <!-- form-group -->
+		      		<div class="form-group">
+		      			<label class="control-label col-md-2" for="diagnosis">Diagnosis and/or Symptoms</label>
+		      			<div class="col-md-8">
+			      			<textarea name="diagnosis" class="form-control" rows="10" placeholder="Doctor's Diagnosis and/or Your Symptoms"></textarea>
+		      			</div> <!-- col-md-8 -->
+		      		</div> <!-- form-group -->
+		      		<div class="form-group">
+		      			<div class="col-md-offset-2 col-md-8">
+		      				<button class="btn btn-default button-test-2" type="submit">Submit</button>
+		      			</div>
+		      		</div> <!-- form-group -->
+		      	</form>
+	      	<!-- END OF VERSION 2 OF FORM -->
+
+		      </div> <!-- col-md-offset-1 col-md-10 -->
+		      </div> <!-- row -->
+
+		      </div> <!-- col-md-offset-1 col-md-10 -->
+		    </div> <!-- row -->
+		  </div> <!-- container -->
+		</section> <!-- appointment request -->
+
+
+
+
+      <footer id="footer" class="text-center">
+      </footer>
+    
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+
+</body>
+</html>

@@ -14,7 +14,8 @@ h4,
 h5,
 h6 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+/*  font-weight: 400; */
+  font-weight: 300;
 }
 
 p {
@@ -82,12 +83,12 @@ p {
 
 /* Dropdown menu (from template)
 -------------------------------------------------- */
-.theme-dropdown .dropdown-menu {
+/*.theme-dropdown .dropdown-menu {
   position: static;
   display: block;
   margin-bottom: 20px;
 }
-
+*/
 /* HEADER CAROUSEL
 -------------------------------------------------- */
 
@@ -118,7 +119,7 @@ p {
 MISSION CONTAINER
  -------------------------------*/
 .home-mission h1 {
-  font-family: 'Raleway', sans-serif;
+/*  font-family: 'Raleway', sans-serif;*/
 }
 
 .full-logo  {
@@ -196,7 +197,7 @@ TREATMENTS (marketing section from carousel)
     text-align: center;
 }
 /*.marketing h2 {*/
-  .treatments h2 {
+.treatments h2 {
   font-weight: normal;
 }
 /*.marketing .col-lg-4 p {*/
@@ -207,7 +208,7 @@ TREATMENTS (marketing section from carousel)
 
 .treatments h1 {
   padding-top: 25px;
-  font-family: 'Raleway', sans-serif; 
+/*  font-family: 'Raleway', sans-serif; */
 }
 
 /*.treatment-types {
@@ -220,7 +221,7 @@ PHYSICAL THERAPY
 
 .physical-therapy, .manual-therapy, .therapeutic h1 {
   padding-bottom: 20px;
-  font-family: 'Raleway', sans-serif;
+/*  font-family: 'Raleway', sans-serif;*/
 }
 
 img #id {
@@ -259,12 +260,7 @@ CONCEIRGE VISITS
 /* ------------------------------------------
 SPORT-SPECIFIC
 -------------------------------------------------- */
-.sport-specific img {
-  display: block;
-  max-width: 100%;
-  margin-left: 0;
 
-}
 
 /* ------------------------------------------
 TESTIMONIAL CAROUSEL
@@ -288,6 +284,7 @@ TESTIMONIAL CAROUSEL
   background: none !important;
   filter: progid:none !important;
 }
+/* ------------------------------ */
 
 /* ------------------------------------------
 CONTACT
@@ -354,6 +351,24 @@ CONTACT
 .privacy li:before {
   color: #7f4098;
 }
+
+/* ------------------------------------------
+  CONTACT FORM
+-------------------------------------------------- */
+.appointment-request {
+  margin-top: 20px;
+  padding-top: 70px;
+}
+
+.test2 label {
+  color: #7f4098;
+}
+
+.button-test-2:hover {
+  background-color: #E2BFF0;
+}
+
+
 
 
 /* ------------------------------------------
