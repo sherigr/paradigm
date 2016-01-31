@@ -28,6 +28,8 @@ p {
   color: #7f4098;
 }
 
+
+
 /* --------------------------------------
    NAVBAR
 -------------------------------------- */
@@ -79,6 +81,15 @@ p {
 .dropdown-menu>li>a:hover {
   color: #330033;
 }
+
+/* Dropdown Menu On Hover update as media query*/
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.navbar-inverse .navbar-nav>.open>a {
+  color: #891792 !important;
+}
+
 
 
 /* Dropdown menu (from template)
@@ -367,9 +378,6 @@ CONTACT
 .button-test-2:hover {
   background-color: #E2BFF0;
 }
-
-
-
 
 /* ------------------------------------------
   FOOTER
