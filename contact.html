@@ -90,136 +90,87 @@
 
     <!-- Contact Form -->
     <section class="appointment-request">
-	    <div class="container">
-	      <div class="row">
-		      <div class="col-md-offset-1 col-md-10">
-		      	<h3 class="text-center purple">Online Appointment Request</h3>
-		      	<hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-1 col-md-10">
+            <h3 class="text-center purple">Online Appointment Request</h3>
+            <hr>
 
-		      	<div class="row">
-		      	<div class="col-md-offset-1 col-md-10">
+            <div class="row">
+              <div class="col-md-offset-1 col-md-10">
 
-			      	<div class="col-md-offset-1 col-md-8">	
-			      		<p class="purple">&ast;Required Field</p>
-			      	</div> 
-			      	<!-- Version 1 OF FORM -->
-			      	<form class="form-horizontal" action="http://httpbin.org/post" method="POST" role="form">
-			      		<div class="form-group">
-			      			<div class="col-md-offset-2 col-md-8">
-			      				<label for="name">Name&ast;</label>
-			      				<input type="text" required class="form-control" name="name" placeholder="Your Name">
-			      			</div> <!-- col-md-offset-2 col-md-8 -->
-			      		</div> <!-- form-group -->
-			      		<div class="form-group">
-			      			<div class="col-md-offset-2 col-md-8">
-			      			<label for="email">Email&ast;</label>
-			      			<input type="email" required class="form-control" name="email" placeholder="Your Email">
-			      			</div> <!-- col-md-offset-2 col-md-8 -->
-			      		</div> <!-- form-group -->
-			      		<div class="form-group">
-			      			<div class="col-md-offset-2 col-md-8">
-			      			<label for="telephone">Phone Number&ast;</label>
-			      			<input type="tel" required class="form-control" name="phone-number" placeholder="Phone Number">
-			      			</div> <!-- col-md-offset-2 col-md-8 -->
-			      		</div> <!-- form-group -->
-			      		<div class="form-group">
-			      			<div class="col-md-offset-2 col-md-8">
-			      			<label for="insurance">Insurance</label>
-			      			<input type="text" class="form-control" name="insurance" placeholder="Primary Health Insurance">
-			      			</div> <!-- col-md-offset-2 col-md-8 -->
-			      		</div> <!-- form-group -->
-			      		<div class="form-group">
-			      			<div class="col-md-offset-2 col-md-8">
-			      			<label for="doctor">Referring Doctor</label>
-			      			<input type="text" class="form-control" name="doctor" placeholder="Doctor Who Referred You">
-			      			</div> <!-- col-md-offset-2 col-md-8 -->
-			      		</div> <!-- form-group -->
-			      		<div class="form-group">
-			      			<div class="col-md-offset-2 col-md-8">
-			      			<label for="doctors-number">Doctor's Phone Number</label>
-			      			<input type="tel" class="form-control" name="phone-number" placeholder="Referring Doctor's Phone Number">
-			      			</div> <!-- col-md-offset-2 col-md-8 -->
-			      		</div> <!-- form-group -->
-			      		<div class="form-group">
-			      			<div class="col-md-offset-2 col-md-8">
-			      			<label for="diagnosis">Diagnosis and/or Symptoms</label>
-			      			<textarea name="diagnosis" class="form-control" rows="10" placeholder="Doctor's Diagnosis and/or Your Symptoms"></textarea>
-			      			</div> <!-- col-md-offset-2 col-md-8 -->
-			      		</div> <!-- form-group -->
-			      		<div class="form-group">
-			      			<div class="col-md-offset-2 col-md-8">
-			      				<button class="btn btn-block btn-default" type="submit">Submit</button>
-		      				</div> <!-- col-md-offset-2 col-md-8 -->
-			      		</div> <!-- form-group -->
-		      	</form>
+                <div class="col-md-offset-1 col-md-8">  
+                  <p class="purple">&ast;Required Field</p>
+                </div> <!-- col-md-offset-1 col-md-8 -->
 
-		      	<br> <!-- just for the 2 versions -->
+                <div class="col-md-offset-1 col-md-10">
+                  <form class="form-horizontal test2" action="http://httpbin.org/post" method="POST" role="form">
 
-		      	<!-- VERSION 2 OF FORM -->
-		      	<form class="form-horizontal test2" action="http://httpbin.org/post" method="POST" role="form">
-		      		<div class="form-group">
-		      				<label class="control-label col-md-2" for="name">Name&ast;</label>
-		      				<div class="col-md-8">
-			      				<input type="text" required class="form-control" name="name" placeholder="Your Name">
-		      			</div> <!-- col-md-8 -->
-		      		</div> <!-- form-group -->
-		      		<div class="form-group">
-		      			<label class="control-label col-md-2" for="email">Email&ast;</label>
-		      			<div class="col-md-8">
-			      			<input type="email" required class="form-control" name="email" placeholder="Your Email">
- 		      			</div> <!-- col-col-md-8 -->
-		      		</div> <!-- form-group -->
-		      		<div class="form-group">
-		      			<label class="control-label col-md-2" for="telephone">Phone Number&ast;</label>
-		      			<div class="col-md-8">
-			      			<input type="tel" required class="form-control" name="phone-number" placeholder="Phone Number">
-		      			</div> <!-- col-md-8 -->
-		      		</div> <!-- form-group -->
-		      		<div class="form-group">
-		      			<label class="control-label col-md-2" for="insurance">Insurance</label>
-		      			<div class="col-md-8">
-			      			<input type="text" class="form-control" name="insurance" placeholder="Primary Health Insurance">
-		      			</div> <!-- col-md-8 -->
-		      		</div> <!-- form-group -->
-		      		<div class="form-group">
-		      			<label class="control-label col-md-2" for="doctor">Referring Doctor</label>
-		      			<div class="col-md-8">
-			      			<input type="text" class="form-control" name="doctor" placeholder="Doctor Who Referred You">
-		      			</div> <!-- col-md-8 -->
-		      		</div> <!-- form-group -->
-		      		<div class="form-group">
-		      			<label class="control-label col-md-2" for="doctors-number">Doctor's Phone Number</label>
-		      			<div class="col-md-8">
-			      			<input type="tel" class="form-control" name="phone-number" placeholder="Referring Doctor's Phone Number">
-		      			</div> <!-- col-md-8 -->
-		      		</div> <!-- form-group -->
-		      		<div class="form-group">
-		      			<label class="control-label col-md-2" for="diagnosis">Diagnosis and/or Symptoms</label>
-		      			<div class="col-md-8">
-			      			<textarea name="diagnosis" class="form-control" rows="10" placeholder="Doctor's Diagnosis and/or Your Symptoms"></textarea>
-		      			</div> <!-- col-md-8 -->
-		      		</div> <!-- form-group -->
-		      		<div class="form-group">
-		      			<div class="col-md-offset-2 col-md-8">
-		      				<button class="btn btn-default button-test-2" type="submit">Submit</button>
-		      			</div>
-		      		</div> <!-- form-group -->
-		      	</form>
-	      	<!-- END OF VERSION 2 OF FORM -->
-
-		      </div> <!-- col-md-offset-1 col-md-10 -->
-		      </div> <!-- row -->
-
-		      </div> <!-- col-md-offset-1 col-md-10 -->
-		    </div> <!-- row -->
-		  </div> <!-- container -->
-		</section> <!-- appointment request -->
+                    <div class="form-group">
+                      <label class="control-label col-md-2" for="name">Name&ast;</label>
+                      <div class="col-md-8">
+                        <input type="text" required class="form-control" name="name" placeholder="Your Name">
+                      </div> <!-- col-md-8 -->
+                    </div> <!-- form-group -->
+                    <div class="form-group">
+                      <label class="control-label col-md-2" for="email">Email&ast;</label>
+                      <div class="col-md-8">
+                        <input type="email" required class="form-control" name="email" placeholder="Your Email">
+                      </div> <!-- col-col-md-8 -->               
+                    </div> <!-- form-group -->
+                    <div class="form-group">
+                      <label class="control-label col-md-2" for="telephone">Phone Number&ast;</label>
+                      <div class="col-md-8">
+                        <input type="tel" required class="form-control" name="phone-number" placeholder="Phone Number">
+                      </div> <!-- col-md-8 -->
+                    </div> <!-- form-group -->
+                    <div class="form-group">
+                      <label class="control-label col-md-2" for="insurance">Insurance</label>
+                      <div class="col-md-8">
+                        <input type="text" class="form-control" name="insurance" placeholder="Primary Health Insurance">
+                      </div> <!-- col-md-8 -->
+                    </div> <!-- form-group -->
+                    <div class="form-group">
+                      <label class="control-label col-md-2" for="doctor">Referring Doctor</label>
+                      <div class="col-md-8">
+                        <input type="text" class="form-control" name="doctor" placeholder="Doctor Who Referred You">
+                      </div> <!-- col-md-8 -->
+                    </div> <!-- form-group -->
+                    <div class="form-group">
+                      <label class="control-label col-md-2" for="doctors-number">Doctor's Phone Number</label>
+                      <div class="col-md-8">
+                        <input type="tel" class="form-control" name="phone-number" placeholder="Referring Doctor's Phone Number">
+                      </div> <!-- col-md-8 -->
+                    </div> <!-- form-group -->
+                    <div class="form-group">
+                      <label class="control-label col-md-2" for="diagnosis">Diagnosis and/or Symptoms</label>
+                      <div class="col-md-8">
+                        <textarea name="diagnosis" class="form-control" rows="10" placeholder="Doctor's Diagnosis and/or Your Symptoms"></textarea>
+                      </div> <!-- col-md-8 -->
+                    </div> <!-- form-group -->
+                    <div class="form-group">
+                      <div class="col-md-offset-2 col-md-8">
+                        <button class="btn btn-default button-test-2" type="submit">Submit</button>
+                      </div>
+                    </div> <!-- form-group -->
 
 
+                  </form>
+              </div> <!-- col-md-offset-1 col-md-10 -->
 
 
-      <footer id="footer" class="text-center">
-      </footer>
+              </div> <!-- col-md-offset-1 col-md-10 -->
+            </div> <!-- row -->
+
+          </div> <!-- col-md-offset-1 col-md-10 -->
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </section> <!-- appointment request -->
+
+
+		<!-- FOOTER-->
+  <footer id="footer" class="text-center">
+  </footer>
     
 
 

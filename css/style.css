@@ -28,7 +28,14 @@ p {
   color: #7f4098;
 }
 
+.curved-picture {
+  border-radius: 20px;
+}
 
+hr {
+  border-top: 1px solid #E2E2E2 !important;
+  padding-bottom: 15px;
+}
 
 /* --------------------------------------
    NAVBAR
@@ -90,8 +97,6 @@ p {
   color: #891792 !important;
 }
 
-
-
 /* Dropdown menu (from template)
 -------------------------------------------------- */
 /*.theme-dropdown .dropdown-menu {
@@ -129,19 +134,19 @@ p {
 /* -------------------------------------
 MISSION CONTAINER
  -------------------------------*/
-.home-mission h1 {
-/*  font-family: 'Raleway', sans-serif;*/
-}
-
-.full-logo  {
-  width: 80%;
+#full-logo  {
+  width: 75%;
   float: left;
 }
 
-#second-col {
+.paradigm-logo {
+  padding-bottom: 25px;
+}
+
+#mission-col {
   margin-top: 50px;
   padding: 50px 20px 60px 20px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .second-par {
@@ -154,106 +159,153 @@ MISSION CONTAINER
   font-style: italic;
 }
 
-hr {
-  border-top: 1px solid #E2E2E2 !important;
-  padding-bottom: 15px;
-}
-
 
 /* ------------------------------------
-Shadow Person Image
+PARADIGM DEF IMAGE
 ------------------------------------*/
-.shadow{
+.paradigm-def {
   width: 100%;
-  background-position: no-repeat center;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   height: 400px;
   padding: 0;
  }
 
- .shadow h2 {
+
+ .paradigm-def h2 {
   padding-top: 100px;
   /*color: white;*/
   color: #5E3B71;
-
- }
-
-/* -------------------------------------
-ABOUT JUSTIN GORNELL
- -------------------------------*/
- .about {
-  margin-top: 70px;
-  padding-top: 30px;
- }
-
- .about img {
-    padding-top: 30px;
-    border-radius: 50% 20%;
- }
-
- .justin {
-  margin-bottom: 25px;
  }
 
 /* ------------------------------------------
-TREATMENTS (marketing section from carousel)
+TREATMENTS 
 -------------------------------------------------- */
 
-/* Center align the text within the three columns below the carousel */
-/*.marketing .col-lg-4 {*/
-  .treatments .col-lg-4 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    text-align: center;
-}
-/*.marketing h2 {*/
-.treatments h2 {
-  font-weight: normal;
-}
-/*.marketing .col-lg-4 p {*/
-  .treatments .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.treatments h1 {
+#treatments h1 {
   padding-top: 25px;
-/*  font-family: 'Raleway', sans-serif; */
 }
 
-/*.treatment-types {
-  padding: 20px 0;
-}*/
+#treatments .col-md-4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+/*  padding-top: 20px;*/
+  padding: 20px 25px;
+}
+
+#treatments p {
+  padding-bottom: 20px;
+} 
+
 
 /* ------------------------------------------
 PHYSICAL THERAPY 
 -------------------------------------------------- */
 
-.physical-therapy, .manual-therapy, .therapeutic h1 {
+#physical-therapy, #manual-therapy, .therapeutic h1 {
   padding-bottom: 20px;
-/*  font-family: 'Raleway', sans-serif;*/
 }
 
-img #id {
-  width: 500px;
+.picture-text-container {  
+  background-color: #F5F5F5;
+  max-height: 500px;
+  overflow: auto;
 }
 
-.physical-therapy .col-lg-6 {
+#physical-therapy .container-text {
   padding-top: 20px;
+  padding-left: 50px; /*added for left pic */
 }
 
-.physical-therapy {
+#physical-therapy {
   margin-bottom: 50px;
+  /*background-color: #F0ECF7;*/
+/*  background-color: #FCFCFD;*/
+background-color: #F5F5F5;
+}
+/* --------------------------- */
+/* trying to expand left-side pic*/
+#physical-therapy .inner-picture {
+/*  position: absolute;
+  left: 0;*/
 }
 
+#physical-therapy .inner-picture img {
+/*  position: absolute;
+  left: 0;
+  max-height: 380px;
+  width: 100%;*/
+  /*border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;*/
+  border-radius: 0;
+}
+.container-text {
+/*  float: right;*/
+}
+#physical-therapy .col-md-6 {
+  padding-left: 0;
+}
+
+
+/* -----------------------------------
+TESTING SECTION 
+-------------------------------*/
+.inner-pic-row img {
+  width: 45%;
+  float: left;
+  max-height: 450px;
+  display: block;
+}
+
+.post-thumbnail {
+  position: relative;
+}
+
+.inner-pic-row {
+  background-color: #F5F5F5;
+  max-height: 500px;
+  overflow: auto;
+}
+
+/* triangle effect*/
+.post-thumbnail:after {
+  border-left-width: 200px;
+  border-bottom-width: 500px;
+  content: ' ';
+  width: 0;
+  height: 0;
+  border-left: 260px solid transparent;
+  border-bottom: 450px solid #F5F5F5;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.picture-text {
+  width: 45%;
+  float: left;
+  background-color: #F5F5F5;
+  padding: 50px;
+  max-height: 450px;
+
+}
+/*END OF TESTING SECTION ---------- */
 
 /* ------------------------------------------
 MANUAL THERAPY 
 -------------------------------------------------- */
-  .manual-therapy {
+  #manual-therapy {
     margin-top: 20px;
     padding-top: 70px;
+  }
+
+  .manual-treatments {
+    padding-top: 25px;
+  }
+
+  .check-icon {
+    padding-right: 10px;
   }
 
 /* ------------------------------------------
@@ -268,14 +320,24 @@ CONCEIRGE VISITS
   margin-bottom: 20px;
 }
 
-/* ------------------------------------------
-SPORT-SPECIFIC
--------------------------------------------------- */
+#weights {
+  width: 85%;
+}
 
+/* ------------------------------------------
+Therapeutic
+-------------------------------------------------- */
+.therapeutic-treatments {
+  padding-top: 25px;
+}
 
 /* ------------------------------------------
 TESTIMONIAL CAROUSEL
 -------------------------------------------------- */
+#testimonialCarousel.carousel {
+  height: 300px;
+}
+
 #testimonials {
   margin-top: 20px;
 }
@@ -301,7 +363,7 @@ TESTIMONIAL CAROUSEL
 CONTACT
 -------------------------------------------------- */
 
-.contact {
+#contact {
   padding-bottom: 30px;
 }
 .contact-icons {
@@ -315,7 +377,7 @@ CONTACT
   line-height: 1px;
 }
 
-.contact a {
+#contact a {
   font-family: 'Lato', sans-serif; 
   font-size: 16px;
   font-weight: 300;
@@ -335,6 +397,7 @@ CONTACT
   margin: 0;
   position: relative;
   background-position: center center;
+  height: 100%;
   width: 100%;
 /*  width: cover;*/ 
 
@@ -351,6 +414,32 @@ CONTACT
 }
 
 /* ------------------------------------------
+  ABOUT PAGE
+-------------------------------------------------- */
+/* About Justin --------*/
+ .about {
+  margin-top: 70px;
+  padding-top: 30px;
+ }
+
+ .about img {
+    padding-top: 30px;
+    border-radius: 50% 20%;
+ }
+
+ .justin {
+  margin-bottom: 25px;
+ }
+
+ /* testimonials*/
+ .featurette {
+  margin-left: 20px;
+  margin-right: 20px;
+ }
+
+
+
+/* ------------------------------------------
   PATIENT INFO PAGE
 -------------------------------------------------- */
 /* Insurance */
@@ -361,6 +450,10 @@ CONTACT
 
 .privacy li:before {
   color: #7f4098;
+}
+
+.form-links {
+  text-align: center;
 }
 
 /* ------------------------------------------
@@ -378,6 +471,7 @@ CONTACT
 .button-test-2:hover {
   background-color: #E2BFF0;
 }
+
 
 /* ------------------------------------------
   FOOTER

@@ -1,6 +1,9 @@
+
 $(function() {
 
-//Carousel Speed
+/*==========================================
+ CAROUSEL SPEED
+=====================================================*/
 	$('#myCarousel').carousel({
 		interval: 3000,
 		pause: false
@@ -12,10 +15,20 @@ $(function() {
 	});
 
 
-});
+/*==========================================
+ GOOGLE MAP
+=====================================================*/
+    $('#map').click(function () {
+        $('#map iframe').css("pointer-events", "auto");
+    });
+    
+    $( "#map" ).mouseleave(function() {
+      $('#map iframe').css("pointer-events", "none"); 
+    });
 
-//Footer
-$(function() {
+/*==========================================
+  FOOTER
+=====================================================*/
 
 var today = new Date();
 var year = today.getFullYear();
