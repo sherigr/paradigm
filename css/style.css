@@ -213,100 +213,47 @@ PHYSICAL THERAPY
   overflow: auto;
 }
 
-#physical-therapy .container-text {
-  padding-top: 20px;
-  padding-left: 50px; /*added for left pic */
+.picture-text p {
+  padding-top: 60px;
+  padding-right: 40px;
+}
+
+#physical-therapy .container-fluid {
+  background-color: #F5F5F5;
 }
 
 #physical-therapy {
   margin-bottom: 50px;
-  /*background-color: #F0ECF7;*/
-/*  background-color: #FCFCFD;*/
-background-color: #F5F5F5;
-}
-/* --------------------------- */
-/* trying to expand left-side pic*/
-#physical-therapy .inner-picture {
-/*  position: absolute;
-  left: 0;*/
 }
 
 #physical-therapy .inner-picture img {
-/*  position: absolute;
-  left: 0;
-  max-height: 380px;
-  width: 100%;*/
-  /*border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;*/
+/*  max-width: 90%;*/
+  max-height: 450px; /* increase to 500 above screen width 1440 */
   border-radius: 0;
 }
-.container-text {
-/*  float: right;*/
+.picture-text {
+  padding-top: 40px;
+  padding-right: 40px;
 }
 #physical-therapy .col-md-6 {
   padding-left: 0;
 }
 
-
-/* -----------------------------------
-TESTING SECTION 
--------------------------------*/
-.inner-pic-row img {
-  width: 45%;
-  float: left;
-  max-height: 450px;
-  display: block;
-}
-
-.post-thumbnail {
-  position: relative;
-}
-
-.inner-pic-row {
-  background-color: #F5F5F5;
-  max-height: 500px;
-  overflow: auto;
-}
-
-/* triangle effect*/
-.post-thumbnail:after {
-  border-left-width: 200px;
-  border-bottom-width: 500px;
-  content: ' ';
-  width: 0;
-  height: 0;
-  border-left: 260px solid transparent;
-  border-bottom: 450px solid #F5F5F5;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.picture-text {
-  width: 45%;
-  float: left;
-  background-color: #F5F5F5;
-  padding: 50px;
-  max-height: 450px;
-
-}
-/*END OF TESTING SECTION ---------- */
-
 /* ------------------------------------------
 MANUAL THERAPY 
 -------------------------------------------------- */
-  #manual-therapy {
-    margin-top: 20px;
-    padding-top: 70px;
-  }
+#manual-therapy {
+  margin-top: 20px;
+  padding-top: 70px;
+}
 
-  .manual-treatments {
-    padding-top: 25px;
-  }
+.manual-treatments {
+  padding-top: 25px;
+}
 
-  .check-icon {
-    padding-right: 10px;
-  }
+.check-icon {
+  padding-right: 10px;
+}
 
 /* ------------------------------------------
 CONCEIRGE VISITS
