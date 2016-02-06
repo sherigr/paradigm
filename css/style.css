@@ -389,10 +389,6 @@ margin: 0 0 25px;
   border-radius: 20px;
 }
 
-/*.bottom-space {
-  margin-bottom: 70px;
-  background-color: #FFF4FF;
-}*/
 
 /* ------------------------------------------
   PATIENT INFO PAGE
@@ -414,16 +410,18 @@ margin: 0 0 25px;
 /* ------------------------------------------
   CONTACT FORM
 -------------------------------------------------- */
-.appointment-request {
+#appointment-request {
   margin-top: 20px;
-  padding-top: 70px;
+/*  padding-top: 70px;
+  padding-bottom: 100px;*/
+  padding: 70px 0 100px;
 }
 
-.test2 label {
+.contact-form label {
   color: #7f4098;
 }
 
-.button-test-2:hover {
+.button-purple:hover {
   background-color: #E2BFF0;
 }
 
@@ -519,8 +517,8 @@ Based on col-sm-10 col-sm-offset-1 */
 /* Based on col-sm-7 offset-1 */
 @media (max-width: 768px) {
   .about-image {
-    max-width: 50%;
-    margin: auto;
+/*    max-width: 50%;*/
+/*    margin: auto;*/
   }
   #about h2 {
     padding: 15px 0;
@@ -531,17 +529,56 @@ Based on col-sm-10 col-sm-offset-1 */
   }
   p {
     padding: 0 10px;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
+/*  .about-image {
+    max-width: 50%;
+    margin: auto;
+  }*/
+  #appointment-request h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 736px) {
   .about-image {
-    height: auto;
+    max-width: 40%;
+    margin: auto;
   }
   #about h2 {
     font-size: 20px;
   }
+}
+
+@media (max-width: 667px) {
+  .about-image {
+    /*max-width: 40%;*/
+/*    margin: auto;*/
+  }
+  /*#about h2 {
+    font-size: 20px;
+  }*/
   #testimonials img {
     max-width: 60%;
+}
+
+@media (max-width: 600px) {
+  .about-image {
+   /* height: auto;*/
+  }
+  /*#about h2 {
+    font-size: 20px;
+  }*/
+  /*#testimonials img {
+    max-width: 60%;*/
+  }
+
+  @media (max-width: 432px) {
+    #appointment-request h1 {
+      font-size: 26px;
+    }
   }
 
 
