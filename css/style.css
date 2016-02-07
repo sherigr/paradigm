@@ -411,7 +411,11 @@ margin: 0 0 25px;
   background-color: #F6F6F6;
 }
 
-.privacy li:before {
+#privacy {
+  padding-top: 30px;
+}
+
+#privacy li:before {
   color: #7f4098;
 }
 
@@ -428,11 +432,33 @@ margin: 0 0 25px;
 #forms .inner-picture {
 /*  display: block;*/
   width: 100%;
-  background-size: cover;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .inner-picture.small-picture {
   display: none;
+}
+
+#privacy {
+  background-color: #F4F1F4;
+  padding-bottom: 100px;
+}
+
+#privacy ul > li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#privacy li {
+  margin-top: 15px;
+}
+
+/* prevent paranthesis word from splitting */
+.word-break {
+  white-space: nowrap;
 }
 
 /* ------------------------------------------
@@ -536,24 +562,6 @@ margin: 0 0 25px;
   }
 }
 
-@media (max-width: 767px) {
-  .inner-picture.angled-picture {
-    display: none;
-  }
-  .inner-picture.small-picture {
-    visibility: visible;
-    display: block;
-    margin: 0 auto;
-    border-radius: 20px;
-  }
-  #forms .inner-picture.small-picture {
-    max-width: 70%;
-  }
-}
-
-
-
-
 @media (min-width: 768px) and (max-width: 800px) {
   .form-links {
     padding-top: 10px;
@@ -585,13 +593,23 @@ margin: 0 0 25px;
 }
 
 @media (max-width: 767px) {
-/*  .about-image {
-    max-width: 50%;
-    margin: auto;
-  }*/
-  /*#appointment-request h1 {*/
-    h1 {
+  h1 {
     font-size: 30px;
+  }
+  .inner-picture.angled-picture {
+    display: none;
+  }
+  .inner-picture.small-picture {
+    visibility: visible;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+  #forms .inner-picture.small-picture {
+    max-width: 70%;
+  }
+  .form-links {
+    padding-bottom: 20px;
   }
 }
 
@@ -602,6 +620,12 @@ margin: 0 0 25px;
   }
   #about h2 {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 720px) {
+  #privacy h4 {
+    padding: 0 20px;
   }
 }
 
