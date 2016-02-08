@@ -240,24 +240,29 @@ PHYSICAL THERAPY
 }
 
 /* ------------------------------------------
-MANUAL THERAPY 
+MANUAL THERAPY - Services Page
 -------------------------------------------------- */
-#manual-therapy {
+ #manual-therapy {
   margin-top: 20px;
   padding-top: 70px;
 }
 
-.manual-treatments {
-  padding-top: 25px;
+#ptbands {
+  max-width: 80%;
+}
+
+.first-manual-part {
+  margin-bottom: 40px;
 }
 
 .check-icon {
   padding-right: 10px;
 }
 
+
 /* ------------------------------------------
-CONCEIRGE VISITS
--------------------------------------------------- */
+CONCEIRGE VISITS - Services Page
+-------------------------------------------------- 
 .concierge {
   padding-top: 50px; 
 }
@@ -272,8 +277,11 @@ CONCEIRGE VISITS
 }
 
 /* ------------------------------------------
-Therapeutic
+Therapeutic - Services Page
 -------------------------------------------------- */
+#therapeutic {
+  margin-top: 70px;
+}
 .therapeutic-treatments {
   padding-top: 25px;
 }
@@ -626,6 +634,16 @@ margin: 0 0 25px;
 @media (max-width: 720px) {
   #privacy h4 {
     padding: 0 20px;
+  }
+}
+
+@media (max-width: 691px) {
+/*  .col-sm-5 #ptbands {*/
+  .small-ptbands #ptbands {
+    display: block;
+    max-width: 50%;
+    margin: 0 auto;
+    padding-bottom: 25px;
   }
 }
 
