@@ -249,7 +249,15 @@ MANUAL THERAPY - Services Page
 
 #ptbands {
   max-width: 80%;
+  display: block;
+  margin-bottom: 25px;
 }
+
+/*.ptbands {
+  max-width: 80%;
+  display: block;
+  margin-bottom: 25px;
+}*/
 
 .first-manual-part {
   margin-bottom: 40px;
@@ -262,19 +270,38 @@ MANUAL THERAPY - Services Page
 
 /* ------------------------------------------
 CONCEIRGE VISITS - Services Page
--------------------------------------------------- 
-.concierge {
-  padding-top: 50px; 
+-------------------------------------------------*/
+#concierge .office-angled.col-md-6 {
+  padding-left: 0;
 }
 
-.concierge p {
-  line-height: 28px;
-  margin-bottom: 20px;
+#concierge .container-fluid {
+/*  background-color: #E6E0DB;*/
+  background-color: #F1EDEA;
 }
 
-#weights {
-  width: 85%;
+/*#concierge .inner-picture {
+  width: 100%;
+  max-height: 450px;
+  
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
+.concierge-text {
+  text-align: center;
+  padding-top: 15px;
+}*/
+.office-small {
+  display: none;
+}
+
+
+
+
+
 
 /* ------------------------------------------
 Therapeutic - Services Page
@@ -341,12 +368,10 @@ margin-bottom: 0;
   height: 100%;
   width: 100%;
 /*  width: cover;*/ 
-
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
- /* Remove scroll*/
 }
 
 /* disabling other click options*/
@@ -543,13 +568,12 @@ margin: 0 0 25px;
   }
 }
 
-
-@media (min-width: 992px) {
-/*  .inner-picture.small-picture {
-    display: none;
-  }*/
+@media (min-width: 1024px) {
+  .concierge-text {
+    padding-top: 45px;
+    padding-right: 100px;
+  }
 }
-
 
 @media (max-width: 991px) {
   /*.inner-picture.angled-picture {
@@ -568,7 +592,19 @@ margin: 0 0 25px;
   #forms .inner-picture.small-picture {
     padding-bottom: 0;
   }
+  /* concierge pictures*/
+  .img-responsive.office-angled {
+    display: none;
+  }
+  .img-responsive.office-small {
+    visibility: visible;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding-left: 10px;
+  }
 }
+
 
 @media (min-width: 768px) and (max-width: 800px) {
   .form-links {
@@ -619,6 +655,19 @@ margin: 0 0 25px;
   .form-links {
     padding-bottom: 20px;
   }
+  /* hide concierge picture */
+/*  .img-responsive.office-small {
+    display: none;
+  }*/
+/*  .img-responsive.office-small {
+    max-width: 60%;
+  }*/
+/*  #concierge p {
+    padding: 0 30px;
+  }
+  #concierge .second-par {
+    padding-top: 20px;
+  }*/
 }
 
 @media (max-width: 736px) {
@@ -629,6 +678,8 @@ margin: 0 0 25px;
   #about h2 {
     font-size: 20px;
   }
+  .img-responsive.office-small {
+    max-width: 50%;
 }
 
 @media (max-width: 720px) {
@@ -637,45 +688,49 @@ margin: 0 0 25px;
   }
 }
 
+@media (min-width: 600px) and (max-width: 736px) {
+  /* */
+}
+
+/* Not kicking in until 630px */
 @media (max-width: 691px) {
-/*  .col-sm-5 #ptbands {*/
-  .small-ptbands #ptbands {
+/*  .small-ptbands #ptbands {*/
+  #ptbands {
     display: block;
     max-width: 50%;
     margin: 0 auto;
     padding-bottom: 25px;
   }
+/*  .ptbands {
+    max-width: 50% !important;
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }*/
 }
 
 @media (max-width: 667px) {
-  .about-image {
-    /*max-width: 40%;*/
-/*    margin: auto;*/
-  }
-  /*#about h2 {
-    font-size: 20px;
-  }*/
   #testimonials img {
     max-width: 60%;
+  }
+  .img-responsive.office-small {
+    max-width: 50%;
+    margin-bottom: 20px;
+  }
 }
-
-@media (max-width: 600px) {
-  .about-image {
-   /* height: auto;*/
-  }
-  /*#about h2 {
-    font-size: 20px;
-  }*/
-  /*#testimonials img {
-    max-width: 60%;*/
-  }
 
   @media (max-width: 432px) {
     #appointment-request h1 {
       font-size: 26px;
     }
+    #manual-therapies p {
+      text-align: left;
+    }
   }
 
+@media (min-width: 640px) and (max-width: 667px) {
+  .img-responsive.office-small {
+  }
+}
 
 
 
