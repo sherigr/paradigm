@@ -298,19 +298,32 @@ CONCEIRGE VISITS - Services Page
   display: none;
 }
 
-
-
-
-
-
 /* ------------------------------------------
-Therapeutic - Services Page
+THERAPEUTIC MODALITIES - Services Page
 -------------------------------------------------- */
 #therapeutic {
-  margin-top: 70px;
+/*  margin-top: 70px;
+  margin-bottom: 40px;*/
+  margin: 70px 0 40px;
+  padding-bottom: 20px;
 }
 .therapeutic-treatments {
   padding-top: 25px;
+}
+
+/* ------------------------------------------
+SPORT-SPECIFIC - Services Page
+-------------------------------------------------- */
+#sport-specific {
+  margin-top: 70px;
+  margin-bottom: 60px;
+  padding-bottom: 35px;
+}
+
+#runner {
+  /*max-width: 50%;*/
+  max-width: 60%;
+  border-radius: 20px;
 }
 
 /* ------------------------------------------
@@ -605,6 +618,12 @@ margin: 0 0 25px;
   }
 }
 
+@media (max-width: 960px) {
+  .about-modalities {
+    padding-bottom: 25px;
+  }
+}
+
 
 @media (min-width: 768px) and (max-width: 800px) {
   .form-links {
@@ -688,9 +707,6 @@ margin: 0 0 25px;
   }
 }
 
-@media (min-width: 600px) and (max-width: 736px) {
-  /* */
-}
 
 /* Not kicking in until 630px */
 @media (max-width: 691px) {
@@ -706,6 +722,20 @@ margin: 0 0 25px;
     margin: 0 auto;
     padding-bottom: 25px;
   }*/
+}
+
+/* not overiding p mq for max 768 */
+@media (max-width: 695px) {
+  #therapeutic p {
+    padding-top: 10px;
+  }
+  /* sport-specific picture*/
+  #runner {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 40%;
+    display: block; 
+  }
 }
 
 @media (max-width: 667px) {
