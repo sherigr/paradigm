@@ -245,6 +245,7 @@ MANUAL THERAPY - Services Page
  #manual-therapy {
   margin-top: 20px;
   padding-top: 70px;
+  background-color: #FDFDFC;
 }
 
 #ptbands {
@@ -306,6 +307,7 @@ THERAPEUTIC MODALITIES - Services Page
   margin-bottom: 40px;*/
   margin: 70px 0 40px;
   padding-bottom: 20px;
+  /*background-color: #FCFBFA;*/
 }
 .therapeutic-treatments {
   padding-top: 25px;
