@@ -4,7 +4,8 @@ body {
 	font-family: 'Lato', sans-serif; 
 /*	font-weight: 400;*/
   font-weight: 300;
-  color: #555;
+  /*color: #555;*/
+  color: #313131;
 }
 
 h1,
@@ -20,7 +21,7 @@ h6 {
 
 p {
   font-size: 16px;
-  line-height: 28px;
+  line-height: 1.5;
 }
 
 /* Purple Font */
@@ -28,14 +29,16 @@ p {
   color: #7f4098;
 }
 
-/*.curved-picture {
+.rounded-img {
   border-radius: 20px;
-}*/
+}
 
 hr {
   border-top: 1px solid #E2E2E2 !important;
   padding-bottom: 15px;
 }
+
+
 
 /* --------------------------------------
    NAVBAR
@@ -248,13 +251,7 @@ MANUAL THERAPY - Services Page
   background-color: #FDFDFC;
 }
 
-#ptbands {
-  max-width: 80%;
-  display: block;
-  margin-bottom: 25px;
-}
-
-/*.ptbands {
+/*#ptbands {
   max-width: 80%;
   display: block;
   margin-bottom: 25px;
@@ -272,13 +269,17 @@ MANUAL THERAPY - Services Page
 /* ------------------------------------------
 CONCEIRGE VISITS - Services Page
 -------------------------------------------------*/
-#concierge .office-angled.col-md-6 {
+/*#concierge .office-angled.col-md-6 {
+  padding-left: 0;
+}*/
+#concierge-angled .col-md-6:first-child, .col-sm-5 {
   padding-left: 0;
 }
 
 #concierge .container-fluid {
 /*  background-color: #E6E0DB;*/
   background-color: #F1EDEA;
+/*  max-height: 480px;*/
 }
 
 /*#concierge .inner-picture {
@@ -295,8 +296,26 @@ CONCEIRGE VISITS - Services Page
   text-align: center;
   padding-top: 15px;
 }*/
+
+/*??? */
+.office-angled {
+  width: 100%;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 85%;
+}
+
 .office-small {
   display: none;
+}
+
+.concierge-first {
+  padding-top: 40px;
+}
+#concierge-angled p {
+  padding-right: 25px;
 }
 
 /* ------------------------------------------
@@ -309,9 +328,7 @@ THERAPEUTIC MODALITIES - Services Page
   padding-bottom: 20px;
   /*background-color: #FCFBFA;*/
 }
-.therapeutic-treatments {
-  padding-top: 25px;
-}
+
 
 /* ------------------------------------------
 SPORT-SPECIFIC - Services Page
@@ -400,27 +417,13 @@ margin-bottom: 0;
 /*---- ABOUT JUSTIN --------*/
  #about {
   margin-top: 70px;
-/*  margin-bottom: 50px;*/
-/*  margin: 70px 0 50px;*/
-/*  padding-top: 30px;
-  padding-bottom: 30px;*/
   padding: 30px 0;
   background-color: #FFF9FF;
  }
 
- #about .container {
-  padding-top: 30px;
- }
-
- #about img {
-  max-height: 400px;
-  border-radius: 20px;
- }
-
- .justin {
-/*  margin-bottom: 25px;*/
-margin: 0 0 25px; 
- }
+#about h2 {
+  margin-top: 0;
+}
 
  /* -- TESTIMONIALS -------*/
 #testimonials {
@@ -428,13 +431,9 @@ margin: 0 0 25px;
   padding-bottom: 60px;
 }
 
- .featurette {
+.featurette {
   margin-left: 20px;
   margin-right: 20px;
- }
-
-#testimonials img {
-  border-radius: 20px;
 }
 
 
@@ -457,14 +456,7 @@ margin: 0 0 25px;
 #forms .container-fluid {
 /*  background-color: #FFF4FF;*/
   background-color: #F6F6F6;
-}
-
-#privacy {
-  padding-top: 30px;
-}
-
-#privacy li:before {
-  color: #7f4098;
+  padding-bottom: 50px;
 }
 
 .form-links {
@@ -490,24 +482,7 @@ margin: 0 0 25px;
   display: none;
 }
 
-#privacy {
-  background-color: #F4F1F4;
-  padding-bottom: 100px;
-}
 
-#privacy ul > li {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-#privacy li {
-  margin-top: 15px;
-}
-
-/* prevent paranthesis word from splitting */
-.word-break {
-  white-space: nowrap;
-}
 
 /* ------------------------------------------
   CONTACT FORM
@@ -583,84 +558,56 @@ margin: 0 0 25px;
   }
 }
 
-@media (min-width: 1024px) {
-  .concierge-text {
-    padding-top: 45px;
-    padding-right: 100px;
+@media (min-width: 992px) and (max-width: 1024px) {
+  /* Concierge pictures*/
+  .concierge-first {
+    padding-top: 10px;
+}
+
+}
+
+@media (min-width: 768px) {
+  #forms .container-fluid {
+    max-height: 470px;
   }
 }
 
-@media (max-width: 991px) {
-  /*.inner-picture.angled-picture {
-    display: none;
-  }
-  .inner-picture.small-picture {
-    visibility: visible;
-    margin: 0 auto;
-    border-radius: 20px;
-  }*/
-  .form-links {
-    padding-top: 25px;
-    padding-right: 0;
-    line-height: 1px;
-  }
-  #forms .inner-picture.small-picture {
-    padding-bottom: 0;
-  }
-  /* concierge pictures*/
-  .img-responsive.office-angled {
-    display: none;
-  }
-  .img-responsive.office-small {
+@media (max-width: 768px) {
+  /* concierge small picture */
+  .office-small {
     visibility: visible;
     display: block;
     margin: 0 auto;
-    border-radius: 20px;
-    padding-left: 10px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    max-width: 60%;
+  }
+  /* concierge large picture */
+  .office-angled {
+    display: none;
+  }
+  #concierge .container-fluid {
+    max-height: initial;
+  }
+  .concierge-first {
+    padding-top: 15px;
+  }
+  #concierge-angled p {
+  padding-right: initial;
+  }
+  #concierge .second-par {
+    padding-bottom: 20px;
   }
 }
 
-@media (max-width: 960px) {
-  .about-modalities {
-    padding-bottom: 25px;
-  }
-}
-
-
-@media (min-width: 768px) and (max-width: 800px) {
-  .form-links {
-    padding-top: 10px;
-  }
-}
-
-/* --------------------------- */
-/* Based on col-sm-7 offset-1 */
-@media (max-width: 768px) {
-  .about-image {
-  }
-  #about h2 {
-    padding: 15px 0;
-  }
-  #about h2, p {
-    margin: 0 auto;
-    text-align: center;
-  }
-  p {
-    padding: 0 10px;
-  }
-  .inner-picture.small-picture {
-    max-width: 80%;
-    padding-bottom: 15px;
-  }
-  #forms p {
-    line-height: 1.5;
-  }
-}
 
 @media (max-width: 767px) {
-  h1 {
-    font-size: 30px;
+  .justin-image {
+    max-width: 40%;
+    margin: auto;
+    margin-bottom: 20px;
   }
+  /*form picture */
   .inner-picture.angled-picture {
     display: none;
   }
@@ -670,106 +617,33 @@ margin: 0 0 25px;
     margin: 0 auto;
     border-radius: 20px;
   }
-  #forms .inner-picture.small-picture {
-    max-width: 70%;
+/*  #forms .inner-picture.small-picture {*/
+  #forms .inner-picture {
+    max-width: 60%;
+    margin-bottom: 25px;
   }
   .form-links {
     padding-bottom: 20px;
+    margin: 0 auto;
+    padding: 0;
   }
-  /* hide concierge picture */
-/*  .img-responsive.office-small {
-    display: none;
-  }*/
-/*  .img-responsive.office-small {
+  #manual-img {
+    margin: 0 auto;
+    margin-bottom: 25px;
     max-width: 60%;
-  }*/
-/*  #concierge p {
-    padding: 0 30px;
   }
-  #concierge .second-par {
-    padding-top: 20px;
-  }*/
-}
-
-@media (max-width: 736px) {
-  .about-image {
-    max-width: 40%;
-    margin: auto;
+  #manual-therapies {
+    text-align: center;
+    font-style: italic;
   }
-  #about h2 {
-    font-size: 20px;
+  .modalities {
+    text-align: center;
+    font-style: italic;
   }
-  .img-responsive.office-small {
-    max-width: 50%;
-}
-
-@media (max-width: 720px) {
-  #privacy h4 {
-    padding: 0 20px;
-  }
-}
-
-
-/* Not kicking in until 630px */
-@media (max-width: 691px) {
-/*  .small-ptbands #ptbands {*/
-  #ptbands {
-    display: block;
-    max-width: 50%;
-    margin: 0 auto;
-    padding-bottom: 25px;
-  }
-/*  .ptbands {
-    max-width: 50% !important;
-    margin: 0 auto;
-    padding-bottom: 25px;
-  }*/
-}
-
-/* not overiding p mq for max 768 */
-@media (max-width: 695px) {
-  #therapeutic p {
+  .modalities:first-child {
     padding-top: 10px;
   }
-  /* sport-specific picture*/
-  #runner {
-    margin: 0 auto;
-    margin-bottom: 20px;
-    max-width: 40%;
-    display: block; 
-  }
+  
+
 }
-
-@media (max-width: 667px) {
-  #testimonials img {
-    max-width: 60%;
-  }
-  .img-responsive.office-small {
-    max-width: 50%;
-    margin-bottom: 20px;
-  }
-}
-
-  @media (max-width: 432px) {
-    #appointment-request h1 {
-      font-size: 26px;
-    }
-    #manual-therapies p {
-      text-align: left;
-    }
-  }
-
-@media (min-width: 640px) and (max-width: 667px) {
-  .img-responsive.office-small {
-  }
-}
-
-
-
-
-
-
-
-
-
 
