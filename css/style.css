@@ -38,8 +38,6 @@ hr {
   padding-bottom: 15px;
 }
 
-
-
 /* --------------------------------------
    NAVBAR
 -------------------------------------- */
@@ -137,9 +135,13 @@ hr {
 /* -------------------------------------
 MISSION CONTAINER
  -------------------------------*/
-#full-logo  {
+#full-logo-large  {
   width: 75%;
   float: left;
+}
+
+#full-logo-small {
+  display: none;
 }
 
 .paradigm-logo {
@@ -210,7 +212,7 @@ PHYSICAL THERAPY
   padding-bottom: 20px;
 }
 
-.picture-text-container {  
+./*picture-text-container {  
   background-color: #F5F5F5;
   max-height: 500px;
   overflow: auto;
@@ -219,7 +221,7 @@ PHYSICAL THERAPY
 .picture-text p {
   padding-top: 60px;
   padding-right: 40px;
-}
+}*/
 
 #physical-therapy .container-fluid {
   background-color: #F5F5F5;
@@ -229,17 +231,29 @@ PHYSICAL THERAPY
   margin-bottom: 50px;
 }
 
-#physical-therapy .inner-picture img {
+/*#physical-therapy .inner-picture img {*/
 /*  max-width: 90%;*/
-  max-height: 450px; /* increase to 500 above screen width 1440 */
+  /*max-height: 450px;*/ /* increase to 500 above screen width 1440 */
 /*  border-radius: 0;*/
-}
-.picture-text {
+/*}*/
+/*.picture-text {
   padding-top: 40px;
   padding-right: 40px;
 }
 #physical-therapy .col-md-6 {
   padding-left: 0;
+}*/
+
+/* TESTING CHANGES */
+#pt-small {
+  display: none;
+}
+#physical-therapy .col-md-5 {
+  padding-left: 0;
+}
+.picture-text {
+  padding-top: 30px;
+  padding-right: 40px;
 }
 
 /* ------------------------------------------
@@ -339,10 +353,8 @@ SPORT-SPECIFIC - Services Page
   padding-bottom: 35px;
 }
 
-#runner {
-  /*max-width: 50%;*/
+#sport-img {
   max-width: 60%;
-  border-radius: 20px;
 }
 
 /* ------------------------------------------
@@ -363,6 +375,7 @@ margin-bottom: 0;
 }
 
 #street {
+  margin-bottom: 0;
   text-indent: 22px;
   font-size: 14px;
   font-style: italic;
@@ -562,8 +575,7 @@ margin-bottom: 0;
   /* Concierge pictures*/
   .concierge-first {
     padding-top: 10px;
-}
-
+  }
 }
 
 @media (min-width: 768px) {
@@ -598,16 +610,35 @@ margin-bottom: 0;
   #concierge .second-par {
     padding-bottom: 20px;
   }
+  /* physical therapy pictures*/
+  #pt-small {
+    visibility: visible;
+    display: block;
+    margin: 0 auto;
+    max-width: 60%;
+  }
+  #pt-large {
+    display: none;
+  }
+  .picture-text {
+    padding-top: 0;
+  }
+  .contact-info {
+    text-align: center;
+  }
 }
 
 
 @media (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+  }
   .justin-image {
     max-width: 40%;
     margin: auto;
     margin-bottom: 20px;
   }
-  /*form picture */
+  /*form pictures */
   .inner-picture.angled-picture {
     display: none;
   }
@@ -627,23 +658,57 @@ margin-bottom: 0;
     margin: 0 auto;
     padding: 0;
   }
+  /* manual-therapy image*/
   #manual-img {
     margin: 0 auto;
     margin-bottom: 25px;
     max-width: 60%;
   }
-  #manual-therapies {
+  #manual-therapies, .modalities {
     text-align: center;
     font-style: italic;
   }
-  .modalities {
-    text-align: center;
+  /*.modalities {  /* refactored to above */
+/*    text-align: center;
     font-style: italic;
-  }
+  }*/
   .modalities:first-child {
     padding-top: 10px;
   }
+  /*sport-specific image */
+  #sport-img {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  #full-logo-large {
+    display: none;
+  }
+  #full-logo-small {
+    visibility: visible;
+    display: block;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  #mission-col {
+    margin-top: initial;
+    padding-top: initial;
+  }
+  #pt-small {
+/*    visibility: visible;
+    display: block;
+    margin: 0 auto;*/
+    max-width: 50%;
+  }
+  /*#pt-large {
+    display: none;
+  }*/
+  .picture-text {
+    margin: initial;
+    padding: 30px 10px 0 15px;
+  }
+  #physical-therapy {
+    margin-bottom: initial;
+  }
   
-
 }
 
