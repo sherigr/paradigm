@@ -164,6 +164,10 @@ MISSION CONTAINER
   font-style: italic;
 }
 
+#mission-col > p, #philosophy p {
+  font-size: 18px;
+}
+
 
 /* ------------------------------------
 PARADIGM DEF IMAGE
@@ -183,6 +187,18 @@ PARADIGM DEF IMAGE
   /*color: white;*/
   color: #5E3B71;
  }
+
+ /* ------------------------------------
+PHILOSOPHY
+------------------------------------*/
+#philosophy {
+  padding: 70px 0;
+
+}
+
+#philosophy-img {
+  max-width: 70%;
+}
 
 /* ------------------------------------------
 TREATMENTS 
