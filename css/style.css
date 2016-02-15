@@ -2,7 +2,6 @@
 body {
 	padding-top: 70px;
 	font-family: 'Lato', sans-serif; 
-/*	font-weight: 400;*/
   font-weight: 300;
   /*color: #555;*/
   color: #313131;
@@ -15,7 +14,6 @@ h4,
 h5,
 h6 {
   font-family: 'Raleway', sans-serif;
-/*  font-weight: 400; */
   font-weight: 300;
 }
 
@@ -37,6 +35,15 @@ hr {
   border-top: 1px solid #E2E2E2 !important;
   padding-bottom: 15px;
 }
+
+.padding-top {
+  padding-top: 30px;
+}
+
+.page-top {
+  padding-top: 100px;
+}
+
 
 /* --------------------------------------
    NAVBAR
@@ -171,7 +178,7 @@ MISSION CONTAINER
 
 
 /* ------------------------------------
-PARADIGM DEF IMAGE
+PARADIGM DEF SECTION
 ------------------------------------*/
 .paradigm-def {
   width: 100%;
@@ -182,19 +189,24 @@ PARADIGM DEF IMAGE
   padding: 0;
  }
 
-
  .paradigm-def h2 {
   padding-top: 100px;
   /*color: white;*/
   color: #5E3B71;
  }
 
+
+
  /* ------------------------------------
 PHILOSOPHY
 ------------------------------------*/
-#philosophy {
+/*#philosophy {
   padding: 70px 0;
+} TEMPORARY*/
 
+/*temporary */
+#philosophy {
+  padding-bottom: 70px;
 }
 
 #philosophy-img {
@@ -202,12 +214,12 @@ PHILOSOPHY
 }
 
 /* ------------------------------------------
-TREATMENTS 
+DIAGNOSES TREATED (treatments)
 -------------------------------------------------- */
 
-#treatments h1 {
+/*#treatments h1 {
   padding-top: 25px;
-}
+} TEMPORARY*/
 
 #treatments .col-md-4 {
   margin-top: 20px;
@@ -225,11 +237,11 @@ TREATMENTS
 PHYSICAL THERAPY 
 -------------------------------------------------- */
 
-#physical-therapy, #manual-therapy, .therapeutic h1 {
+/*#physical-therapy, #manual-therapy, .therapeutic h1 {
   padding-bottom: 20px;
-}
+} TEMPORARY*/
 
-./*picture-text-container {  
+/*picture-text-container {  
   background-color: #F5F5F5;
   max-height: 500px;
   overflow: auto;
@@ -277,16 +289,10 @@ PHYSICAL THERAPY
 MANUAL THERAPY - Services Page
 -------------------------------------------------- */
  #manual-therapy {
-  margin-top: 20px;
-  padding-top: 70px;
+/*  margin-top: 20px;
+  padding-top: 70px; THIESE 2 TEMPORARY*/
   background-color: #FDFDFC;
 }
-
-/*#ptbands {
-  max-width: 80%;
-  display: block;
-  margin-bottom: 25px;
-}*/
 
 .first-manual-part {
   margin-bottom: 40px;
@@ -353,10 +359,8 @@ CONCEIRGE VISITS - Services Page
 THERAPEUTIC MODALITIES - Services Page
 -------------------------------------------------- */
 #therapeutic {
-/*  margin-top: 70px;
-  margin-bottom: 40px;*/
-  margin: 70px 0 40px;
-  padding-bottom: 20px;
+/*  margin: 70px 0 40px;
+  padding-bottom: 20px; THESE 2 TEMPORARY*/
   /*background-color: #FCFBFA;*/
 }
 
@@ -365,7 +369,7 @@ THERAPEUTIC MODALITIES - Services Page
 SPORT-SPECIFIC - Services Page
 -------------------------------------------------- */
 #sport-specific {
-  margin-top: 70px;
+/*  margin-top: 70px; TEMPORARY*/
   margin-bottom: 60px;
   padding-bottom: 35px;
 }
@@ -437,7 +441,7 @@ margin-bottom: 0;
 }
 
 /* disabling other click options*/
-#map iframe{
+#map iframe, #second-map iframe{
     pointer-events: none;
 }
 
@@ -446,8 +450,8 @@ margin-bottom: 0;
 -------------------------------------------------- */
 /*---- ABOUT JUSTIN --------*/
  #about, #about-joseph {
-  margin-top: 70px;
-  padding: 30px 0;
+  /*margin-top: 70px;
+  padding: 30px 0; THESE 2 TEMPORARY*/
   background-color: #FFF9FF;
  }
 
@@ -472,14 +476,14 @@ margin-bottom: 0;
 -------------------------------------------------- */
 /* Insurance */
 #insurance {
-  margin-top: 70px;
-  padding-top: 30px;
+/*  margin-top: 70px;
+  padding-top: 30px; THESE 2 TEMPORARY*/
 /*  background-color: #FFF4FF;*/
   background-color: #FFF4FF;
 }
 
 #forms {
-  padding-top: 30px;
+ /* padding-top: 30px; TEMPORARY*/
   background-color: #FFF4FF;
 }
 
@@ -518,10 +522,8 @@ margin-bottom: 0;
   CONTACT FORM
 -------------------------------------------------- */
 #appointment-request {
-  margin-top: 20px;
-/*  padding-top: 70px;
-  padding-bottom: 100px;*/
-  padding: 70px 0 100px;
+  /*margin-top: 20px;
+  padding: 70px 0 100px; TEMPORARY*/
 }
 
 .contact-form label {
@@ -532,6 +534,36 @@ margin-bottom: 0;
   background-color: #E2BFF0;
 }
 
+#contact-section {
+  padding-top: 70px;
+}
+
+#contact-section a {
+  font-family: 'Lato', sans-serif; 
+  font-size: 16px;
+  font-weight: 300;
+  color: #555;
+/*  text-decoration: none;*/
+}
+
+/*contact-section */
+.big-icon, .second-icon {
+  margin-bottom: 10px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.second-icon {
+  padding-left: 20px;
+}
+
+.big-home {
+  padding-left: 20px;
+}
+
+#contact-section {
+  /*text-align: center;*/
+}
 
 /* ------------------------------------------
   FOOTER
@@ -600,6 +632,19 @@ margin-bottom: 0;
   /* Concierge pictures*/
   .concierge-first {
     padding-top: 10px;
+  }
+}
+
+/*contact page  */
+@media (max-width: 991px) {
+  #contact-section {
+  text-align: center;
+  }
+  #contact-section h3 {
+    margin-top: 0
+  }
+  .big-icon:not(.big-home), .second-icon {
+    padding-top: 20px;
   }
 }
 
@@ -733,6 +778,10 @@ margin-bottom: 0;
   }
   #physical-therapy {
     margin-bottom: initial;
+  }
+  .paradigm-def h2 {
+    padding: 20px 0;
+    font-size: 22px;
   }
   
 }
