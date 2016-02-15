@@ -4,6 +4,17 @@
 	<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="description" content="Paradigm Physical Therapy's mission is to enhance overall physical health, fitness and quality of life through physical therapy and wellness services that provide superior, comprehensive and individual treatments.">
+    <meta name="author" content="Sheri Grossman">
+    <meta name="keywords" content="physical therapy upper east side, ankle/foot, knee, hip, shoulder, elbow, spine, body injuries, pain management, wellness, manual therapy, therapeutic modalities, restore body movement">
+      <meta name="robots" content="index, follow">
+      <meta property="og:site_name" content="Paradigm Physical Therapy">
+      <meta property="og:title" content="Paradigm Physical Therapy"></meta>
+      <meta property="og:description" content="physical therapy upper east side, ankle/foot, knee, hip, shoulder, elbow, spine, body injuries, pain management, wellness, manual therapy, therapeutic modalities, restore body movement">
+      <meta property="og:image" content="http://.png">
+      <meta property="og:url" content="http://.com/"> -->
+
+
 	<title>Paradigm Physical Therapy</title>
 
 	<!-- Bootstrap core CSS -->
@@ -39,8 +50,10 @@
             <span class="icon-bar"></span>
           </button> 
           <a class="navbar-brand" href="#">
-            <img alt="Paradigm Logo" src="img/nav-logo2.png">
-          </a>        
+            <!-- <img alt="Paradigm Logo" src="img/nav-logo2.png">
+          </a>  --> 
+          <img alt="Paradigm Logo" src="img/logoTest2.png">
+          </a>       
         </div> <!--navbar-header -->
 
         <div  id="navbar" class="collapse navbar-collapse">
@@ -167,7 +180,7 @@
     <section id="philosophy">
       <div class="container">
         <div class="row">
-          <h1 class="text-center purple">PARADIGM PHILOSOPHY</h1>
+          <h1 class="text-center purple padding-top">PARADIGM PHILOSOPHY</h1>
           <hr>
           <div class="col-sm-6">
             <img id="philosophy-img" class="img-responsive rounded-img" src="img/gym2.jpg" alt="philosophy picture">
@@ -181,10 +194,8 @@
       </div> <!-- container -->
     </section> <!-- philosophy -->
 
-    <!-- Philosophy-->
-
     <!-- Shadow Image div -->
-    <div class="parallax-window" data-parallax="scroll" data-image-src="img/ShadowPerson.jpg" alt="shadow person">
+    <div class="parallax-window img-responsive" data-parallax="scroll" data-image-src="img/ShadowPerson.jpg" alt="shadow person">
       <div class="paradigm-def">
         <div class="container">
           <h2 class="text-center"> Paradigm &lsqb;pa‐ră‐dym&rsqb;&colon; something serving as an example of how things should be done; a pattern or model in which some quality or relation is illustrated in its purest form&semi; epitome, ideal.</h2>
@@ -192,62 +203,71 @@
       </div> <!-- paradigm-def -->
     </div> <!-- parallax window -->
 
+    <!-- trying parallax via js -->
+    <!-- <div id="paradigm-def">
+      <div class="parallax-window img-responsive">
+        <div class="container">
+          <h2 class="text-center"> Paradigm &lsqb;pa‐ră‐dym&rsqb;&colon; something serving as an example of how things should be done; a pattern or model in which some quality or relation is illustrated in its purest form&semi; epitome, ideal.</h2>
+        </div> --> <!-- container -->
+      <!-- </div>
+    </div>  --><!-- paradigm-def -->
+
+
     <!--TREATMENTS -->
     <section id="treatments">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
-            <h1 class="text-center purple">DIAGNOSES TREATED</h1>
+            <h1 class="text-center purple padding-top">DIAGNOSES TREATED</h1>
               <hr>
           </div> <!-- col-md-10 -->
           <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
             <div class="col-md-4 col-sm-6">
-              <img id="foot" class="img-circle center-block" src="img/foot.jpg" alt="foot image" width="140" height="140">
-            <h4 class="purple text-center">Ankle/Foot</h4>
+              <img id="foot" class="img-circle center-block treated" src="img/foot.jpg" alt="foot image" width="140" height="140" data-container="body" data-toggle="popover" title="Ankle/Foot" data-placement="bottom" data-content="sprain, contusion, fracture, Achilles tendonitis, hallux rigidus, plantar fascitis, arthritis, shin splints, heel spurs">
+              <h4 class="purple text-center">Ankle/Foot</h4>
             <!-- Foot Content -->
-            <!-- <p>sprain, contusion, fracture, Achilles tendonitis, hallux rigidus, plantar fascitis, arthritis, shin splints, heel spurs</p> -->
+              
             </div> <!-- col-md-4 col-sm-6 -Ankle -->
 
             <div class="col-md-4 col-sm-6">
-              <img class="img-circle center-block" src="img/knee.jpg" alt="knee image" width="140" height="140">
-            <h4 class="purple text-center">Knee</h4>
+              <img class="img-circle center-block treated" src="img/knee.jpg" alt="knee image" width="140" height="140" data-container="body" data-toggle="popover" title="Knee" data-placement="bottom" data-content="sligament tears (ACL, MCL, PCL, LCL), runners knee, patella-femoral knee pain (chondomalacia), meniscal injuries, tendonitis, bursitis, cartilage injuries, fracture, quadriceps strain, hamstring strain, joint replacement, arthritis">
+              <h4 class="purple text-center">Knee</h4>
             <!-- Knee Content -->
-            <!-- <p>ligament tears (ACL, MCL, PCL, LCL), runners knee, patella-femoral knee pain (chondomalacia), meniscal injuries, tendonitis, bursitis, cartilage injuries, fracture, quadriceps strain, hamstring strain, joint replacement, arthritis</p> -->
+              
             </div> <!-- col-md-4 col-sm-6 Knee -->
 
             <div class="col-md-4 col-sm-6">
-              <img class="img-circle center-block" src="img/hip.jpg" alt="hip image" width="140" height="140">
-            <h4 class="purple text-center">Hip</h4>
+              <img class="img-circle center-block treated" src="img/hip.jpg" alt="hip image" width="140" height="140" data-container="body" data-toggle="popover" title="Hip" data-placement="bottom" data-content="bursitis, tenonitis, joint replacement, labral tears, strains/sprains, arthritis, piriformis syndrome, cartilage injuries">
+              <h4 class="purple text-center">Hip</h4>
             <!-- Hip Content -->
-            <!-- <p>bursitis, tenonitis, joint replacement, labral tears, strains/sprains, arthritis, piriformis syndrome, cartilage injuries</p> -->
+              
             </div> <!-- col-md-4 col-sm-6 Hip -->
 
             <div class="col-md-4 col-sm-6">
-              <img class="img-circle center-block" src="img/shoulder.jpg" alt="shoulder image" width="140" height="140">
-            <h4 class="purple text-center">Shoulder</h4>
+              <img class="img-circle center-block treated" src="img/shoulder.jpg" alt="shoulder image" width="140" height="140" data-container="body" data-toggle="popover" title="Shoulder" data-placement="top" data-content="separation (AC joint), dislocation, tendonitis, bursitis, arthritis, rotator cuff tear, labral tear, cartilage injuries, shoulder instability, fracture, joint replacement">
+              <h4 class="purple text-center">Shoulder</h4>
             <!-- Shoulder Content -->
-            <!-- <p>separation (AC joint), dislocation, tendonitis, bursitis, arthritis, rotator cuff tear, labral tear, cartilage injuries, shoulder instability, fracture, joint replacement</p> -->
+              
             </div> <!-- col-md-4 col-sm-6 Shoulder -->
 
             <div class="col-md-4 col-sm-6">
-              <img class="img-circle center-block" src="img/elbow.jpg" alt="shoulder image" width="140" height="140">
+              <img class="img-circle center-block treated" src="img/elbow.jpg" alt="shoulder image" width="140" height="140" data-container="body" data-toggle="popover" title="Elbow" data-placement="top" data-content="lateral and medial epicondylitis, tendonitis, bursitis, arthritis, fracture, dislocation">
               <h4 class="purple text-center">Elbow</h4>
               <!-- Elbow Content -->
-              <!-- <p>lateral and medial epicondylitis, tendonitis, bursitis, arthritis, fracture, dislocation</p>  -->
+                
             </div> <!-- col-md-4 col-sm-6 Elbow -->
 
             <div class="col-md-4 col-sm-6">
-              <img class="img-circle center-block" src="img/spine.jpg" alt="spine image" width="140" height="140">
+              <img class="img-circle center-block treated" src="img/spine.jpg" alt="spine image" width="140" height="140" data-container="body" data-toggle="popover" title="Spine" data-placement="top" data-content="degenerative disc disease, degenerative joint disease, spondylosis, stenosis, spondylolisthesis, sciatica, neck pain, herniated disc, facet syndrome">
               <h4 class="purple text-center">Spine</h4>
               <!-- Spine Content -->
-              <!-- <p>degenerative disc disease, degenerative joint disease, spondylosis, stenosis, spondylolisthesis, sciatica, neck pain, herniated disc, facet syndrome</p> -->
+                
             </div> <!-- col-md-4 col-sm-6 Spine -->
             
           </div> <!-- col-md-10 -->
         </div> <!-- row -->
       </div> <!-- container -->
     </section> <!-- treatments -->
-    <!-- <div class="container marketing"> -->
 
     <!--PHYSICAL THERARPY  -->
     <section id="physical-therapy">
@@ -295,6 +315,7 @@
                 <span id="fax-icon" class="contact-icons"><i class="fa fa-fax"></i></span><a id="fax" href="fax:6468632650"> 646-863-2650</a> <br>
                 <span id="email-icon" class="contact-icons"><i class="fa fa-envelope"></i></span><a href="mailto:info@paradigmtherapys.com">info@paradigmtherapys.com</a> <br>
                 <span class="contact-icons"><a href="http://www.facebook.com/Paradigm-Physical-Therapy-210523072317132/?fref=ts" target="_blank"><i id="fb-icon" class="contact-icons fa fa-facebook"></i></a></span><a href="http://www.facebook.com/Paradigm-Physical-Therapy-210523072317132/?fref=ts"> Paradigm Physical Therapy</a> <br>
+              </p>
               </p>
             </div> <!-- col-md-6 -->
             <!-- <div class="directions col-md-6 col-xs-10 col-xs-offset-1"> -->

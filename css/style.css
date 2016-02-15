@@ -232,6 +232,24 @@ DIAGNOSES TREATED (treatments)
   padding-bottom: 20px;
 } 
 
+/* fade diagnoses img on hover*/
+#treatments img {
+  -webkit-transition: opacity .2s ease;
+  -moz-transition: opacity .2s ease;
+  -0-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+}
+#treatments img:hover {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+
+
+/* Popover*/
+#treatments .img-cirle {
+  text-align: center;
+}
 
 /* ------------------------------------------
 PHYSICAL THERAPY 
