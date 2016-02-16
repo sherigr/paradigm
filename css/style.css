@@ -244,11 +244,12 @@ DIAGNOSES TREATED (treatments)
   filter: alpha(opacity=40);
 }
 
-
-
 /* Popover*/
-#treatments .img-cirle {
+.popover-title {
   text-align: center;
+  color: #7f4098;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* ------------------------------------------
