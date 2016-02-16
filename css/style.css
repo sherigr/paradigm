@@ -139,6 +139,11 @@ hr {
   height: 500px;
 }
 
+.carousel h1, h3 {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
 /* -------------------------------------
 MISSION CONTAINER
  -------------------------------*/
@@ -802,6 +807,19 @@ margin-bottom: 0;
     padding: 20px 0;
     font-size: 22px;
   }
-  
+  #philosophy-img {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar-brand>img {
+    height: 70px;
+   /* max-width: 80%;*/
+  }
+  .navbar-toggle {
+    margin-top: 20px;
+  }
 }
 
