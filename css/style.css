@@ -36,13 +36,20 @@ hr {
   padding-bottom: 15px;
 }
 
-.padding-top {
+/*.padding-top {
   padding-top: 30px;
-}
+}*/ 
 
 .page-top {
   padding-top: 100px;
 }
+
+/* so link goes directly to h1 & h2 
+gives too much padding */
+/*#para-philosophy, #para-mission {
+  margin-top: 75px;
+  padding-top: 75px;
+}*/
 
 
 /* --------------------------------------
@@ -84,7 +91,8 @@ hr {
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
-  color: #7f4098;
+ /* color: #7f4098;*/
+  color: #8E8392;
 }
 
 .navbar-inverse .navbar-nav>li>a:focus {
@@ -103,6 +111,12 @@ hr {
   color: #330033;
 }
 
+/* dropdown menu on hover but prevents click dropdown on mobile*/
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+  display: block;
+}
+
+
 
 
 /* Dropdown menu (from template)
@@ -118,7 +132,6 @@ hr {
 
 /* Carousel base class */
 .carousel {
-  height: 500px;
   margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -139,9 +152,47 @@ hr {
   height: 500px;
 }
 
-.carousel h1, h3 {
+/* add shadow only to carousel text */
+.carousel h1, .carousel h3 {
   color: #ffffff;
   text-shadow: 2px 2px 4px #000000;
+}
+
+/*fade carousel picture in */
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+/* delayed h1 fade in */
+.carousel h1, .carousel h3 {
+  opacity: 0;
+  -webkit-transition: opacity 1.5s ease-in-out;
+  -moz-transition: opacity 1.5s ease-in-out;
+  -o-transition: opacity 1.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
+}
+.carousel-fade .carousel-inner .active h1,
+.carousel-fade .carousel-inner .active h3 {
+  opacity: 1;
 }
 
 /* -------------------------------------
@@ -483,6 +534,10 @@ margin-bottom: 0;
   margin-top: 0;
 }
 
+#about-joseph img {
+  margin-top: 50px;
+}
+
  /* -- TESTIMONIALS -------*/
 #testimonials {
   background-color: #FFF4FF;
@@ -550,6 +605,7 @@ margin-bottom: 0;
   padding: 70px 0 100px; TEMPORARY*/
 }
 
+
 .contact-form label {
   color: #7f4098;
 }
@@ -608,11 +664,11 @@ margin-bottom: 0;
 -------------------------------------------------- */
 /* NAVBAR*/
 /* prevent dropdown on collapsed navbar */
-@media (min-width: 979px) {
+/*@media (min-width: 979px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }
-}
+}*/
 
 @media (min-width: 768px) and (max-width: 992px) { 
   .navbar-header {
@@ -727,7 +783,7 @@ margin-bottom: 0;
   h1 {
     font-size: 30px;
   }
-  .justin-image {
+  #justin-image, #joseph-img {
     max-width: 40%;
     margin: auto;
     margin-bottom: 20px;
