@@ -29,6 +29,9 @@ p {
 
 .rounded-img {
   border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 5px #888888;
+  -moz-box-shadow: 10px 10px 5px #888888;
+  box-shadow: 10px 10px 5px #888888;
 }
 
 hr {
@@ -182,7 +185,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .carousel-fade .carousel-control {
   z-index: 2;
 }
-/* delayed h1 fade in */
+/* fade in text shortly after picture */
 .carousel h1, .carousel h3 {
   opacity: 0;
   -webkit-transition: opacity 1.5s ease-in-out;
@@ -239,7 +242,7 @@ PARADIGM DEF SECTION
 .paradigm-def {
   width: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   background-size: cover;
   height: 400px;
   padding: 0;
