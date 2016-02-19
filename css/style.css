@@ -65,7 +65,7 @@ gives too much padding */
 }
 
 .navbar {
-  min-height: 100px;
+  min-height: 85px;
   padding: 15px;
 }
 
@@ -75,7 +75,7 @@ gives too much padding */
 
 /* accomodate logo*/
 .navbar-brand {
-  height: 100px;
+  height: 85px;
   padding-top: 0;
 }
 
@@ -115,9 +115,10 @@ gives too much padding */
 }
 
 /* dropdown menu on hover but prevents click dropdown on mobile*/
-ul.nav li.dropdown:hover > ul.dropdown-menu {
+/*ul.nav li.dropdown:hover > ul.dropdown-menu {
   display: block;
-}
+}*/
+
 
 
 
@@ -155,8 +156,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   height: 500px;
 }
 
-/* add shadow to carousel text */
-.carousel h1, .carousel h3 {
+/* add shadow to carousel & para def text */
+.carousel h1, .carousel h3, .paradigm-def h2 {
   color: #ffffff;
   text-shadow: 2px 2px 4px #000000;
 }
@@ -242,18 +243,16 @@ PARADIGM DEF SECTION
 .paradigm-def {
   width: 100%;
   background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
+/*  background-position: center bottom; */
+  background-size: cover; 
   height: 400px;
   padding: 0;
  }
 
  .paradigm-def h2 {
   padding-top: 100px;
-  /*color: white;*/
-  color: #5E3B71;
+  /*color: #5E3B71;*/
  }
-
 
 
  /* ------------------------------------
@@ -683,8 +682,8 @@ margin-bottom: 0;
   }
   .navbar-toggle {
     display: block;
-    margin-top: 20px; /*override bootstrap to lower button*/
-  }
+    margin-top: 20px;*/ /*override bootstrap to lower button*/
+   }
   .navbar-collapse {
     border-top: 1px solid transparent;
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
@@ -710,7 +709,15 @@ margin-bottom: 0;
   .collapse.in {
     display:block !important;
   }
+  .open .dropdown-menu {
+    position: static;
+  }
+  .dropdown.open .dropdown-menu{
+    background-color: #ffffff;
+  }
 }
+
+
 
 @media (min-width: 992px) and (max-width: 1024px) {
   /* Concierge pictures*/
@@ -870,6 +877,9 @@ margin-bottom: 0;
   }
   #physical-therapy {
     margin-bottom: initial;
+  }
+  .paradigm-def {
+    height: 250px;
   }
   .paradigm-def h2 {
     padding: 20px 0;

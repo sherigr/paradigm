@@ -4,22 +4,13 @@ $(function() {
 /*==========================================
 NAVBAR
 =====================================================*/
-//Enables Navbar dropdown menu on hover, can click open on mobile
-//NO SCROLLING DOWN FOR FULL NAVBAR LIST
-// jQuery('ul.nav li.dropdown').hover(function() {
-//   jQuery(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn();
-// }, function() {
-//   jQuery(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut();
-// });
+//if link hovered, show dropdown menu
+$('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn();
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut();
+});
 
-//NO SCROLLING DOWN FOR FULL NAVBAR LIST
-// jQuery('ul.nav li.dropdown').hover(function() {
-//   jQuery(this).find('.dropdown-menu').stop(true, true).show();
-//   jQuery(this).addClass('open');
-// }, function() {
-//   jQuery(this).find('.dropdown-menu').stop(true, true).hide();
-//   jQuery(this).removeClass('open');
-// });
 
 
 /*==========================================
@@ -36,16 +27,8 @@ NAVBAR
 /*==========================================
  GOOGLE MAP
 =====================================================*/
-    // $('#map').click(function () {
-    //     $('#map iframe').css("pointer-events", "auto");
-    // });
-    
-    // $( "#map").mouseleave(function() {
-    //   $('#map iframe').css("pointer-events", "none"); 
-    // });
-
-    // Added Second Map
-        $('#map, #second-map').click(function () {
+    // Both Maps
+    $('#map, #second-map').click(function () {
         $('#map iframe, #second-map iframe').css("pointer-events", "auto");
     });
     
@@ -58,12 +41,32 @@ NAVBAR
 =====================================================*/
 
 /* Show Diagnoses Description on Hover */
-$('#treatments img').mouseover(function() {
-	$(this).popover('show');
-});
-$('#treatments img').mouseout(function() {
-	$(this).popover('hide');
-});
+// $('#treatments img').mouseover(function() {
+// 	$(this).popover('show');
+// });
+// $('#treatments img').mouseout(function() {
+// 	$(this).popover('hide');
+// });
+
+function hoverDiagnoses() {
+  $('#treatments img').mouseover(function(e) {
+    e.preventDefault();
+   $(this).popover('show');
+  });
+  $('#treatments img').mouseout(function(e) {
+    e.preventDefault();
+   $(this).popover('hide');
+  });
+}
+hoverDiagnoses();
+
+// function clickDiagnoses() {
+//   $('#treatments img').click(function(e){
+//     e.preventDefault();
+//     $(this).popover('toggle');
+//   }); 
+// }
+// clickDiagnoses();
 
 
 
@@ -71,8 +74,19 @@ $('#treatments img').mouseout(function() {
  PARALLAX SECTION - paradigm def
 =====================================================*/
 // $('.parallax-window').parallax({imageSrc: 'img/ShadowPerson.jpg'});
-$('.parallax-window').parallax({imageSrc: 'img/swimTest.jpg'});
+// $('.parallax-window').parallax({imageSrc: 'img/swimTest.jpg'});
+$('.parallax-window').parallax({
+    imageSrc: 'img/swimTest.jpg',
+    position: 'center top'
+});
 
+/*==========================================
+ SCROLL REVEL
+ =====================================================*/
+ // disable on mobile
+    // var config = { mobile: false }
+
+    // window.scrollReveal = new scrollReveal();
 
 /*==========================================
   FOOTER

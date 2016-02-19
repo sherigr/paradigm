@@ -40,44 +40,43 @@
 <body>
 
 	<!-- Fixed navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button> 
+          </button>
           <a class="navbar-brand" href="#">
-            <!-- <img alt="Paradigm Logo" src="img/nav-logo2.png">
-          </a>  --> 
-          <img alt="Paradigm Logo" src="img/logoTest2.png">
-          </a>       
-        </div> <!--navbar-header -->
+            <img alt="Paradigm Logo" src="img/logoTest2.png">
+          </a>
+        </div> <!-- navbar-header -->
 
-        <div  id="navbar" class="collapse navbar-collapse">
-          <!-- <ul class="nav navbar-nav navbar-right"> -->
-          <ul class="nav navbar-nav">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar">
+
+          <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a> -->
-              <a href="about.html" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="about.html">Justin B. Gornell, <br>
-                    PT, DPT, OCS
-                  </a></li>
-                  <li><a href="about.html#about-joseph">Joseph Castelli, <br>
-                    PT, DPT
-                  </a></li>
-                  <li><a href="about.html#testimonials">Testimonials</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#mission">Mission</a></li>
-                  <li><a href="#philosophy">Philosophy</a></li>
-                  <li><a href="#contact">Location</a></li>
-                </ul> <!-- dropdown-menu -->
-              <li class="dropdown">
-              <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a> -->
-              <a href="services.html" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+              <a href="about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="about.html">Justin B. Gornell, <br>
+                        PT, DPT, OCS
+                      </a></li>
+                <li><a href="about.html#about-joseph">Joseph Castelli, <br>
+                  PT, DPT
+                </a></li>
+                <li><a href="about.html#testimonials">Testimonials</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#philosophy">Philosophy</a></li>
+                <li><a href="#contact">Location</a></li>
+              </ul>  <!-- dropdown-menu -->
+            </li> <!-- dropdown -->
+            <li class="dropdown">
+              <a href="services.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#physical-therapy">Physical Therapy</a></li> 
                 <li role="separator" class="divider"></li>
@@ -86,22 +85,21 @@
                 <li><a href="services.html#concierge">Concierge Visits</a></li>
                 <li><a href="services.html#sport-specific">Sport Specific</a></li>
               </ul> <!-- dropdown-menu -->
-
-              <li class="dropdown">
-              <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Patient Info <span class="caret"></span></a> -->
-              <a href="patient.html" role="button" aria-haspopup="true" aria-expanded="false">Patient Info <span class="caret"></span></a>
+            </li> <!-- dropdown -->
+            <li class="dropdown">
+              <a href="patient.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Patient Info <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#treatments">Diagnoses Treated</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="patient.html#insurance">Insurance Info</a></li>   
+                <li><a href="patient.html#insurance">Insurance Info</a></li>
                 <li><a href="patient.html#forms">Forms</a></li>
               </ul> <!-- dropdown-menu -->
-
-              <li><a href="contact.html">Contact</a></li>  
-
             </li> <!-- dropdown -->
-          </ul> <!-- navbar-nav navbar-right -->
-        </div><!--/.nav-collapse -->
+        <li><a href="#">Contact</a></li>
+      </ul> <!-- nav navbar-nav navbar-right -->
+
+    </div> <!-- navbar collapse -->
+        
       </div> <!-- container -->
     </nav>
 
@@ -195,15 +193,16 @@
     </section> <!-- philosophy -->
 
     <!-- Shadow Image div -->
+    <section> <!-- adding section for testing -->
     <!-- <div class="parallax-window img-responsive" data-parallax="scroll" data-image-src="img/ShadowPerson.jpg" alt="shadow person"> -->
-    <!-- testing swimming image -->
-    <div class="parallax-window img-responsive" alt="shadow person">
+    <div class="parallax-window img-responsive" alt="swimmer" data-parallax="scroll" >
       <div class="paradigm-def">
         <div class="container">
           <h2 class="text-center"> Paradigm &lsqb;pa‐ră‐dym&rsqb;&colon; something serving as an example of how things should be done; a pattern or model in which some quality or relation is illustrated in its purest form&semi; epitome, ideal.</h2>
         </div> <!-- container -->
       </div> <!-- paradigm-def -->
     </div> <!-- parallax window -->
+  </section>
 
     <!--TREATMENTS -->
     <section id="treatments">
@@ -351,8 +350,6 @@
       <footer id="footer" class="text-center">
       </footer>
     
-
-
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
