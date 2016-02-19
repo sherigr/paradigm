@@ -712,8 +712,16 @@ margin-bottom: 0;
   .open .dropdown-menu {
     position: static;
   }
-  .dropdown.open .dropdown-menu{
+}
+@media (max-width: 767px) {
+  .navbar-nav .open .dropdown-menu {
     background-color: #ffffff;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color: #7f4098;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+    background-color: #e5e5e5;
   }
 }
 
