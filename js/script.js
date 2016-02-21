@@ -11,6 +11,25 @@ $('ul.nav li.dropdown').hover(function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut();
 });
 
+//make dropdown parent link clickable but prevents
+  //dropdown menu from appearing
+// $('.dropdown-toggle').click(function() {
+//   var location = $(this).attr('href');
+//   window.location.href = location;
+//   return false;
+// });
+
+//collapse navbar when link is clicked
+//not always working
+// $('.navbar-nav li a').click(function(event) {
+//     $('.dropdown .navbar-collapse').collapse('hide');
+//   });
+
+//when link is clicked, close navbar 
+// THIS WORKING SO FAR!
+$('.dropdown').on('hide.bs.dropdown', function(e) {
+  $('.navbar-collapse').collapse('hide');
+});
 
 
 /*==========================================
