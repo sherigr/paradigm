@@ -50,10 +50,10 @@ hr {
 
 /* so link goes directly to h1 & h2 
 gives too much padding */
-/*#para-philosophy, #para-mission {
+#para-philosophy, #para-mission {
   margin-top: 75px;
   padding-top: 75px;
-}*/
+}
 
 
 /* --------------------------------------
@@ -299,10 +299,11 @@ DIAGNOSES TREATED (treatments)
   -0-transition: opacity .2s ease;
     transition: opacity .2s ease;
 }
-#treatments img:hover {
+#treatments img:not(.no-hover):hover {
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
+
 
 /* Popover*/
 .popover-title {
@@ -682,10 +683,11 @@ margin-bottom: 0;
  /* .navbar-left,.navbar-right {
     float: none !important;
   }*/
-  .navbar-toggle {
-    display: block;
-    margin-top: 20px;*/ /*override bootstrap to lower button*/
-   }
+/*  .navbar-toggle {
+    display: block;*/
+    /*override bootstrap to lower button*/
+/*    margin-top: 20px; 
+   }*/
   .navbar-collapse {
     border-top: 1px solid transparent;
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
@@ -763,6 +765,13 @@ margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
+  /* changed to this instead of thru 992px */
+.navbar-toggle {
+    display: block;*/
+    /*override bootstrap to lower button*/
+   margin-top: 20px; 
+   }
+
   /* concierge small picture */
   .office-small {
     visibility: visible;

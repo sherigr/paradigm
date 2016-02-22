@@ -5,6 +5,8 @@ $(function() {
 NAVBAR
 =====================================================*/
 //if link hovered, show dropdown menu
+//since adding fix for closing navbar on click, dropdown menu
+//not closing after link click only on mouseleave
 $('ul.nav li.dropdown').hover(function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn();
 }, function() {
@@ -19,17 +21,13 @@ $('ul.nav li.dropdown').hover(function() {
 //   return false;
 // });
 
-//collapse navbar when link is clicked
-//not always working
-// $('.navbar-nav li a').click(function(event) {
-//     $('.dropdown .navbar-collapse').collapse('hide');
-//   });
-
-//when link is clicked, close navbar 
+//when link is clicked on mobile, close navbar 
 // THIS WORKING SO FAR!
 $('.dropdown').on('hide.bs.dropdown', function(e) {
   $('.navbar-collapse').collapse('hide');
 });
+
+
 
 
 /*==========================================
@@ -56,7 +54,7 @@ $('.dropdown').on('hide.bs.dropdown', function(e) {
     });
 
 /*==========================================
- TREATMENT
+ DIAGNOSES TREATED
 =====================================================*/
 
 /* Show Diagnoses Description on Hover */
@@ -87,6 +85,11 @@ hoverDiagnoses();
 // }
 // clickDiagnoses();
 
+// no opacity transition on clicking image
+$('#treatments img').click(function(e) {
+  e.preventDefault();
+  $(this).addClass('no-hover');
+});
 
 
 /*==========================================
