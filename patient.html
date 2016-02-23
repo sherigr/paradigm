@@ -27,29 +27,32 @@
     <![endif]-->
   </head>
   <body>
-  <!-- Fixed navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+  
+    <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button> 
+          </button>
           <a class="navbar-brand" href="index.html">
-            <img alt="Paradigm Logo" src="img/nav-logo2.png">
-          </a>        
-        </div> <!--navbar-header -->
+            <!-- <img alt="Paradigm Logo" src="img/logoTest2.png"> -->
+            <img alt="Paradigm Logo" src="img/newLogo-731293.png">
+          </a>
+        </div> <!-- navbar-header -->
 
-        <div  id="navbar" class="collapse navbar-collapse">
-          <!-- <ul class="nav navbar-nav navbar-right"> -->
-          <ul class="nav navbar-nav">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar">
+
+          <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a> -->
-              <a href="about.html" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="about.html">Justin B. Gornell, <br>
+              <a href="about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="about.html">Justin B. Gornell, <br>
                     PT, DPT, OCS
                   </a></li>
                   <li><a href="about.html#about-joseph">Joseph Castelli, <br>
@@ -60,10 +63,10 @@
                   <li><a href="index.html#mission">Mission</a></li>
                   <li><a href="index.html#philosophy">Philosophy</a></li>
                   <li><a href="index.html#contact">Location</a></li>
-                </ul> <!-- dropdown-menu -->
-              <li class="dropdown">
-              <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a> -->
-              <a href="services.html" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+              </ul>  <!-- dropdown-menu -->
+            </li> <!-- dropdown -->
+            <li class="dropdown">
+              <a href="services.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="index.html#physical-therapy">Physical Therapy</a></li> 
                 <li role="separator" class="divider"></li>
@@ -72,22 +75,21 @@
                 <li><a href="services.html#concierge">Concierge Visits</a></li>
                 <li><a href="services.html#sport-specific">Sport Specific</a></li>
               </ul> <!-- dropdown-menu -->
-
-              <li class="dropdown">
-              <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Patient Info <span class="caret"></span></a> -->
-              <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Patient Info <span class="caret"></span></a>
+            </li> <!-- dropdown -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Patient Info <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="index.html#treatments">Diagnoses Treated</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="#insurance">Insurance Info</a></li>   
                 <li><a href="#forms">Forms</a></li>
               </ul> <!-- dropdown-menu -->
-
-              <li><a href="contact.html">Contact</a></li>  
-
             </li> <!-- dropdown -->
-          </ul> <!-- navbar-nav navbar-right -->
-        </div><!--/.nav-collapse -->
+        <li><a href="contact.html">Contact</a></li>
+      </ul> <!-- nav navbar-nav navbar-right -->
+
+    </div> <!-- navbar collapse -->
+        
       </div> <!-- container -->
     </nav>
 	
@@ -96,7 +98,7 @@
     <section id="insurance">
       <div class="container page-top">
         <div class="row">
-          <h2 class="purple text-center">INSURANCE INFO</h2>
+          <h2 class="purple text-center cushion-top">INSURANCE INFO</h2>
             <hr>
             <div class="col-md-offset-2 col-md-8">
               <p class="text-center"><span class="purple">Paradigm Physical Therapy</span> accepts most out-of-network insurance plans including, but not limted to, Aetna, Cigna, BlueCross Blue Shield, Oxford, United Healthcare and Medicare.</p> <br>
@@ -111,18 +113,18 @@
 	      <div class="container padding-top">  
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
-              <h2 class="text-center purple">PATIENT FORMS</h2>
+              <h2 class="text-center purple cushion-top">PATIENT FORMS</h2>
               <hr>
             </div> <!-- col-md-10 col-md-offset-10 -->
           </div> <!-- row -->
         </div> <!-- container -->
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-6 col-sm-5">
+            <div class="col-md-5 col-sm-6">
               <img class="img-responsive inner-picture angled-picture" src="img/formangled.png" alt="forms image">
               <img class="img-responsive inner-picture small-picture" src="img/medforms.jpg" alt="forms image">
             </div> <!-- col-lg-6 -->
-            <div class="col-md-6 col-sm-7 form-links">
+            <div class="col-md-7 col-sm-6 form-links">
               <p> Please complete the forms before your arriving for your initial visit&colon;</p> <br>
               <p><!-- <img src="img/pdficon.png"> --><a href="pdf/patientInfo.pdf" target="_blank">Patient Info</a></p> <br>
               <p><!-- <img src="img/pdficon.png"> --><a href="pdf/informedConsent.pdf" target="_blank">Informed Consent for Physical Therapy</a></p> <br>
@@ -131,6 +133,10 @@
             </div> <!-- row -->
           </div> <!-- container-fluid-->
       </section> <!-- forms -->
+
+      <!--add extra padding after forms container before footer -->
+      <div class="empty">
+      </div>
 
 
     <footer id="footer" class="text-center">

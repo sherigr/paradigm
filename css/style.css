@@ -40,21 +40,16 @@ hr {
   padding-bottom: 15px;
 }
 
-/*.padding-top {
-  padding-top: 30px;
-}*/ 
-
+/* adding padding to first page container*/
 .page-top {
   padding-top: 100px;
 }
 
-/* so link goes directly to h1 & h2 
-gives too much padding */
-#para-philosophy, #para-mission {
-  margin-top: 75px;
-  padding-top: 75px;
+/* so link goes directly to h1 & h2 */
+.cushion-top {
+  margin-top:75px;
+  padding-top:75px;
 }
-
 
 /* --------------------------------------
    NAVBAR
@@ -116,15 +111,6 @@ gives too much padding */
   color: #330033;
 }
 
-/* dropdown menu on hover but prevents click dropdown on mobile*/
-/*ul.nav li.dropdown:hover > ul.dropdown-menu {
-  display: block;
-}*/
-
-
-
-
-
 /* Dropdown menu (from template)
 -------------------------------------------------- */
 /*.theme-dropdown .dropdown-menu {
@@ -138,7 +124,8 @@ gives too much padding */
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 60px;
+  /* remove margin bottom since added margin-top to mission */
+  /*margin-bottom: 60px;*/
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -219,7 +206,9 @@ MISSION CONTAINER
 
 #mission-col {
   margin-top: 50px;
-  padding: 50px 20px 60px 20px;
+  /*padding: 50px 20px 60px 20px;*/
+  /*removing padding bottom */
+  padding: 50px 20px 0 20px;
   font-size: 18px;
 }
 
@@ -337,7 +326,8 @@ PHYSICAL THERAPY
 }
 
 #physical-therapy {
-  margin-bottom: 50px;
+  /* removing since added margin/padding top to contact */
+ /* margin-bottom: 50px;*/
 }
 
 /*#physical-therapy .inner-picture img {*/
@@ -575,7 +565,7 @@ margin-bottom: 0;
 #forms .container-fluid {
 /*  background-color: #FFF4FF;*/
   background-color: #F6F6F6;
-  padding-bottom: 50px;
+  /*padding-bottom: 50px;*/
 }
 
 .form-links {
@@ -584,7 +574,7 @@ margin-bottom: 0;
   padding-right: 100px;
 }
 
-#forms .col-md-6 {
+#forms .col-md-5 {
   padding-left: 0;
 }
 
@@ -601,6 +591,9 @@ margin-bottom: 0;
   display: none;
 }
 
+.empty {
+  padding-bottom: 85px;
+}
 
 
 /* ------------------------------------------
@@ -609,6 +602,7 @@ margin-bottom: 0;
 #appointment-request {
   /*margin-top: 20px;
   padding: 70px 0 100px; TEMPORARY*/
+  padding-bottom: 85px;
 }
 
 
@@ -683,11 +677,11 @@ margin-bottom: 0;
  /* .navbar-left,.navbar-right {
     float: none !important;
   }*/
-/*  .navbar-toggle {
-    display: block;*/
+  .navbar-toggle {
+    display: block;
     /*override bootstrap to lower button*/
-/*    margin-top: 20px; 
-   }*/
+   margin-top: 20px; 
+   }
   .navbar-collapse {
     border-top: 1px solid transparent;
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
@@ -735,6 +729,13 @@ margin-bottom: 0;
   /* Concierge pictures*/
   .concierge-first {
     padding-top: 10px;
+  }
+}
+
+/* remove padding from section*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  #forms .container-fluid {
+    padding-bottom: 0;
   }
 }
 
@@ -813,6 +814,31 @@ margin-bottom: 0;
   .contact-info {
     text-align: center;
   }
+  #physical-therapy .container-fluid {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+  /* testing*/
+  /*  #forms .inner-picture.small-picture {*/
+  #forms .inner-picture {
+    max-width: 60%;
+    margin-bottom: 25px;
+  }
+  .inner-picture.angled-picture {
+    display: none;
+  }
+  .inner-picture.small-picture {
+    visibility: visible;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+  .form-links {
+    padding-top: 20px;
+  }
+  #forms .inner-picture {
+    padding-top: 40px;
+  }
 }
 
 
@@ -836,9 +862,13 @@ margin-bottom: 0;
     border-radius: 20px;
   }
 /*  #forms .inner-picture.small-picture {*/
-  #forms .inner-picture {
+  /*#forms .inner-picture {
     max-width: 60%;
     margin-bottom: 25px;
+  }*/
+  /* remove padding added for 768px*/ 
+  #forms .inner-picture {
+    padding-top: 0;
   }
   .form-links {
     padding-bottom: 20px;
