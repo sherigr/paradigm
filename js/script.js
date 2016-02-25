@@ -1,5 +1,5 @@
-
 $(function() {
+
 
 /*==========================================
 NAVBAR
@@ -22,10 +22,9 @@ $('ul.nav li.dropdown').hover(function() {
 // });
 
 //when link is clicked on mobile, close navbar 
-// THIS WORKING SO FAR!
-$('.dropdown').on('hide.bs.dropdown', function(e) {
-  $('.navbar-collapse').collapse('hide');
-});
+// $('.dropdown').on('hide.bs.dropdown', function(e) {
+//   $('.navbar-collapse').collapse('hide');
+// });
 
 
 
@@ -37,6 +36,8 @@ $('.dropdown').on('hide.bs.dropdown', function(e) {
 		interval: 3500,
 		pause: false
 	});
+  
+
 
 	
 
@@ -77,14 +78,6 @@ function hoverDiagnoses() {
 }
 hoverDiagnoses();
 
-// function clickDiagnoses() {
-//   $('#treatments img').click(function(e){
-//     e.preventDefault();
-//     $(this).popover('toggle');
-//   }); 
-// }
-// clickDiagnoses();
-
 // no opacity transition on clicking image
 $('#treatments img').click(function(e) {
   e.preventDefault();
@@ -117,7 +110,7 @@ $('.parallax-window').parallax({
 var today = new Date();
 var year = today.getFullYear();
 
-$('#footer').html('<p>Paradigm Physical Therapy &copy' + year + '</p>');
+ $('#footer').html('<p>Paradigm Physical Therapy &copy' + year + '</p>');
 
 
 });

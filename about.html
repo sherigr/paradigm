@@ -28,70 +28,65 @@
 	</head>
 	<body>
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button> 
+          </button>
           <a class="navbar-brand" href="index.html">
-            <img alt="Paradigm Logo" src="img/nav-logo2.png">
-          </a>        
-        </div> <!--navbar-header -->
-
-        <div  id="navbar" class="collapse navbar-collapse">
-          <!-- <ul class="nav navbar-nav navbar-right"> -->
+            <img id="main-nav-logo" alt="Paradigm Logo" src="img/newLogo-731293.png">
+            <img id="sm-nav-logo" alt="mobile Paradigm Logo" src="img/newLogo-731293-sm.png">
+          </a>
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a> -->
-              <a href="#" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#about">Justin B. Gornell, <br>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#about">Justin B. Gornell, <br>
                     PT, DPT, OCS
                   </a></li>
                   <li><a href="#about-joseph">Joseph Castelli, <br>
                     PT, DPT
                   </a></li>
                   <li><a href="#testimonials">Testimonials</a></li>
-                  <li role="separator" class="divider"></li>
+                  <li role="separator" class="divider hidden-xs hidden-sm"></li>
                   <li><a href="index.html#mission">Mission</a></li>
                   <li><a href="index.html#philosophy">Philosophy</a></li>
                   <li><a href="index.html#contact">Location</a></li>
-                </ul> <!-- dropdown-menu -->
-              <li class="dropdown">
-              <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a> -->
-              <a href="services.html" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="services.html" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#physical-therapy">Physical Therapy</a></li> 
-                <li role="separator" class="divider"></li>
+                <li><a href="index.html#physical-therapy">Physical Therapy</a></li> 
+                <li role="separator" class="divider hidden-xs hidden-sm"></li>
                 <li><a href="services.html#manual-therapy">Manual Therapy</a></li>
                 <li><a href="services.html#therapeutic">Therapeutic Modalities</a></li>  
                 <li><a href="services.html#concierge">Concierge Visits</a></li>
                 <li><a href="services.html#sport-specific">Sport Specific</a></li>
-              </ul> <!-- dropdown-menu -->
+              </ul>
+            </li>
 
-              <li class="dropdown">
-              <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Patient Info <span class="caret"></span></a> -->
-              <a href="patient.html" role="button" aria-haspopup="true" aria-expanded="false">Patient Info <span class="caret"></span></a>
+            <li class="dropdown">
+              <a hre="patient.html" class="dropdown-toggle" data-toggle="dropdown">Patient Info <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="index.html#treatments">Diagnoses Treated</a></li>
-                <li role="separator" class="divider"></li>
+                <li role="separator" class="divider hidden-xs hidden-sm"></li>
                 <li><a href="patient.html#insurance">Insurance Info</a></li>   
                 <li><a href="patient.html#forms">Forms</a></li>
-              </ul> <!-- dropdown-menu -->
-
-              <li><a href="contact.html">Contact</a></li>  
-
+              </ul>
             </li> <!-- dropdown -->
-          </ul> <!-- navbar-nav navbar-right -->
+            <li id="contanct-link"><a href="contact.html">Contact</a></li>
+          </ul>
         </div><!--/.nav-collapse -->
-      </div> <!-- container -->
+      </div>
     </nav>
     		
-
 	  <!-- About Justin -->
     <section id="about">
       <div class="container page-top">
@@ -112,8 +107,8 @@
 
     <!--About Joseph Castelli -->
     <section id="about-joseph">
-      <div class="container padding-top">
-        <div class="row">
+      <div class="container">
+        <div class="row cushion-top">
           <div class="col-sm-4">
             <img id="joseph-img" class="img-responsive rounded-img" src="https://placeholdit.imgix.net/~text?txtsize=30&txt=315%C3%97400&w=315&h=400" alt="about joseph castelli">
           </div> <!-- col-sm-4 -->
@@ -131,7 +126,7 @@
     <!-- TESTIMONIALS FEATURETTES-->
     <section id="testimonials">
       <div class="row featurette">
-        <h1 class="purple text-center padding-top">TESTIMONIALS</h1>
+        <h1 class="purple text-center cushion-top">TESTIMONIALS</h1>
         <hr>
         <div class="col-md-7">
           <h2 class="purple featurette-heading"> &ldquo;I wouldn't hesitate for an instant to recommend him to my closest family and friends.&rdquo; </h2>

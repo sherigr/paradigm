@@ -40,68 +40,63 @@
 <body>
 
 	<!-- Fixed navbar -->
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">
-            <!-- <img alt="Paradigm Logo" src="img/logoTest2.png"> -->
-            <img alt="Paradigm Logo" src="img/newLogo-731293.png">
+          <a class="navbar-brand" href="index.html">
+            <img id="main-nav-logo" alt="Paradigm Logo" src="img/newLogo-731293.png">
+            <img id="sm-nav-logo" alt="mobile Paradigm Logo" src="img/newLogo-731293-sm.png">
           </a>
-        </div> <!-- navbar-header -->
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar">
-
-          <ul class="nav navbar-nav navbar-right">
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a href="about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+              <a href="about.html" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="about.html">Justin B. Gornell, <br>
-                        PT, DPT, OCS
-                      </a></li>
-                <li><a href="about.html#about-joseph">Joseph Castelli, <br>
-                  PT, DPT
-                </a></li>
-                <li><a href="about.html#testimonials">Testimonials</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#mission">Mission</a></li>
-                <li><a href="#philosophy">Philosophy</a></li>
-                <li><a href="#contact">Location</a></li>
-              </ul>  <!-- dropdown-menu -->
-            </li> <!-- dropdown -->
+                      PT, DPT, OCS
+                    </a></li>
+              <li><a href="about.html#about-joseph">Joseph Castelli, <br>
+                PT, DPT
+              </a></li>
+              <li><a href="about.html#testimonials">Testimonials</a></li>
+              <li role="separator" class="divider hidden-xs hidden-sm"></li>
+              <li><a href="#mission">Mission</a></li>
+              <li><a href="#philosophy">Philosophy</a></li>
+              <li><a href="#contact">Location</a></li>
+              </ul>
+            </li>
             <li class="dropdown">
-              <a href="services.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+              <a href="services.html" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#physical-therapy">Physical Therapy</a></li> 
-                <li role="separator" class="divider"></li>
-                <li><a href="services.html#manual-therapy">Manual Therapy</a></li>
-                <li><a href="services.html#therapeutic">Therapeutic Modalities</a></li>
-                <li><a href="services.html#concierge">Concierge Visits</a></li>
-                <li><a href="services.html#sport-specific">Sport Specific</a></li>
-              </ul> <!-- dropdown-menu -->
-            </li> <!-- dropdown -->
+              <li role="separator" class="divider hidden-xs hidden-sm"></li>
+              <li><a href="services.html#manual-therapy">Manual Therapy</a></li>
+              <li><a href="services.html#therapeutic">Therapeutic Modalities</a></li>
+              <li><a href="services.html#concierge">Concierge Visits</a></li>
+              <li><a href="services.html#sport-specific">Sport Specific</a></li>
+              </ul>
+            </li>
+
             <li class="dropdown">
-              <a href="patient.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Patient Info <span class="caret"></span></a>
+              <a hre="patient.html" class="dropdown-toggle" data-toggle="dropdown">Patient Info <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#treatments">Diagnoses Treated</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="patient.html#insurance">Insurance Info</a></li>
-                <li><a href="patient.html#forms">Forms</a></li>
-              </ul> <!-- dropdown-menu -->
+              <li role="separator" class="divider hidden-xs hidden-sm"></li>
+              <li><a href="patient.html#insurance">Insurance Info</a></li>
+              <li><a href="patient.html#forms">Forms</a></li>
+              </ul>
             </li> <!-- dropdown -->
-        <li><a href="#">Contact</a></li>
-      </ul> <!-- nav navbar-nav navbar-right -->
-
-    </div> <!-- navbar collapse -->
-        
-      </div> <!-- container -->
+            <li id="contanct-link"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
     </nav>
 
     <!-- CAROUSEL  add fade class to fade in -->
@@ -154,10 +149,10 @@
     </div><!-- /.carousel -->
 
     <!-- Mission Statement-->
-    <secition id="mission">
+    <section id="mission">
       <div class="container">  
         <div class="row">
-          <h1 id="para-mission" class="text-center purple">PARADIGM MISSION</h1>
+          <h1 id="para-mission" class="text-center purple cushion-top">PARADIGM MISSION</h1>
           <hr>
           <div class="col-sm-6 paradigm-logo">
             <img id="full-logo-large" class="img-responsive" src="img/FullLogoLarge.png" alt="full logo">
@@ -179,7 +174,7 @@
     <section id="philosophy">
       <div class="container">
         <div class="row">
-          <h1 id="para-philosophy" class="text-center purple padding-top">PARADIGM PHILOSOPHY</h1>
+          <h1 id="para-philosophy" class="text-center purple cushion-top">PARADIGM PHILOSOPHY</h1>
           <hr>
           <div class="col-sm-6">
             <img id="philosophy-img" class="img-responsive rounded-img" src="img/iStock_000004746646.jpg" alt="philosophy picture">
@@ -210,7 +205,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
-            <h1 class="text-center purple padding-top">DIAGNOSES TREATED</h1>
+            <h1 class="text-center purple cushion-top">DIAGNOSES TREATED</h1>
               <hr>
           </div> <!-- col-md-10 -->
           <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
@@ -290,7 +285,7 @@
       <div class="container">  
         <div class="row">
           <div class="col-md-10 col-md-offset-1"> 
-            <h1 class="text-center purple">PHYSICAL THERAPY</h1>
+            <h1 class="text-center purple cushion-top">PHYSICAL THERAPY</h1>
           <hr>
           </div> <!-- col-md-10 col-md-offset-1 -->
         </div> <!-- row -->
@@ -318,7 +313,7 @@
         <div class="container">  
           <div class="row">
             <div class="col-md-10 col-md-offset-1"> 
-              <h2 class=" purple text-center">CONTACT INFORMATION</h2>
+              <h2 class=" purple text-center cushion-top">CONTACT INFORMATION</h2>
             <hr>
             </div> <!-- col-md-10 col-md-offset-1 -->
             <!-- <div class="col-md-6 col-xs-10 col-xs-offset-1"> -->
@@ -350,6 +345,7 @@
 
       <footer id="footer" class="text-center">
       </footer>
+
     
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
