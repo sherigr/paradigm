@@ -1,7 +1,7 @@
 
 body {
-	padding-top: 70px;
-	font-family: 'Lato', sans-serif; 
+  padding-top: 70px;
+  font-family: 'Lato', sans-serif; 
   font-weight: 300;
   background-color: #FEFEFE;
   /*color: #555;*/
@@ -42,25 +42,28 @@ hr {
 
 /* adding padding to first page container*/
 .page-top {
-  padding-top: 100px;
+ /* padding-top: 100px;*/
+ /* Reduced with thinner navbar*/
+  padding-top: 50px;
 }
 
 /* so link goes directly to h1 & h2 */
 .cushion-top {
-  margin-top:75px;
-  padding-top:75px;
+/*  margin-top:75px;
+  padding-top:75px;*/
+  /* Reduced amount with thinner navbar */
+  margin-top: 50px;
+  padding-top: 50px;
 }
 
 /* --------------------------------------
    NAVBAR
 -------------------------------------- */
-.navbar-inverse {
-  background-color: #120012;
-}
 .navbar {
   min-height: 70px;
   margin-bottom: 0px;
 }
+
 .navbar-default .navbar-nav > li > a {
   color: #9D59B3;
   font-weight: 400;
@@ -96,6 +99,7 @@ hr {
 #sm-nav-logo {
   display: none;
 }
+
 
 /* Dropdown menu (from template)
 -------------------------------------------------- */
@@ -649,6 +653,7 @@ margin-bottom: 0;
  MEDIA QUERIES
 -------------------------------------------------- */
 /* NAVBAR*/
+/* NAVBAR*/
 /* text center dropdown links */
 @media (max-width: 992px) {
   .dropdown-menu {
@@ -663,6 +668,9 @@ margin-bottom: 0;
   }
   #main-nav-logo {
     display: none;
+  }
+  #second-map {
+    padding-top: 20px;
   }
 }
 
@@ -687,7 +695,6 @@ margin-bottom: 0;
       padding-top: 10px;
   }
 }
-
 @media (max-width: 320px) {
   .navbar-brand {
     float: none;
@@ -702,8 +709,6 @@ margin-bottom: 0;
     padding-top: 25px;
   }
 }
-/* ****** END NAVBAR ************  */  
-
 
 @media (min-width: 992px) and (max-width: 1024px) {
   /* Concierge pictures*/
@@ -744,6 +749,8 @@ margin-bottom: 0;
     max-height: 470px;
   }
 }
+
+@media (max-width: 768px) {
   /* concierge small picture */
   .office-small {
     visibility: visible;
@@ -910,6 +917,8 @@ margin-bottom: 0;
     margin-bottom: 20px;
   }
 }
+
+
 
 
 
