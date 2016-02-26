@@ -375,8 +375,10 @@ CONCEIRGE VISITS - Services Page
 
 #concierge .container-fluid {
 /*  background-color: #E6E0DB;*/
-  background-color: #F1EDEA;
+/*  background-color: #F1EDEA;*/
+ /* background-color: #B8B3AF;*/
 /*  max-height: 480px;*/
+  background-color: #FAF1FA;
 }
 
 /*#concierge .inner-picture {
@@ -652,8 +654,7 @@ margin-bottom: 0;
 /* ------------------------------------------
  MEDIA QUERIES
 -------------------------------------------------- */
-/* NAVBAR*/
-/* NAVBAR*/
+/* ******* NAVBAR ***********/
 /* text center dropdown links */
 @media (max-width: 992px) {
   .dropdown-menu {
@@ -707,6 +708,13 @@ margin-bottom: 0;
   #sm-nav-logo {
     margin-left: 15px;
     padding-top: 25px;
+  }
+}
+/******* End of Navbar ****** */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .office-angled {
+    max-width: 100%;
   }
 }
 
