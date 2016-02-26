@@ -13,18 +13,20 @@ $('ul.nav li.dropdown').hover(function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut();
 });
 
-//make dropdown parent link clickable but prevents
-  //dropdown menu from appearing
-// $('.dropdown-toggle').click(function() {
-//   var location = $(this).attr('href');
-//   window.location.href = location;
-//   return false;
-// });
+//if not in collapsed state, make the parent link clickable and go directly to page
+var width = $(window).width();
+if(width >= 768) {
+  $('.dropdown-toggle').click(function() {
+    var location = $(this).attr('href');
+    window.location.href = location;
+    return false;
+  });
+}
 
 //when link is clicked on mobile, close navbar 
-// $('.dropdown').on('hide.bs.dropdown', function(e) {
-//   $('.navbar-collapse').collapse('hide');
-// });
+$('.dropdown').on('hide.bs.dropdown', function(e) {
+  $('.navbar-collapse').collapse('hide');
+});
 
 
 
