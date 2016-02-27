@@ -15,7 +15,7 @@ $('ul.nav li.dropdown').hover(function() {
 
 //if not in collapsed state, make the parent link clickable and go directly to page
 var width = $(window).width();
-if(width >= 768) {
+if(width > 1024) {
   $('.dropdown-toggle').click(function() {
     var location = $(this).attr('href');
     window.location.href = location;
@@ -34,7 +34,7 @@ $('.dropdown').on('hide.bs.dropdown', function(e) {
 /*==========================================
  CAROUSEL SPEED
 =====================================================*/
-	$('#myCarousel').carousel({
+	$('#mainCarousel').carousel({
 		interval: 3500,
 		pause: false
 	});
