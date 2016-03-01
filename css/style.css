@@ -139,17 +139,15 @@ hr {
  /* background-color: #777;*/
 
 }
-/*.carousel-inner > .item > img {  
+
+.carousel-inner > .item > img:not(.first-slide) {
   position: absolute; 
   top: 0;
   left: 0;
-  min-width: 100%;*/
-  /*min-height: 500px;*/ /* testing change to min-height*/
-  /*min-height: auto;*/ /* testing change to min-height*/
-  /* try fix */
-  /*object-fit: cover;*/
-/*}*/
-/* --------------------------- */
+  min-width: 100%;
+  height: 500px;
+}
+
 .carousel-inner > .item > img.first-slide {  
   position: absolute; 
   top: 0;
@@ -157,34 +155,8 @@ hr {
   min-width: 100%;
   /*min-height: 500px;*/ /* testing change to min-height*/
   min-height: auto; /* testing change to min-height*/
-  /* try fix */
-  /*object-fit: cover;*/
 }
-/* try fix */
-.carousel-inner > .item > img.second-slide {
-  position: absolute;
-  bottom: -25px;
-  min-width: 100%;
-  /*min-height: auto;*/
-}
-.carousel-inner > .item > img.second-slide {
-  position: absolute; 
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
-}
-.carousel-inner > .item > img.third-slide {
-  /*position: absolute;
-  bottom: -60px;
-  min-width: 100%;
-  height: 500px;*/
-  position: absolute; 
-  top: -220px;
-  left: 0;
-  min-width: 100%;
-  /*height: 500px;*/
-}
+
 
 
 /* --------------------------- */
@@ -769,31 +741,12 @@ margin-bottom: 0;
   }
 }
 /******* End of Navbar ****** */
-/******* CAROUSEL ********* */
 
-@media (max-width: 1024px) {
-  .carousel-inner > .item > img {  
-    position: absolute; 
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 500px;
+@media (max-width: 1023px) {
+  .carousel-inner > .item > img.first-slide {
+    min-height: 500px;
   }
 }
-@media (max-width: 1024px) {
-  .carousel-inner > .item > img.third-slide {
-    top: 0;
-  }
-}
-/*@media (max-width: 667px) {
-  .carousel-inner > .item > img.second-slide {
-    bottom: 0;
-    height: 500px;
-  }
-}*/
-
-
-/******* END CAROUSEL ********* */
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .office-angled {
