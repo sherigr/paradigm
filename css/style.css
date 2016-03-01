@@ -75,8 +75,16 @@ hr {
   color: #7404A0;
 }
 .navbar-default .navbar-nav>li>a:active {
-  color: #AFA5B2;
+  /*color: #AFA5B2;*/  /* testing new active */
 }
+/* TESTING NEW ACTIVE*/
+.navbar-default .navbar-nav>.active>a {
+  background-color: transparent !important;
+  color: #C1A5C1;
+}
+/* --------------- */
+
+
 .navbar-default {
   background-color: #120012;
   border-color: transparent;
@@ -114,6 +122,8 @@ hr {
 
 /* Carousel base class */
 .carousel {
+  height: 500px; /* testing change to min-height*/
+  min-height: 500px; /* testing change to min-height*/
   /* remove margin bottom since added margin-top to mission */
   /*margin-bottom: 60px;*/
 }
@@ -124,18 +134,62 @@ hr {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
-  background-color: #777;
+  height: 500px; /* testing change to min-height*/
+  /*min-height: 500px;*/ /* testing change to min-height*/
+ /* background-color: #777;*/
+
 }
-.carousel-inner > .item > img {
-  position: absolute;
+/*.carousel-inner > .item > img {  
+  position: absolute; 
   top: 0;
   left: 0;
-  width: 100%;
+  min-width: 100%;*/
+  /*min-height: 500px;*/ /* testing change to min-height*/
+  /*min-height: auto;*/ /* testing change to min-height*/
+  /* try fix */
+  /*object-fit: cover;*/
+/*}*/
+/* --------------------------- */
+.carousel-inner > .item > img.first-slide {  
+  position: absolute; 
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  /*min-height: 500px;*/ /* testing change to min-height*/
+  min-height: auto; /* testing change to min-height*/
+  /* try fix */
+  /*object-fit: cover;*/
+}
+/* try fix */
+.carousel-inner > .item > img.second-slide {
+  position: absolute;
+  bottom: -25px;
+  min-width: 100%;
+  /*min-height: auto;*/
+}
+.carousel-inner > .item > img.second-slide {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  min-width: 100%;
   height: 500px;
 }
+.carousel-inner > .item > img.third-slide {
+  /*position: absolute;
+  bottom: -60px;
+  min-width: 100%;
+  height: 500px;*/
+  position: absolute; 
+  top: -220px;
+  left: 0;
+  min-width: 100%;
+  /*height: 500px;*/
+}
 
-/* add shadow to carousel & para def text */
+
+/* --------------------------- */
+
+/* add shadow to carousel & paradigm def text */
 .carousel h1, .carousel h3, .paradigm-def h2 {
   color: #ffffff;
   text-shadow: 2px 2px 4px #000000;
@@ -637,6 +691,10 @@ margin-bottom: 0;
   /*text-align: center;*/
 }
 
+#hidden-field {
+  display: none;
+}
+
 /* ------------------------------------------
   FOOTER
 -------------------------------------------------- */
@@ -711,6 +769,31 @@ margin-bottom: 0;
   }
 }
 /******* End of Navbar ****** */
+/******* CAROUSEL ********* */
+
+@media (max-width: 1024px) {
+  .carousel-inner > .item > img {  
+    position: absolute; 
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+  }
+}
+@media (max-width: 1024px) {
+  .carousel-inner > .item > img.third-slide {
+    top: 0;
+  }
+}
+/*@media (max-width: 667px) {
+  .carousel-inner > .item > img.second-slide {
+    bottom: 0;
+    height: 500px;
+  }
+}*/
+
+
+/******* END CAROUSEL ********* */
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .office-angled {
