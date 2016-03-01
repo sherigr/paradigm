@@ -138,8 +138,13 @@
             <hr>
           </div> <!-- col-md-offset-1 col-md-10 -->
           <!--ADDING FORM SUCCESS/ERROR MESSAGE -->
-          <div id="form-messages">
-          </div>
+          <div class="container">
+            <div class="row">
+              <div id="form-messages"> 
+              </div>
+            </div> <!-- row -->
+          </div> <!-- container -->
+          
           <!-- End form success message -->
           <div class="container"> 
             <div class="row">
@@ -158,13 +163,13 @@
                     <div class="form-group">
                       <label class="control-label col-md-4" for="email">Email&ast;</label>
                       <div class="col-md-8">
-                        <input type="email" id="patient-email" required class="form-control" name="email" placeholder="Your Email">
+                        <input type="email" id="patient-email" required class="form-control" name="email" placeholder="yourname@example.com">
                       </div> <!-- col-col-md-8 -->               
                     </div> <!-- form-group -->
                     <div class="form-group">
                       <label class="control-label col-md-4" for="telephone">Phone Number&ast;</label>
                       <div class="col-md-8">
-                        <input type="tel" id="patient-phone" required class="form-control" name="phone-number" placeholder="Phone Number">
+                        <input type="tel" id="patient-phone" required class="form-control" name="phone-number" placeholder="555-555-5555">
                       </div> <!-- col-md-8 -->
                     </div> <!-- form-group -->
                     <div class="form-group">
@@ -182,7 +187,7 @@
                     <div class="form-group">
                       <label class="control-label col-md-4" for="doctors-number">Doctor's Phone Number</label>
                       <div class="col-md-8">
-                        <input type="tel" id="doctor-phone" class="form-control" name="doctor-number" placeholder="Referring Doctor's Phone Number">
+                        <input type="tel" id="doctor-phone" class="form-control" name="doctor-number" placeholder="Referring Dr's Number&nbsp;555-555-5555">
                       </div> <!-- col-md-8 -->
                     </div> <!-- form-group -->
                     <div class="form-group">
@@ -191,12 +196,12 @@
                         <textarea name="diagnosis" id="patient-diagnosis" class="form-control" rows="10" placeholder="Doctor's Diagnosis and/or Your Symptoms"></textarea>
                       </div> <!-- col-md-8 -->
                     </div> <!-- form-group -->
-                    <!-- hidden field -->
+                    <!-- hidden field to prevent bots -->
                     <div class="form-group" id="hidden-field">
                       <label class="control-label col-md-4" for="address">Address</label>
                       <div class="col-md-8">
                         <input type="text" id="address" required class="form-control" name="address" placeholder="Your Address">
-                      </div> <!-- col-md-8 -->
+                      </div> col-md-8
                     </div> <!-- End Hiddend form-group -->
 
                     <div class="form-group">
