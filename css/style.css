@@ -243,6 +243,12 @@ MISSION CONTAINER
   font-size: 18px;
 }
 
+#quote {
+  padding-top: 40px;
+  font-size: 18px;
+  font-style: italic;
+}
+
 
 /* ------------------------------------
 PARADIGM DEF SECTION
