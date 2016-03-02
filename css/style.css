@@ -164,7 +164,7 @@ hr {
 /* add shadow to carousel & paradigm def text */
 .carousel h1, .carousel h3, .paradigm-def h2 {
   color: #ffffff;
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 4px 2px 4px #000000;
 }
 
 /*fade carousel picture in */
