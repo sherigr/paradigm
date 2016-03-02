@@ -66,6 +66,7 @@ hr {
 
 .navbar-default .navbar-nav > li > a {
   color: #9D59B3;
+  font-size: 16px;
   font-weight: 400;
 }
 .navbar-default .navbar-nav > li > a:hover {
@@ -712,6 +713,9 @@ margin-bottom: 0;
 }
 
 @media (max-width: 767px) {
+  .navbar-default .navbar-nav > li > a {
+    font-size: 14px;
+  }
   /* remove white bar*/
   .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     background-color: transparent;
