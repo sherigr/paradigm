@@ -124,7 +124,7 @@ hr {
 /* Carousel base class */
 .carousel {
   height: 500px; /* testing change to min-height*/
-  min-height: 500px; /* testing change to min-height*/
+ /* min-height: 500px;*/ /* testing change to min-height*/
   /* remove margin bottom since added margin-top to mission */
   /*margin-bottom: 60px;*/
 }
@@ -150,6 +150,15 @@ hr {
 }
 
 .carousel-inner > .item > img.first-slide {  
+  position: absolute; 
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  /*min-height: 500px;*/ /* testing change to min-height*/
+  min-height: auto; /* testing change to min-height*/
+}
+
+.carousel-inner > .item > img.second-slide {  
   position: absolute; 
   top: 0;
   left: 0;
