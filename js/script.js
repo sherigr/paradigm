@@ -5,13 +5,15 @@ $(function() {
 NAVBAR
 =====================================================*/
 //if link hovered, show dropdown menu
-//since adding fix for closing navbar on click, dropdown menu
-//not closing after link click only on mouseleave
-$('ul.nav li.dropdown').hover(function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn();
-}, function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut();
-});
+// only hover based on screen size
+var screenWidth = $(window).width();
+  if(screenWidth > 1024) {
+    $('ul.nav li.dropdown').hover(function() {
+      $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn();
+    }, function() {
+      $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut();
+    });   
+  }
 
 //if not in collapsed state, make the parent link clickable and go directly to page
 var width = $(window).width();
