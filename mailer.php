@@ -6,11 +6,12 @@
       $name = strip_tags(trim($_POST["name"]));
 			$name = str_replace(array("\r","\n"),array(" "," "),$name);
       $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-      $phone = trim($_POST["phone-number"]);
-      $insurance = trim($_POST["insurance"]);
-      $doctor = trim($_POST["doctor"]);
-      $drphone = trim($_POST["doctor-number"]);
+      $phone = $_POST["phone-number"];
+      $insurance = $_POST["insurance"];
+      $doctor = $_POST["doctor"];
+      $drphone = $_POST["doctor-number"];
       $message = trim($_POST["diagnosis"]);
+
 
       // Check that data was sent to the mailer.
       if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone)) {
@@ -35,10 +36,13 @@
       }
 
       // Set email where form is being sent
-      $recipient = "info@ptparadigm.com";
+      // $recipient = "info@ptparadigm.com";
+
+      // ** delete this email after testing and put back info **
+      $recipient = "webmaster@ptparadigm.com";
 
       // Set the email subject.
-      $subject = "New contact from $name";
+      $subject = "New contact form from $name";
 
       // Build the email content.
       $email_content = "Name: $name\n";
@@ -56,7 +60,7 @@
       if (mail($recipient, $subject, $email_content, $email_headers)) {
           // Set a 200 (okay) response code.
           http_response_code(200);
-          echo "Thank You! Your message has been sent.";
+          echo "Thank You for your appointment request.";
       } else {
           // Set a 500 (internal server error) response code.
           http_response_code(500);
