@@ -24,6 +24,9 @@ $(function() {
 			// $(formMessages).removeClass('error');  /* Add class to css */
 			// $(formMessages).addClass('success');   /* Add class to css */
 
+			//hide form after submitted
+			$('#appointment-request').hide();
+
 			// Set the message text.
 			$(formMessages).text(response);
 

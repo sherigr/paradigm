@@ -14,7 +14,7 @@
 
 
       // Check that data was sent to the mailer.
-      if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone)) {
+      if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone)) {
           // Set a 400 (bad request) response code and exit.
           http_response_code(400);
           echo "Oops! There was a problem with your submission. Please complete the required information on the form and try again.";

@@ -674,6 +674,12 @@ margin-bottom: 0;
   display: none;
 }
 
+/* Form Submit Message*/ 
+#form-messages {
+  padding: 50px 0;
+
+}
+
 /* ------------------------------------------
   FOOTER
 -------------------------------------------------- */
