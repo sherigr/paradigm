@@ -5,7 +5,7 @@ $(function() {
 NAVBAR
 =====================================================*/
 //if link hovered, show dropdown menu
-// only hover based on screen size
+// only hover greater than 1024 screen size
 var screenWidth = $(window).width();
   if(screenWidth > 1024) {
     $('ul.nav li.dropdown').hover(function() {
@@ -87,6 +87,8 @@ $('#treatments img').click(function(e) {
   e.preventDefault();
   $(this).addClass('no-hover');
 });
+
+
 
 
 /*==========================================
