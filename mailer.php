@@ -12,9 +12,20 @@
       $drphone = $_POST["doctor-number"];
       $message = trim($_POST["diagnosis"]);
 
+      // Check valid phone number
+      function valid_number($phone) {
+        $reg = "/^(\d[\s-]?)?[\(\[\s-]{0,2}?\d{3}[\)\]\s-]{0,2}?\d{3}[\s-]?\d{4}$/i";
+        if(preg_match($reg, $phone)) {
+          return true;
+        }
+          return false;
+
+      }
+
 
       // Check that data was sent to the mailer.
-      if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone)) {
+      // if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone)) {
+      if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone) OR !valid_number($phone, $drphone)) {
           // Set a 400 (bad request) response code and exit.
           http_response_code(400);
           echo "Oops! There was a problem with your submission. Please complete the required information on the form and try again.";
