@@ -64,6 +64,10 @@ hr {
   margin-bottom: 0px;
 }
 
+.navbar-default {
+  z-index: 99999;
+}
+
 .navbar-default .navbar-nav > li > a {
   color: #9D59B3;
   font-size: 16px;
@@ -660,9 +664,17 @@ margin-bottom: 0;
 }
 
 /* Form Submit Message*/ 
-#form-messages {
+/*#form-messages {
   padding: 50px 0;
 
+}*/
+.success {
+  padding: 50px 0;
+}
+
+.error {
+  margin-top: -50px;
+  padding: 0 0 50px;
 }
 
 /* ------------------------------------------
