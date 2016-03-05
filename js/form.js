@@ -20,9 +20,8 @@ $(function() {
 			data: formData
 		})
 		.done(function(response) {
-			// Make sure that the formMessages div has the 'success' class.
-			// $(formMessages).removeClass('error');  /* Add class to css */
-			// $(formMessages).addClass('success');   /* Add class to css */
+			 $(formMessages).removeClass('error');  
+			 $(formMessages).addClass('success');   
 
 			//hide form after submitted
 			$('#appointment-request').hide();
@@ -40,9 +39,8 @@ $(function() {
 			$('#patient-diagnosis').val('');
 		})
 		.fail(function(data) {
-			// Make sure that the formMessages div has the 'error' class.
-			// $(formMessages).removeClass('success');
-			// $(formMessages).addClass('error');
+			 $(formMessages).removeClass('success');
+			 $(formMessages).addClass('error');
 			// Set the message text.
 			if (data.responseText !== '') {
 				$(formMessages).text(data.responseText);
