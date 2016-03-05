@@ -56,7 +56,7 @@
       $subject = "New contact form from $name";
 
       // Build the email content.
-      $email_content = "Name: $name\n";
+      $email_content = "Name: $name\n\n";
       $email_content .= "Email: $email\n\n";
       $email_content .= "Phone: $phone\n\n";
       $email_content .= "Insurance: $insurance\n\n";
