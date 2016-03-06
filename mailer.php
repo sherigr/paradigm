@@ -22,7 +22,6 @@
 
       }
 
-
       // Check that data was sent to the mailer.
       // if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone)) {
       if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone) OR !valid_number($phone, $drphone)) {
@@ -63,6 +62,18 @@
       $email_content .= "Referring Doctor: $doctor\n\n";
       $email_content .= "Doctor's Phone: $drphone\n\n";
       $email_content .= "Diagnosis:\n$message\n";
+
+      // Autoresponder email
+        //This works but response email from server not ptparadigm
+      $respond_subject = "Thank you for contacting Paradigm";
+      $respond_message = "We will get back to you as soon as possible\n
+
+      Regards,
+      Paradigm Physical Therapy
+      wwww.ptparadigm.com";
+
+      mail($email, $respond_subject, $respond_message);
+
 
       // Build the email headers.
       $email_headers = "From: $name <$email>";
