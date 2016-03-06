@@ -88,7 +88,24 @@ $('#treatments img').click(function(e) {
   $(this).addClass('no-hover');
 });
 
+// toggle diagnoses on click
+ //NOT Fixing Bootstrap Bug having to double click close
+function clickDiagnoses() {
+  $('[data-toggle="popover"]').popover();
+}
+clickDiagnoses();
 
+//on smartphone position auto
+ //THIS NOT WORKING YET
+function popPosition() {
+  var width = $(window).width();
+  if(width < 768) {
+    $('#treatments img').popover({
+      placement: 'auto'
+    });
+  }
+}
+popPosition();
 
 
 /*==========================================
