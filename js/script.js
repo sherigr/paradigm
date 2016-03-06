@@ -4,7 +4,7 @@ $(function() {
 /*==========================================
 NAVBAR
 =====================================================*/
-//if link hovered, show dropdown menu
+// if link hovered, show dropdown menu
 // only hover greater than 1024 screen size
 var screenWidth = $(window).width();
   if(screenWidth > 1024) {
@@ -12,7 +12,7 @@ var screenWidth = $(window).width();
       $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn();
     }, function() {
       $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut();
-    });   
+     });   
   }
 
 //if not in collapsed state, make the parent link clickable and go directly to page
@@ -29,7 +29,6 @@ if(width > 1024) {
 $('.dropdown').on('hide.bs.dropdown', function(e) {
   $('.navbar-collapse').collapse('hide');
 });
-
 
 
 
@@ -95,17 +94,6 @@ function clickDiagnoses() {
 }
 clickDiagnoses();
 
-//on smartphone position auto
- //THIS NOT WORKING YET
-function popPosition() {
-  var width = $(window).width();
-  if(width < 768) {
-    $('#treatments img').popover({
-      placement: 'auto'
-    });
-  }
-}
-popPosition();
 
 
 /*==========================================
@@ -122,7 +110,17 @@ $('.parallax-window').parallax({
 /*==========================================
  SCROLL REVEL
  =====================================================*/
- // disable on mobile
+var scrollReveal = {
+  delay: 500,
+  easing: 'ease-in-out'
+};
+
+window.sr = ScrollReveal();
+sr.reveal('.srContact, .srhomeContact, .srModalities, .srLSVT', scrollReveal);
+sr.reveal('.srDiagnoses', {delay: 600, easing: 'ease-in-out', viewFactor: 0.3 });
+
+
+ // if wanting to disable on mobile
     // var config = { mobile: false }
 
     // window.scrollReveal = new scrollReveal();
