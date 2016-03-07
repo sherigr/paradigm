@@ -795,6 +795,74 @@ margin-bottom: 0;
 }
 /******* End of Carousel ****** */
 
+/*added per testing*/
+@media (min-width: 1920px) {
+  #forms .inner-picture {
+    max-width: 90%;
+  }
+}
+
+/*added per testing*/
+@media (min-width: 1440px) {
+  .concierge-first {
+    margin-top: 40px;
+    margin-right: 50px;
+  }
+}
+/*added per testing*/
+@media (min-width: 1280px) {
+   .picture-text #pttext {
+    margin-top: 50px;
+  }
+}
+/*added per testing*/
+@media (min-width: 800px) and (max-width: 801px) {
+  .form-links {
+    padding-top: 30px; /*fix text pushing down section */
+  }
+}
+/*added per testing*/
+@media (max-width: 800px) {
+  .office-small {
+    visibility: visible;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    max-width: 60%;
+  }
+  /* concierge large picture */
+  .office-angled {
+    display: none;
+  }
+  #concierge .container-fluid {
+    max-height: initial;
+  }
+  .concierge-first {
+    padding-top: 15px;
+  }
+  #concierge-angled p {
+  padding-right: initial;
+  }
+  #concierge .second-par {
+    padding-bottom: 20px;
+  }
+  #pt-small {
+    visibility: visible;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 60%;
+  }
+  #pt-large {
+    display: none;
+  }
+  #physical-therapy .container-fluid {
+  padding-top: 35px;
+  padding-bottom: 30px;
+  }
+}
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .office-angled {
     max-width: 100%;
@@ -828,6 +896,16 @@ margin-bottom: 0;
   }
 }
 
+/*added per testing*/
+@media (min-width: 768px) and (max-width: 800px) {
+  .modalities-description {
+    padding-left: 10px;
+  }
+  .modalities-types {
+    padding-left: 80px;
+  }
+}
+
 @media (min-width: 768px) {
   /* Bump up size of carousel content*/ 
 /*  .carousel-caption p {
@@ -843,19 +921,19 @@ margin-bottom: 0;
 
 @media (max-width: 768px) {
   /* concierge small picture */
-  .office-small {
+  /*.office-small {
     visibility: visible;
     display: block;
     margin: 0 auto;
     margin-bottom: 25px;
     margin-top: 20px;
     max-width: 60%;
-  }
+  }*/
   /* concierge large picture */
-  .office-angled {
+/*  .office-angled {
     display: none;
-  }
-  #concierge .container-fluid {
+  }*/
+/*  #concierge .container-fluid {
     max-height: initial;
   }
   .concierge-first {
@@ -866,9 +944,9 @@ margin-bottom: 0;
   }
   #concierge .second-par {
     padding-bottom: 20px;
-  }
+  }*/
   /* physical therapy pictures*/
-  #pt-small {
+  /*#pt-small {
     visibility: visible;
     display: block;
     margin: 0 auto;
@@ -876,17 +954,17 @@ margin-bottom: 0;
   }
   #pt-large {
     display: none;
-  }
+  }*/
   .picture-text {
     padding-top: 0;
   }
   .contact-info {
     text-align: center;
   }
-  #physical-therapy .container-fluid {
+/*  #physical-therapy .container-fluid {
     padding-top: 35px;
     padding-bottom: 30px;
-  }
+  }*/
   /* testing*/
   /*  #forms .inner-picture.small-picture {*/
   #forms .inner-picture {
@@ -1009,7 +1087,15 @@ margin-bottom: 0;
   }
 }
 
-
+/* added per testing */ 
+@media (min-width: 640px) and (max-width: 736px) {
+  #philosophy-img {
+    max-width: 60%;
+  }
+  #full-logo-small {
+    max-width: 50%;
+  }
+}
 
 
 
