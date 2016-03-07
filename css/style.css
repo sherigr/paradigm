@@ -551,7 +551,7 @@ margin-bottom: 0;
 
  /* -- TESTIMONIALS -------*/
 #testimonials {
-  background-color: #FFF4FF;
+  /*background-color: #FFF4FF; think I like better without*/ 
   padding-bottom: 60px;
 }
 
@@ -566,7 +566,7 @@ margin-bottom: 0;
 -------------------------------------------------- */
 #forms {
  /* padding-top: 30px; TEMPORARY*/
-  background-color: #FFF4FF;
+  /*background-color: #FFF4FF;*/
 }
 
 #forms .container-fluid {
@@ -791,6 +791,10 @@ margin-bottom: 0;
 @media (min-width: 1920px) {
   #forms .inner-picture {
     max-width: 90%;
+  }
+  /*testing this for xl big screens */
+  .parallax-window {
+    height: 500px;
   }
 }
 
