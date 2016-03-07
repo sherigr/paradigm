@@ -374,6 +374,7 @@ MANUAL THERAPY - Services Page
 /*  margin-top: 20px;
   padding-top: 70px; THIESE 2 TEMPORARY*/
   /*background-color: #FDFDFC;*/
+  padding-top: 25px;
 }
 
 .first-manual-part {
@@ -563,23 +564,13 @@ margin-bottom: 0;
 /* ------------------------------------------
   PATIENT INFO PAGE
 -------------------------------------------------- */
-/* Insurance */
-#insurance {
-/*  margin-top: 70px;
-  padding-top: 30px; THESE 2 TEMPORARY*/
-/*  background-color: #FFF4FF;*/
-  background-color: #FFF4FF;
-}
-
 #forms {
  /* padding-top: 30px; TEMPORARY*/
   background-color: #FFF4FF;
 }
 
 #forms .container-fluid {
-/*  background-color: #FFF4FF;*/
-  background-color: #F6F6F6;
-  /*padding-bottom: 50px;*/
+  background-color: #F5F5F5;
 }
 
 .form-links {
@@ -607,6 +598,7 @@ margin-bottom: 0;
 
 .empty {
   padding-bottom: 85px;
+  background-color: #EFEAEF;
 }
 
 
@@ -684,11 +676,11 @@ margin-bottom: 0;
   padding: 20px;
   background-color: #120012;
   margin-top: 0;
-  padding-right:50px;
+  padding-right: 50px;
 }
 
 #footer p {
-  color: #7f4098;
+  color: #731293;
 }
 
 /* ------------------------------------------
@@ -837,6 +829,7 @@ margin-bottom: 0;
   }
   #concierge .container-fluid {
     max-height: initial;
+    background-color: #FBFDF9;
   }
   .concierge-first {
     padding-top: 15px;
@@ -1061,8 +1054,8 @@ margin-bottom: 0;
   #pt-small {
 /*    visibility: visible;
     display: block;
-    margin: 0 auto;*/
-    max-width: 50%;
+    margin: 0 auto;
+    max-width: 50%; */
   }
   /*#pt-large {
     display: none;
@@ -1084,6 +1077,11 @@ margin-bottom: 0;
   #philosophy-img {
     margin: auto;
     margin-bottom: 20px;
+  }
+  /* reduce space btw secctions on smartphones*/
+  .cushion-top {
+    margin-top: 33px;
+    padding-top: 33px;
   }
 }
 
