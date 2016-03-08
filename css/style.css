@@ -788,6 +788,11 @@ margin-bottom: 0;
 /******* End of Carousel ****** */
 
 /*added per testing*/
+@media (min-width: 2048px) {
+  #forms .inner-picture {
+    max-width: 85%;
+  }
+}
 @media (min-width: 1920px) {
   #forms .inner-picture {
     max-width: 90%;
@@ -795,6 +800,19 @@ margin-bottom: 0;
   /*testing this for xl big screens */
   .parallax-window {
     height: 500px;
+  }
+  /* spread out navbar on very large screens */
+  .navbar-brand>img {
+    margin-left: -150px;
+  }
+  .navbar-nav {
+    margin-right: -150px;
+  }
+}
+
+@media (min-width: 1600px) {
+  p {
+    font-size: 18px;
   }
 }
 
