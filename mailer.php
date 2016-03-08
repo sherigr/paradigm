@@ -7,9 +7,9 @@
 			$name = str_replace(array("\r","\n"),array(" "," "),$name);
       $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
       $phone = $_POST["phone-number"];
-      $insurance = $_POST["insurance"];
-      $doctor = $_POST["doctor"];
-      $drphone = $_POST["doctor-number"];
+      $insurance = trim($_POST["insurance"]);
+      $doctor = trim($_POST["doctor"]);
+      $drphone = trim($_POST["doctor-number"]);
       $message = trim($_POST["diagnosis"]);
 
       // Check valid phone number
@@ -27,7 +27,7 @@
       if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone) OR !valid_number($phone, $drphone)) {
           // Set a 400 (bad request) response code and exit.
           http_response_code(400);
-          echo "Oops! There was a problem with your submission. Please complete the required information on the form and try again.";
+          echo "Please complete the required information on the form and try again.";
           exit;
       }
 
@@ -48,7 +48,7 @@
       // Set email where form is being sent
       // $recipient = "info@ptparadigm.com";
 
-      // ** delete this email after testing and put back info **
+      // ** delete this email after testing and put back info@ptparadigm **
       $recipient = "webmaster@ptparadigm.com";
 
       // Set the email subject.
@@ -73,7 +73,7 @@
       wwww.ptparadigm.com";
 
       mail($email, $respond_subject, $respond_message);
-
+      // end of autoresponder email
 
       // Build the email headers.
       $email_headers = "From: $name <$email>";
