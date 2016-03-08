@@ -1031,5 +1031,13 @@ margin-bottom: 0;
   }
 }
 
+@media (min-width: 361px) and (max-width: 667px) {
+  #full-logo-small {
+    max-width: 50%;
+  }
+  #sport-img {
+    max-width: 60%;
+  }
+}
 
 
