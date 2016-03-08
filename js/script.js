@@ -110,12 +110,14 @@ $('.parallax-window').parallax({
 /*==========================================
  SCROLL REVEL
  =====================================================*/
+
+window.sr = ScrollReveal();
+
 var scrollReveal = {
   delay: 500,
   easing: 'ease-in-out'
 };
 
-window.sr = ScrollReveal();
 sr.reveal('.srContact, .srhomeContact, .srModalities, .srLSVT', scrollReveal);
 sr.reveal('.srDiagnoses', {delay: 600, easing: 'ease-in-out', viewFactor: 0.3 });
 
