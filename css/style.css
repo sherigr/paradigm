@@ -687,6 +687,15 @@ margin-bottom: 0;
  MEDIA QUERIES
 -------------------------------------------------- */
 /* ******* NAVBAR ***********/
+@media (min-width: 1920px) {
+  /* spread out navbar on very large screens */
+  .navbar-brand>img {
+    margin-left: -150px;
+  }
+  .navbar-nav {
+    margin-right: -150px;
+  }
+}
 /* text center dropdown links */
 @media (max-width: 992px) {
   .dropdown-menu {
@@ -793,20 +802,22 @@ margin-bottom: 0;
     max-width: 85%;
   }
 }
-@media (min-width: 1920px) {
+@media (min-width: 1920px) and (max-width: 2047px) {
   #forms .inner-picture {
     max-width: 90%;
   }
+}
+
+@media (min-width: 1920px) {
   /*testing this for xl big screens */
   .parallax-window {
     height: 500px;
   }
-  /* spread out navbar on very large screens */
-  .navbar-brand>img {
-    margin-left: -150px;
+  .concierge-first {
+    margin-top: 60px;
   }
-  .navbar-nav {
-    margin-right: -150px;
+  .form-links {
+    padding-top: 80px;
   }
 }
 
@@ -814,14 +825,24 @@ margin-bottom: 0;
   p {
     font-size: 18px;
   }
+  #philosophy p {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .concierge-first {
+    margin-top: 40px;
+  }
 }
 
 /*added per testing*/
 @media (min-width: 1440px) {
-  .concierge-first {
-    margin-top: 40px;
+  .concierge-first, .second-par {
     margin-right: 50px;
   }
+/*  .second-par {
+    margin-right: 50px;
+  }*/
 }
 /*added per testing*/
 @media (min-width: 1280px) {
