@@ -817,6 +817,11 @@ margin-bottom: 0;
     padding-top: 30px; /*fix text pushing down section */
   }
 }
+@media (max-width: 960px) {
+  .contact-info {
+    text-align: center;
+  }
+}
 /*added per testing*/
 @media (max-width: 800px) {
   .office-small {
@@ -913,9 +918,9 @@ margin-bottom: 0;
   .picture-text {
     padding-top: 0;
   }
-  .contact-info {
+  /*.contact-info {
     text-align: center;
-  }
+  }*/
   #forms .inner-picture {
     max-width: 60%;
     margin-bottom: 25px;
