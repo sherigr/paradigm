@@ -19,7 +19,6 @@
           return true;
         }
           return false;
-
       }
 
       // Check that data was sent to the mailer.
@@ -74,8 +73,7 @@
       wwww.ptparadigm.com";
 
       $headers = 'From: info@ptparadigm.com' . "\r\n" .
-    // 'Reply-To: webmaster@example.com' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
+      'X-Mailer: PHP/' . phpversion();
 
       mail($email, $respond_subject, $respond_message, $headers);
       // end of autoresponder email
