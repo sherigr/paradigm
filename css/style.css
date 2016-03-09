@@ -684,13 +684,20 @@ margin-bottom: 0;
   .concierge-first {
     margin-top: 60px;
   }
+  .concierge-first, .second-par {
+    font-size: 20px;
+  }
   .form-links {
     padding-top: 80px;
+  }
+  .picture-text #pttext {
+    margin-top: 80px;
+    font-size: 20px;
   }
 }
 
 @media (min-width: 1600px) {
-  p {
+  p, #contact a, #contact-section a {
     font-size: 18px;
   }
   #philosophy p {
