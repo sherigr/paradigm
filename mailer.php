@@ -54,6 +54,7 @@
       // Set the email subject.
       $subject = "New contact form from $name";
 
+
       // Build the email content.
       $email_content = "Name: $name\n\n";
       $email_content .= "Email: $email\n\n";
@@ -72,7 +73,11 @@
       Paradigm Physical Therapy
       wwww.ptparadigm.com";
 
-      mail($email, $respond_subject, $respond_message);
+      $headers = 'From: info@ptparadigm.com' . "\r\n" .
+    // 'Reply-To: webmaster@example.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+      mail($email, $respond_subject, $respond_message, $headers);
       // end of autoresponder email
 
       // Build the email headers.
