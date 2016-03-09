@@ -45,10 +45,10 @@
       }
 
       // Set email where form is being sent
-      // $recipient = "info@ptparadigm.com";
+      $recipient = "info@ptparadigm.com";
+        // EMAIL TO USE FOR TESTING PURPOSES
+          // $recipient = "webmaster@ptparadigm.com";
 
-      // ** delete this email after testing and put back info@ptparadigm **
-      $recipient = "webmaster@ptparadigm.com";
 
       // Set the email subject.
       $subject = "New contact form from $name";
