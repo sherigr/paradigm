@@ -1,10 +1,9 @@
 
 body {
-	padding-top: 70px;
-	font-family: 'Lato', sans-serif; 
-/*	font-weight: 400;*/
+  padding-top: 70px;
+  font-family: 'Lato', sans-serif; 
   font-weight: 300;
-  /*color: #555;*/
+  background-color: #FEFEFE;
   color: #313131;
 }
 
@@ -15,7 +14,6 @@ h4,
 h5,
 h6 {
   font-family: 'Raleway', sans-serif;
-/*  font-weight: 400; */
   font-weight: 300;
 }
 
@@ -31,6 +29,9 @@ p {
 
 .rounded-img {
   border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 5px #888888;
+  -moz-box-shadow: 10px 10px 5px #888888;
+  box-shadow: 10px 10px 5px #888888;
 }
 
 hr {
@@ -38,82 +39,78 @@ hr {
   padding-bottom: 15px;
 }
 
+/* adding padding to first page container*/
+.page-top {
+  padding-top: 50px;
+}
+
+/* so link goes directly to h1 & h2 */
+.cushion-top {
+  /* Reduced amount with thinner navbar */
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
 /* --------------------------------------
    NAVBAR
 -------------------------------------- */
-.navbar-inverse {
-/*  background-color: #2D002D;*/
-  /*border-color: #a8a8e5; lighter purple*/
-  background-color: #120012;
-}
-
 .navbar {
-  min-height: 100px;
-  padding: 15px;
+  min-height: 70px;
+  margin-bottom: 0px;
 }
 
-.navbar-header {
-  padding-bottom: 0;
+.navbar-default {
+  z-index: 99999;
 }
 
-/* accomodate logo*/
-.navbar-brand {
-  height: 100px;
-  padding-top: 0;
+.navbar-default .navbar-nav > li > a {
+  color: #9D59B3;
+  font-size: 16px;
+  font-weight: 400;
 }
-
-.nav > li {
-  padding-top: 30px;
+.navbar-default .navbar-nav > li > a:hover {
+  color: #8E8392;
 }
-
-.navbar-inverse .navbar-nav>li>a {
-  color: #81658C;
-}
-
-.navbar-inverse .navbar-nav>li>a:hover {
-  color: #7f4098;
-}
-
-.navbar-inverse .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav>li>a:focus {
   color: #7404A0;
 }
 
-.navbar-inverse .navbar-nav>li>a:active {
+.navbar-default .navbar-nav>.active>a {
+  background-color: transparent !important;
+  color: #C1A5C1;
+}
+
+.navbar-default {
+  background-color: #120012;
+  border-color: transparent;
+}
+.dropdown-menu {
+  background: #ffffff; 
+}
+.dropdown-menu > li > a {
+  color: #9D59B3;
+}
+/* remove bootstrap active box  */
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
   color: #7404A0;
+  background-color: transparent;
+}
+/*move logo up in navbar */
+.navbar-brand>img {
+  margin-top: -35px;
+}
+#sm-nav-logo {
+  display: none;
 }
 
-.dropdown-menu>li>a {
-  color: #7f4098;
-}
-
-.dropdown-menu>li>a:hover {
-  color: #330033;
-}
-
-/* Dropdown Menu On Hover update as media query*/
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-.navbar-inverse .navbar-nav>.open>a {
-  color: #891792 !important;
-}
-
-/* Dropdown menu (from template)
--------------------------------------------------- */
-/*.theme-dropdown .dropdown-menu {
-  position: static;
-  display: block;
-  margin-bottom: 20px;
-}
-*/
-/* HEADER CAROUSEL
--------------------------------------------------- */
-
+/* --------------------------------------
+  CAROUSEL
+-------------------------------------- */
 /* Carousel base class */
 .carousel {
-  height: 500px;
-  margin-bottom: 60px;
+  height: 500px; 
 }
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
@@ -121,15 +118,60 @@ hr {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
-  background-color: #777;
+  height: 500px; 
 }
+
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
-  left: 0;
   min-width: 100%;
+  min-height: auto;
+}
+.carousel-inner > .item > img.second-slide, .carousel-inner > .item > img.third-slide {
   height: 500px;
+}
+
+/* add shadow to carousel & paradigm def text */
+.carousel h1, .carousel h3, .paradigm-def h2 {
+  color: #ffffff;
+  text-shadow: 4px 2px 4px #000000;
+}
+
+/*fade carousel picture in */
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+/* fade in text shortly after picture */
+.carousel h1, .carousel h3 {
+  opacity: 0;
+  -webkit-transition: opacity 1.5s ease-in-out;
+  -moz-transition: opacity 1.5s ease-in-out;
+  -o-transition: opacity 1.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
+}
+.carousel-fade .carousel-inner .active h1,
+.carousel-fade .carousel-inner .active h3 {
+  opacity: 1;
 }
 
 /* -------------------------------------
@@ -150,7 +192,7 @@ MISSION CONTAINER
 
 #mission-col {
   margin-top: 50px;
-  padding: 50px 20px 60px 20px;
+  padding: 50px 20px 0 20px;
   font-size: 18px;
 }
 
@@ -158,7 +200,8 @@ MISSION CONTAINER
   padding-top: 25px;
 }
 
-.home-mission blockquote > p {
+/*.home-mission blockquote > p {*/
+  #mission blockquote > p {
   margin-top: 30px;
   padding-top: 30px;
   font-style: italic;
@@ -168,50 +211,44 @@ MISSION CONTAINER
   font-size: 18px;
 }
 
+#quote {
+  padding-top: 40px;
+  font-size: 18px;
+  font-style: italic;
+}
 
 /* ------------------------------------
-PARADIGM DEF IMAGE
+PARADIGM DEF SECTION
 ------------------------------------*/
 .paradigm-def {
   width: 100%;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-size: cover; 
   height: 400px;
   padding: 0;
  }
 
-
  .paradigm-def h2 {
   padding-top: 100px;
-  /*color: white;*/
-  color: #5E3B71;
  }
 
  /* ------------------------------------
 PHILOSOPHY
 ------------------------------------*/
 #philosophy {
-  padding: 70px 0;
-
+  padding-bottom: 70px;
 }
 
 #philosophy-img {
-  max-width: 70%;
+  max-width: 90%;
 }
 
 /* ------------------------------------------
-TREATMENTS 
+DIAGNOSES TREATED (treatments)
 -------------------------------------------------- */
-
-#treatments h1 {
-  padding-top: 25px;
-}
-
 #treatments .col-md-4 {
   margin-top: 20px;
   margin-bottom: 20px;
-/*  padding-top: 20px;*/
   padding: 20px 25px;
 }
 
@@ -219,48 +256,33 @@ TREATMENTS
   padding-bottom: 20px;
 } 
 
+/* fade diagnoses img on hover*/
+#treatments img {
+  -webkit-transition: opacity .2s ease;
+  -moz-transition: opacity .2s ease;
+  -0-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+}
+#treatments img:not(.no-hover):hover {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+/* Popover*/
+.popover-title {
+  text-align: center;
+  color: #7f4098;
+  font-size: 18px;
+  font-weight: bold;
+}
 
 /* ------------------------------------------
 PHYSICAL THERAPY 
 -------------------------------------------------- */
-
-#physical-therapy, #manual-therapy, .therapeutic h1 {
-  padding-bottom: 20px;
-}
-
-./*picture-text-container {  
-  background-color: #F5F5F5;
-  max-height: 500px;
-  overflow: auto;
-}
-
-.picture-text p {
-  padding-top: 60px;
-  padding-right: 40px;
-}*/
-
 #physical-therapy .container-fluid {
   background-color: #F5F5F5;
 }
 
-#physical-therapy {
-  margin-bottom: 50px;
-}
-
-/*#physical-therapy .inner-picture img {*/
-/*  max-width: 90%;*/
-  /*max-height: 450px;*/ /* increase to 500 above screen width 1440 */
-/*  border-radius: 0;*/
-/*}*/
-/*.picture-text {
-  padding-top: 40px;
-  padding-right: 40px;
-}
-#physical-therapy .col-md-6 {
-  padding-left: 0;
-}*/
-
-/* TESTING CHANGES */
 #pt-small {
   display: none;
 }
@@ -275,17 +297,9 @@ PHYSICAL THERAPY
 /* ------------------------------------------
 MANUAL THERAPY - Services Page
 -------------------------------------------------- */
- #manual-therapy {
-  margin-top: 20px;
-  padding-top: 70px;
-  background-color: #FDFDFC;
+#manual-therapy {
+  padding-top: 25px;
 }
-
-/*#ptbands {
-  max-width: 80%;
-  display: block;
-  margin-bottom: 25px;
-}*/
 
 .first-manual-part {
   margin-bottom: 40px;
@@ -295,39 +309,17 @@ MANUAL THERAPY - Services Page
   padding-right: 10px;
 }
 
-
 /* ------------------------------------------
 CONCEIRGE VISITS - Services Page
 -------------------------------------------------*/
-/*#concierge .office-angled.col-md-6 {
-  padding-left: 0;
-}*/
 #concierge-angled .col-md-6:first-child, .col-sm-5 {
   padding-left: 0;
 }
 
 #concierge .container-fluid {
-/*  background-color: #E6E0DB;*/
-  background-color: #F1EDEA;
-/*  max-height: 480px;*/
+  background-color: #FAF1FA;
 }
 
-/*#concierge .inner-picture {
-  width: 100%;
-  max-height: 450px;
-  
-  -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.concierge-text {
-  text-align: center;
-  padding-top: 15px;
-}*/
-
-/*??? */
 .office-angled {
   width: 100%;
   -webkit-background-size: cover;
@@ -351,26 +343,17 @@ CONCEIRGE VISITS - Services Page
 /* ------------------------------------------
 THERAPEUTIC MODALITIES - Services Page
 -------------------------------------------------- */
-#therapeutic {
-/*  margin-top: 70px;
-  margin-bottom: 40px;*/
-  margin: 70px 0 40px;
-  padding-bottom: 20px;
-  /*background-color: #FCFBFA;*/
-}
-
 
 /* ------------------------------------------
 SPORT-SPECIFIC - Services Page
 -------------------------------------------------- */
 #sport-specific {
-  margin-top: 70px;
   margin-bottom: 60px;
   padding-bottom: 35px;
 }
 
 #sport-img {
-  max-width: 60%;
+  max-width: 90%;
 }
 
 /* ------------------------------------------
@@ -407,7 +390,6 @@ margin-bottom: 0;
   font-size: 16px;
   font-weight: 300;
   color: #555;
-/*  text-decoration: none;*/
 }
 
 .directions {
@@ -416,6 +398,11 @@ margin-bottom: 0;
 
 #fb-icon:hover {
   color: #3b5999;
+}
+
+/* fix sr reveal flicker before JS loads*/
+.sr .srContact {
+  visibility: hidden;
 }
 
 /* ------------------------------------------
@@ -428,7 +415,7 @@ margin-bottom: 0;
   background-position: center center;
   height: 100%;
   width: 100%;
-/*  width: cover;*/ 
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -436,7 +423,7 @@ margin-bottom: 0;
 }
 
 /* disabling other click options*/
-#map iframe{
+#map iframe, #second-map iframe{
     pointer-events: none;
 }
 
@@ -445,8 +432,6 @@ margin-bottom: 0;
 -------------------------------------------------- */
 /*---- ABOUT JUSTIN --------*/
  #about, #about-joseph {
-  margin-top: 70px;
-  padding: 30px 0;
   background-color: #FFF9FF;
  }
 
@@ -454,9 +439,12 @@ margin-bottom: 0;
   margin-top: 0;
 }
 
+#about-joseph img {
+  margin-top: 50px;
+}
+
  /* -- TESTIMONIALS -------*/
 #testimonials {
-  background-color: #FFF4FF;
   padding-bottom: 60px;
 }
 
@@ -465,27 +453,11 @@ margin-bottom: 0;
   margin-right: 20px;
 }
 
-
 /* ------------------------------------------
   PATIENT INFO PAGE
 -------------------------------------------------- */
-/* Insurance */
-#insurance {
-  margin-top: 70px;
-  padding-top: 30px;
-/*  background-color: #FFF4FF;*/
-  background-color: #FFF4FF;
-}
-
-#forms {
-  padding-top: 30px;
-  background-color: #FFF4FF;
-}
-
 #forms .container-fluid {
-/*  background-color: #FFF4FF;*/
-  background-color: #F6F6F6;
-  padding-bottom: 50px;
+  background-color: #F5F5F5;
 }
 
 .form-links {
@@ -494,12 +466,11 @@ margin-bottom: 0;
   padding-right: 100px;
 }
 
-#forms .col-md-6 {
+#forms .col-md-5 {
   padding-left: 0;
 }
 
 #forms .inner-picture {
-/*  display: block;*/
   width: 100%;
   -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -511,17 +482,18 @@ margin-bottom: 0;
   display: none;
 }
 
-
+.empty {
+  padding-bottom: 85px;
+  background-color: #EFEAEF;
+}
 
 /* ------------------------------------------
   CONTACT FORM
 -------------------------------------------------- */
 #appointment-request {
-  margin-top: 20px;
-/*  padding-top: 70px;
-  padding-bottom: 100px;*/
-  padding: 70px 0 100px;
+  padding-bottom: 85px;
 }
+
 
 .contact-form label {
   color: #7f4098;
@@ -531,6 +503,44 @@ margin-bottom: 0;
   background-color: #E2BFF0;
 }
 
+#contact-section {
+  padding-top: 70px;
+}
+
+#contact-section a {
+  font-family: 'Lato', sans-serif; 
+  font-size: 16px;
+  font-weight: 300;
+  color: #555;
+}
+
+/*contact-section */
+.big-icon, .second-icon {
+  margin-bottom: 10px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.second-icon {
+  padding-left: 20px;
+}
+
+.big-home {
+  padding-left: 20px;
+}
+
+#hidden-field {
+  display: none;
+}
+
+.success {
+  padding: 50px 0;
+}
+
+.error {
+  margin-top: -50px;
+  padding: 0 0 50px;
+}
 
 /* ------------------------------------------
   FOOTER
@@ -539,69 +549,191 @@ margin-bottom: 0;
   padding: 20px;
   background-color: #120012;
   margin-top: 0;
-  padding-right:50px;
+  padding-right: 50px;
 }
 
 #footer p {
-  color: #7f4098;
+  color: #731293;
 }
 
 /* ------------------------------------------
  MEDIA QUERIES
 -------------------------------------------------- */
-/* NAVBAR*/
-@media (min-width: 768px) and (max-width: 992px) { 
-  .navbar-header {
-    float: none;
-  }
-  .navbar-left,.navbar-right {
-    float: none !important;
-  }
-  .navbar-toggle {
-    display: block;
-  }
-  .navbar-collapse {
-    border-top: 1px solid transparent;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-  }
-  .navbar-fixed-top {
-    top: 0;
-    border-width: 0 0 1px;
-  }
-  .navbar-collapse.collapse {
-    display: none!important;
+/* ******* NAVBAR ***********/
+@media (min-width: 1920px) {
+  /* spread out navbar on very large screens */
+  .navbar-brand>img {
+    margin-left: -150px;
   }
   .navbar-nav {
-    float: none!important;
-    margin-top: 7.5px;
+    margin-right: -150px;
   }
-  .navbar-nav>li {
-    float: none;
+}
+/* text center dropdown links */
+@media (max-width: 992px) {
+  .dropdown-menu {
+    text-align: center;
   }
-  .navbar-nav>li>a {
-    padding-top: 10px;
-    padding-bottom: 10px;
+}
+@media (max-width: 768px) {
+  #sm-nav-logo {
+    visibility: visible;
+    display: inline-block;
+    padding-top: 15px;
   }
-  .collapse.in {
-    display:block !important;
+  #main-nav-logo {
+    display: none;
+  }
+  #second-map {
+    padding-top: 20px;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
-  /* Concierge pictures*/
-  .concierge-first {
-    padding-top: 10px;
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav > li > a {
+    font-size: 14px;
+  }
+  /* remove white bar*/
+  .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: transparent;
+  }
+  .navbar-toggle {
+    /* lower button*/
+    margin-top: 20px;
+    margin-right: 25px;
+  }
+  .navbar-default .navbar-collapse, .navbar-default {
+    border-color: #1F1A21;
   }
 }
 
 @media (min-width: 768px) {
-  #forms .container-fluid {
-    max-height: 470px;
+  .navbar-nav>li {
+    float: left;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .navbar-brand {
+    float: none;
+    padding: 0;
+  }
+  .navbar-toggle {
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+  #sm-nav-logo {
+    margin-left: 15px;
+    padding-top: 25px;
+  }
+}
+/******* End of Navbar ****** */
+
+/******* Carousel ****** */
+@media (max-width: 1023px) {
+  .carousel-inner > .item > img.first-slide {
+    height: 500px;
   }
 }
 
-@media (max-width: 768px) {
-  /* concierge small picture */
+@media (min-width: 768px) {
+  /* Bump up size of carousel content*/ 
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    height: 400px;
+  }
+  .carousel .item {
+    height: 400px;
+  }
+  .carousel-inner > .item > img {
+    height: 400px;
+  }
+  .carousel-inner > .item > img:not(.third-slide), .first-slide.img-responsive, .second-slide.img-responsive {
+    max-width: none !important;
+  } 
+}
+@media (max-width: 320px) {
+  .carousel-inner > .item > img.first-slide {
+    height: 400px;
+  }
+}
+/******* End of Carousel ****** */
+
+@media (min-width: 2048px) {
+  #forms .inner-picture {
+    max-width: 85%;
+  }
+}
+@media (min-width: 1920px) and (max-width: 2047px) {
+  #forms .inner-picture {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .parallax-window {
+    height: 500px;
+  }
+  .concierge-first {
+    margin-top: 60px;
+  }
+  .concierge-first, .second-par {
+    font-size: 20px;
+  }
+  .form-links {
+    padding-top: 80px;
+  }
+  .picture-text #pttext {
+    margin-top: 80px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1600px) {
+  p, #contact a, #contact-section a {
+    font-size: 18px;
+  }
+  #philosophy p {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .concierge-first {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .concierge-first, .second-par, .picture-text #pttext {
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 1280px) {
+   .picture-text #pttext {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 801px) {
+  .form-links {
+    padding-top: 30px; /*fix text pushing down section */
+  }
+}
+@media (max-width: 960px) {
+  .contact-info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
   .office-small {
     visibility: visible;
     display: block;
@@ -616,6 +748,7 @@ margin-bottom: 0;
   }
   #concierge .container-fluid {
     max-height: initial;
+    background-color: #FBFDF9;
   }
   .concierge-first {
     padding-top: 15px;
@@ -626,30 +759,100 @@ margin-bottom: 0;
   #concierge .second-par {
     padding-bottom: 20px;
   }
-  /* physical therapy pictures*/
   #pt-small {
     visibility: visible;
     display: block;
     margin: 0 auto;
+    margin-top: 30px;
     max-width: 60%;
   }
   #pt-large {
     display: none;
   }
-  .picture-text {
-    padding-top: 0;
-  }
-  .contact-info {
-    text-align: center;
+  #physical-therapy .container-fluid {
+  padding-top: 35px;
+  padding-bottom: 30px;
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .office-angled {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  /* Concierge pictures*/
+  .concierge-first {
+    padding-top: 10px;
+  }
+}
+
+/* remove padding from section*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  #forms .container-fluid {
+    padding-bottom: 0;
+  }
+}
+
+/*contact page  */
+@media (max-width: 991px) {
+  #contact-section {
+  text-align: center;
+  }
+  #contact-section h3 {
+    margin-top: 0
+  }
+  .big-icon:not(.big-home), .second-icon {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 800px) {
+  .modalities-description {
+    padding-left: 10px;
+  }
+  .modalities-types {
+    padding-left: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  #forms .container-fluid {
+    max-height: 470px;
+  }
+}
+
+@media (max-width: 768px) {
+  .picture-text {
+    padding-top: 0;
+  }
+  #forms .inner-picture {
+    max-width: 60%;
+    margin-bottom: 25px;
+  }
+  .inner-picture.angled-picture {
+    display: none;
+  }
+  .inner-picture.small-picture {
+    visibility: visible;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+  .form-links {
+    padding-top: 20px;
+  }
+  #forms .inner-picture {
+    padding-top: 40px;
+  }
+}
 
 @media (max-width: 767px) {
   h1 {
     font-size: 30px;
   }
-  .justin-image {
+  #justin-image, #joseph-img {
     max-width: 40%;
     margin: auto;
     margin-bottom: 20px;
@@ -664,10 +867,8 @@ margin-bottom: 0;
     margin: 0 auto;
     border-radius: 20px;
   }
-/*  #forms .inner-picture.small-picture {*/
   #forms .inner-picture {
-    max-width: 60%;
-    margin-bottom: 25px;
+    padding-top: 0;
   }
   .form-links {
     padding-bottom: 20px;
@@ -684,10 +885,6 @@ margin-bottom: 0;
     text-align: center;
     font-style: italic;
   }
-  /*.modalities {  /* refactored to above */
-/*    text-align: center;
-    font-style: italic;
-  }*/
   .modalities:first-child {
     padding-top: 10px;
   }
@@ -695,6 +892,7 @@ margin-bottom: 0;
   #sport-img {
     margin: 0 auto;
     margin-bottom: 20px;
+    max-width: 80%;
   }
   #full-logo-large {
     display: none;
@@ -709,15 +907,6 @@ margin-bottom: 0;
     margin-top: initial;
     padding-top: initial;
   }
-  #pt-small {
-/*    visibility: visible;
-    display: block;
-    margin: 0 auto;*/
-    max-width: 50%;
-  }
-  /*#pt-large {
-    display: none;
-  }*/
   .picture-text {
     margin: initial;
     padding: 30px 10px 0 15px;
@@ -725,6 +914,40 @@ margin-bottom: 0;
   #physical-therapy {
     margin-bottom: initial;
   }
-  
+  .paradigm-def {
+    height: 250px;
+  }
+  .paradigm-def h2 {
+    padding: 20px 0;
+    font-size: 22px;
+  }
+  #philosophy-img {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  /* reduce space btw secctions on smartphones*/
+  .cushion-top {
+    margin-top: 33px;
+    padding-top: 33px;
+  }
 }
+
+@media (min-width: 640px) and (max-width: 736px) {
+  #philosophy-img {
+    max-width: 60%;
+  }
+  #full-logo-small {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 667px) {
+  #full-logo-small {
+    max-width: 50%;
+  }
+  #sport-img {
+    max-width: 60%;
+  }
+}
+
 
