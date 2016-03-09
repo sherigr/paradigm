@@ -509,6 +509,11 @@ margin-bottom: 0;
   color: #3b5999;
 }
 
+/* fix sr reveal flicker before JS loads*/
+.sr .srContact {
+  visibility: hidden;
+}
+
 /* ------------------------------------------
   MAP
 -------------------------------------------------- */
@@ -837,7 +842,7 @@ margin-bottom: 0;
 
 /*added per testing*/
 @media (min-width: 1440px) {
-  .concierge-first, .second-par {
+  .concierge-first, .second-par, .picture-text #pttext {
     margin-right: 50px;
   }
 /*  .second-par {
