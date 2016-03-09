@@ -4,7 +4,6 @@ body {
   font-family: 'Lato', sans-serif; 
   font-weight: 300;
   background-color: #FEFEFE;
-  /*color: #555;*/
   color: #313131;
 }
 
@@ -42,15 +41,11 @@ hr {
 
 /* adding padding to first page container*/
 .page-top {
- /* padding-top: 100px;*/
- /* Reduced with thinner navbar*/
   padding-top: 50px;
 }
 
 /* so link goes directly to h1 & h2 */
 .cushion-top {
-/*  margin-top:75px;
-  padding-top:75px;*/
   /* Reduced amount with thinner navbar */
   margin-top: 50px;
   padding-top: 50px;
@@ -79,16 +74,11 @@ hr {
 .navbar-default .navbar-nav>li>a:focus {
   color: #7404A0;
 }
-.navbar-default .navbar-nav>li>a:active {
-  /*color: #AFA5B2;*/  /* testing new active */
-}
-/* TESTING NEW ACTIVE*/
+
 .navbar-default .navbar-nav>.active>a {
   background-color: transparent !important;
   color: #C1A5C1;
 }
-/* --------------- */
-
 
 .navbar-default {
   background-color: #120012;
@@ -112,16 +102,6 @@ hr {
 #sm-nav-logo {
   display: none;
 }
-
-
-/* Dropdown menu (from template)
--------------------------------------------------- */
-/*.theme-dropdown .dropdown-menu {
-  position: static;
-  display: block;
-  margin-bottom: 20px;
-}
-*/
 
 /* --------------------------------------
   CAROUSEL
@@ -212,8 +192,6 @@ MISSION CONTAINER
 
 #mission-col {
   margin-top: 50px;
-  /*padding: 50px 20px 60px 20px;*/
-  /*removing padding bottom */
   padding: 50px 20px 0 20px;
   font-size: 18px;
 }
@@ -239,14 +217,12 @@ MISSION CONTAINER
   font-style: italic;
 }
 
-
 /* ------------------------------------
 PARADIGM DEF SECTION
 ------------------------------------*/
 .paradigm-def {
   width: 100%;
   background-repeat: no-repeat;
-/*  background-position: center bottom; */
   background-size: cover; 
   height: 400px;
   padding: 0;
@@ -254,18 +230,11 @@ PARADIGM DEF SECTION
 
  .paradigm-def h2 {
   padding-top: 100px;
-  /*color: #5E3B71;*/
  }
-
 
  /* ------------------------------------
 PHILOSOPHY
 ------------------------------------*/
-/*#philosophy {
-  padding: 70px 0;
-} TEMPORARY*/
-
-/*temporary */
 #philosophy {
   padding-bottom: 70px;
 }
@@ -277,15 +246,9 @@ PHILOSOPHY
 /* ------------------------------------------
 DIAGNOSES TREATED (treatments)
 -------------------------------------------------- */
-
-/*#treatments h1 {
-  padding-top: 25px;
-} TEMPORARY*/
-
 #treatments .col-md-4 {
   margin-top: 20px;
   margin-bottom: 20px;
-/*  padding-top: 20px;*/
   padding: 20px 25px;
 }
 
@@ -305,7 +268,6 @@ DIAGNOSES TREATED (treatments)
   filter: alpha(opacity=40);
 }
 
-
 /* Popover*/
 .popover-title {
   text-align: center;
@@ -317,45 +279,10 @@ DIAGNOSES TREATED (treatments)
 /* ------------------------------------------
 PHYSICAL THERAPY 
 -------------------------------------------------- */
-
-/*#physical-therapy, #manual-therapy, .therapeutic h1 {
-  padding-bottom: 20px;
-} TEMPORARY*/
-
-/*picture-text-container {  
-  background-color: #F5F5F5;
-  max-height: 500px;
-  overflow: auto;
-}
-
-.picture-text p {
-  padding-top: 60px;
-  padding-right: 40px;
-}*/
-
 #physical-therapy .container-fluid {
   background-color: #F5F5F5;
 }
 
-#physical-therapy {
-  /* removing since added margin/padding top to contact */
- /* margin-bottom: 50px;*/
-}
-
-/*#physical-therapy .inner-picture img {*/
-/*  max-width: 90%;*/
-  /*max-height: 450px;*/ /* increase to 500 above screen width 1440 */
-/*  border-radius: 0;*/
-/*}*/
-/*.picture-text {
-  padding-top: 40px;
-  padding-right: 40px;
-}
-#physical-therapy .col-md-6 {
-  padding-left: 0;
-}*/
-
-/* TESTING CHANGES */
 #pt-small {
   display: none;
 }
@@ -370,10 +297,7 @@ PHYSICAL THERAPY
 /* ------------------------------------------
 MANUAL THERAPY - Services Page
 -------------------------------------------------- */
- #manual-therapy {
-/*  margin-top: 20px;
-  padding-top: 70px; THIESE 2 TEMPORARY*/
-  /*background-color: #FDFDFC;*/
+#manual-therapy {
   padding-top: 25px;
 }
 
@@ -385,41 +309,17 @@ MANUAL THERAPY - Services Page
   padding-right: 10px;
 }
 
-
 /* ------------------------------------------
 CONCEIRGE VISITS - Services Page
 -------------------------------------------------*/
-/*#concierge .office-angled.col-md-6 {
-  padding-left: 0;
-}*/
 #concierge-angled .col-md-6:first-child, .col-sm-5 {
   padding-left: 0;
 }
 
 #concierge .container-fluid {
-/*  background-color: #E6E0DB;*/
-/*  background-color: #F1EDEA;*/
- /* background-color: #B8B3AF;*/
-/*  max-height: 480px;*/
   background-color: #FAF1FA;
 }
 
-/*#concierge .inner-picture {
-  width: 100%;
-  max-height: 450px;
-  
-  -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.concierge-text {
-  text-align: center;
-  padding-top: 15px;
-}*/
-
-/*??? */
 .office-angled {
   width: 100%;
   -webkit-background-size: cover;
@@ -443,25 +343,17 @@ CONCEIRGE VISITS - Services Page
 /* ------------------------------------------
 THERAPEUTIC MODALITIES - Services Page
 -------------------------------------------------- */
-#therapeutic {
-/*  margin: 70px 0 40px;
-  padding-bottom: 20px; THESE 2 TEMPORARY*/
-  /*background-color: #FCFBFA;*/
-}
-
 
 /* ------------------------------------------
 SPORT-SPECIFIC - Services Page
 -------------------------------------------------- */
 #sport-specific {
-/*  margin-top: 70px; TEMPORARY*/
   margin-bottom: 60px;
   padding-bottom: 35px;
 }
 
 #sport-img {
   max-width: 90%;
- /* margin-left: -40px;*/
 }
 
 /* ------------------------------------------
@@ -498,7 +390,6 @@ margin-bottom: 0;
   font-size: 16px;
   font-weight: 300;
   color: #555;
-/*  text-decoration: none;*/
 }
 
 .directions {
@@ -524,7 +415,7 @@ margin-bottom: 0;
   background-position: center center;
   height: 100%;
   width: 100%;
-/*  width: cover;*/ 
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -541,8 +432,6 @@ margin-bottom: 0;
 -------------------------------------------------- */
 /*---- ABOUT JUSTIN --------*/
  #about, #about-joseph {
-  /*margin-top: 70px;
-  padding: 30px 0; THESE 2 TEMPORARY*/
   background-color: #FFF9FF;
  }
 
@@ -556,7 +445,6 @@ margin-bottom: 0;
 
  /* -- TESTIMONIALS -------*/
 #testimonials {
-  /*background-color: #FFF4FF; think I like better without*/ 
   padding-bottom: 60px;
 }
 
@@ -565,15 +453,9 @@ margin-bottom: 0;
   margin-right: 20px;
 }
 
-
 /* ------------------------------------------
   PATIENT INFO PAGE
 -------------------------------------------------- */
-#forms {
- /* padding-top: 30px; TEMPORARY*/
-  /*background-color: #FFF4FF;*/
-}
-
 #forms .container-fluid {
   background-color: #F5F5F5;
 }
@@ -589,7 +471,6 @@ margin-bottom: 0;
 }
 
 #forms .inner-picture {
-/*  display: block;*/
   width: 100%;
   -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -606,13 +487,10 @@ margin-bottom: 0;
   background-color: #EFEAEF;
 }
 
-
 /* ------------------------------------------
   CONTACT FORM
 -------------------------------------------------- */
 #appointment-request {
-  /*margin-top: 20px;
-  padding: 70px 0 100px; TEMPORARY*/
   padding-bottom: 85px;
 }
 
@@ -634,7 +512,6 @@ margin-bottom: 0;
   font-size: 16px;
   font-weight: 300;
   color: #555;
-/*  text-decoration: none;*/
 }
 
 /*contact-section */
@@ -652,19 +529,10 @@ margin-bottom: 0;
   padding-left: 20px;
 }
 
-#contact-section {
-  /*text-align: center;*/
-}
-
 #hidden-field {
   display: none;
 }
 
-/* Form Submit Message*/ 
-/*#form-messages {
-  padding: 50px 0;
-
-}*/
 .success {
   padding: 50px 0;
 }
@@ -741,8 +609,8 @@ margin-bottom: 0;
 
 @media (min-width: 768px) {
   .navbar-nav>li {
-      float: left;
-      padding-top: 10px;
+    float: left;
+    padding-top: 10px;
   }
 }
 @media (max-width: 320px) {
@@ -787,9 +655,6 @@ margin-bottom: 0;
   .carousel-inner > .item > img {
     height: 400px;
   }
-  /*.carousel-inner > .item > img:not(.third-slide), .img-responsive:not(.third-slide) {
-    max-width: none !important;
-  } */
   .carousel-inner > .item > img:not(.third-slide), .first-slide.img-responsive, .second-slide.img-responsive {
     max-width: none !important;
   } 
@@ -801,7 +666,6 @@ margin-bottom: 0;
 }
 /******* End of Carousel ****** */
 
-/*added per testing*/
 @media (min-width: 2048px) {
   #forms .inner-picture {
     max-width: 85%;
@@ -814,7 +678,6 @@ margin-bottom: 0;
 }
 
 @media (min-width: 1920px) {
-  /*testing this for xl big screens */
   .parallax-window {
     height: 500px;
   }
@@ -840,22 +703,18 @@ margin-bottom: 0;
   }
 }
 
-/*added per testing*/
 @media (min-width: 1440px) {
   .concierge-first, .second-par, .picture-text #pttext {
     margin-right: 50px;
   }
-/*  .second-par {
-    margin-right: 50px;
-  }*/
 }
-/*added per testing*/
+
 @media (min-width: 1280px) {
    .picture-text #pttext {
     margin-top: 50px;
   }
 }
-/*added per testing*/
+
 @media (min-width: 800px) and (max-width: 801px) {
   .form-links {
     padding-top: 30px; /*fix text pushing down section */
@@ -866,7 +725,7 @@ margin-bottom: 0;
     text-align: center;
   }
 }
-/*added per testing*/
+
 @media (max-width: 800px) {
   .office-small {
     visibility: visible;
@@ -942,7 +801,6 @@ margin-bottom: 0;
   }
 }
 
-/*added per testing*/
 @media (min-width: 768px) and (max-width: 800px) {
   .modalities-description {
     padding-left: 10px;
@@ -962,9 +820,6 @@ margin-bottom: 0;
   .picture-text {
     padding-top: 0;
   }
-  /*.contact-info {
-    text-align: center;
-  }*/
   #forms .inner-picture {
     max-width: 60%;
     margin-bottom: 25px;
@@ -1070,7 +925,6 @@ margin-bottom: 0;
   }
 }
 
-/* added per testing */ 
 @media (min-width: 640px) and (max-width: 736px) {
   #philosophy-img {
     max-width: 60%;
