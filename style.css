@@ -1,0 +1,957 @@
+
+body {
+  padding-top: 70px;
+  font-family: 'Lato', sans-serif; 
+  font-weight: 300;
+  background-color: #FEFEFE;
+  color: #313131;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Purple Font */
+.purple {
+  color: #7f4098;
+}
+
+.rounded-img {
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 5px #888888;
+  -moz-box-shadow: 10px 10px 5px #888888;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+hr {
+  border-top: 1px solid #E2E2E2 !important;
+  padding-bottom: 15px;
+}
+
+/* adding padding to first page container*/
+.page-top {
+  padding-top: 50px;
+}
+
+/* so link goes directly to h1 & h2 */
+.cushion-top {
+  /* Reduced amount with thinner navbar */
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+/* --------------------------------------
+   NAVBAR
+-------------------------------------- */
+.navbar {
+  min-height: 70px;
+  margin-bottom: 0px;
+}
+
+.navbar-default {
+  z-index: 99999;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #9D59B3;
+  font-size: 16px;
+  font-weight: 400;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #8E8392;
+}
+.navbar-default .navbar-nav>li>a:focus {
+  color: #7404A0;
+}
+
+.navbar-default .navbar-nav>.active>a {
+  background-color: transparent !important;
+  color: #C1A5C1;
+}
+
+.navbar-default {
+  background-color: #120012;
+  border-color: transparent;
+}
+.dropdown-menu {
+  background: #ffffff; 
+}
+.dropdown-menu > li > a {
+  color: #9D59B3;
+}
+/* remove bootstrap active box  */
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  color: #7404A0;
+  background-color: transparent;
+}
+/*move logo up in navbar */
+.navbar-brand>img {
+  margin-top: -35px;
+}
+#sm-nav-logo {
+  display: none;
+}
+
+/* --------------------------------------
+  CAROUSEL
+-------------------------------------- */
+/* Carousel base class */
+.carousel {
+  height: 500px; 
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px; 
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  min-width: 100%;
+  min-height: auto;
+}
+.carousel-inner > .item > img.second-slide, .carousel-inner > .item > img.third-slide {
+  height: 500px;
+}
+
+/* add shadow to carousel & paradigm def text */
+.carousel h1, .carousel h3, .paradigm-def h2 {
+  color: #ffffff;
+  text-shadow: 4px 2px 4px #000000;
+}
+
+/*fade carousel picture in */
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+/* fade in text shortly after picture */
+.carousel h1, .carousel h3 {
+  opacity: 0;
+  -webkit-transition: opacity 1.5s ease-in-out;
+  -moz-transition: opacity 1.5s ease-in-out;
+  -o-transition: opacity 1.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
+}
+.carousel-fade .carousel-inner .active h1,
+.carousel-fade .carousel-inner .active h3 {
+  opacity: 1;
+}
+
+/* -------------------------------------
+MISSION CONTAINER
+ -------------------------------*/
+#full-logo-large  {
+  width: 75%;
+  float: left;
+}
+
+#full-logo-small {
+  display: none;
+}
+
+.paradigm-logo {
+  padding-bottom: 25px;
+}
+
+#mission-col {
+  margin-top: 50px;
+  padding: 50px 20px 0 20px;
+  font-size: 18px;
+}
+
+.second-par {
+  padding-top: 25px;
+}
+
+/*.home-mission blockquote > p {*/
+  #mission blockquote > p {
+  margin-top: 30px;
+  padding-top: 30px;
+  font-style: italic;
+}
+
+#mission-col > p, #philosophy p {
+  font-size: 18px;
+}
+
+#quote {
+  padding-top: 40px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* ------------------------------------
+PARADIGM DEF SECTION
+------------------------------------*/
+.paradigm-def {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 400px;
+  padding: 0;
+ }
+
+ .paradigm-def h2 {
+  padding-top: 100px;
+ }
+
+ /* ------------------------------------
+PHILOSOPHY
+------------------------------------*/
+#philosophy {
+  padding-bottom: 70px;
+}
+
+#philosophy-img {
+  max-width: 90%;
+}
+
+/* ------------------------------------------
+DIAGNOSES TREATED (treatments)
+-------------------------------------------------- */
+#treatments .col-md-4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 25px;
+}
+
+#treatments p {
+  padding-bottom: 20px;
+} 
+
+/* fade diagnoses img on hover*/
+#treatments img {
+  -webkit-transition: opacity .2s ease;
+  -moz-transition: opacity .2s ease;
+  -0-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+}
+#treatments img:not(.no-hover):hover {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+/* Popover*/
+.popover-title {
+  text-align: center;
+  color: #7f4098;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ------------------------------------------
+PHYSICAL THERAPY 
+-------------------------------------------------- */
+#physical-therapy .container-fluid {
+  background-color: #F5F5F5;
+}
+
+#pt-small {
+  display: none;
+}
+#physical-therapy .col-md-5 {
+  padding-left: 0;
+}
+.picture-text {
+  padding-top: 30px;
+  padding-right: 40px;
+}
+
+/* ------------------------------------------
+MANUAL THERAPY - Services Page
+-------------------------------------------------- */
+#manual-therapy {
+  padding-top: 25px;
+}
+
+.first-manual-part {
+  margin-bottom: 40px;
+}
+
+.check-icon {
+  padding-right: 10px;
+}
+
+/* ------------------------------------------
+CONCEIRGE VISITS - Services Page
+-------------------------------------------------*/
+#concierge-angled .col-md-6:first-child, .col-sm-5 {
+  padding-left: 0;
+}
+
+#concierge .container-fluid {
+  background-color: #FAF1FA;
+}
+
+.office-angled {
+  width: 100%;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 85%;
+}
+
+.office-small {
+  display: none;
+}
+
+.concierge-first {
+  padding-top: 40px;
+}
+#concierge-angled p {
+  padding-right: 25px;
+}
+
+/* ------------------------------------------
+THERAPEUTIC MODALITIES - Services Page
+-------------------------------------------------- */
+
+/* ------------------------------------------
+SPORT-SPECIFIC - Services Page
+-------------------------------------------------- */
+#sport-specific {
+  margin-bottom: 60px;
+  padding-bottom: 35px;
+}
+
+#sport-img {
+  max-width: 90%;
+}
+
+/* ------------------------------------------
+CONTACT
+-------------------------------------------------- */
+
+#contact {
+  padding-bottom: 30px;
+}
+.contact-icons {
+  padding-right: 5px;
+  line-height: 40px;
+  color: #7f4098;
+}
+
+#address, #address2 {
+margin-bottom: 0;
+}
+
+#street, #street2 {
+  margin-bottom: 0;
+  text-indent: 22px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+#state, #state2  {
+  text-indent: 22px;
+  line-height: 1px;
+}
+
+#contact a {
+  font-family: 'Lato', sans-serif; 
+  font-size: 16px;
+  font-weight: 300;
+  color: #555;
+}
+
+.directions {
+  padding-top: 10px;
+}
+
+#fb-icon:hover {
+  color: #3b5999;
+}
+
+/* fix sr reveal flicker before JS loads*/
+.sr .srContact {
+  visibility: hidden;
+}
+
+/* ------------------------------------------
+  MAP
+-------------------------------------------------- */
+#map, #map2 {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* disabling other click options*/
+#map iframe, #second-map iframe{
+    pointer-events: none;
+}
+/* New Address map diabling click*/
+#map2 iframe, #second-map2 {
+    pointer-events: none;
+}
+
+/* ------------------------------------------
+  ABOUT PAGE
+-------------------------------------------------- */
+/*---- ABOUT JUSTIN --------*/
+ #about, #about-joseph {
+  background-color: #FFF9FF;
+ }
+
+#about h2 {
+  margin-top: 0;
+}
+
+#about-joseph img {
+  margin-top: 50px;
+}
+
+ /* -- TESTIMONIALS -------*/
+#testimonials {
+  padding-bottom: 60px;
+}
+
+.featurette {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* ------------------------------------------
+  PATIENT INFO PAGE
+-------------------------------------------------- */
+#forms .container-fluid {
+  background-color: #F5F5F5;
+}
+
+.form-links {
+  text-align: center;
+  padding-top: 60px;
+  padding-right: 100px;
+}
+
+#forms .col-md-5 {
+  padding-left: 0;
+}
+
+#forms .inner-picture {
+  width: 100%;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.inner-picture.small-picture {
+  display: none;
+}
+
+.empty {
+  padding-bottom: 85px;
+  background-color: #EFEAEF;
+}
+
+/* ------------------------------------------
+  CONTACT FORM
+-------------------------------------------------- */
+#appointment-request {
+  padding-bottom: 85px;
+}
+
+.contact-form label {
+  color: #7f4098;
+}
+
+.button-purple:hover {
+  background-color: #E2BFF0;
+}
+
+#contact-section {
+  padding-top: 70px;
+}
+
+#contact-section a {
+  font-family: 'Lato', sans-serif; 
+  font-size: 16px;
+  font-weight: 300;
+  color: #555;
+}
+
+/*contact-section */
+.big-icon, .second-icon {
+  margin-bottom: 10px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.second-icon {
+  padding-left: 20px;
+}
+
+.big-home {
+  padding-left: 20px;
+}
+
+#hidden-field {
+  display: none;
+}
+
+.success {
+  padding: 50px 0;
+}
+
+.error {
+  margin-top: -50px;
+  padding: 0 0 50px;
+}
+
+
+/* ------------------------------------------
+  FOOTER
+-------------------------------------------------- */
+#footer {
+  padding: 20px;
+  background-color: #120012;
+  margin-top: 0;
+  padding-right: 50px;
+}
+
+#footer p {
+  color: #731293;
+}
+
+/* ------------------------------------------
+ MEDIA QUERIES
+-------------------------------------------------- */
+/* ******* NAVBAR ***********/
+@media (min-width: 1920px) {
+  /* spread out navbar on very large screens */
+  .navbar-brand>img {
+    margin-left: -150px;
+  }
+  .navbar-nav {
+    margin-right: -150px;
+  }
+}
+/* text center dropdown links */
+@media (max-width: 992px) {
+  .dropdown-menu {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  #sm-nav-logo {
+    visibility: visible;
+    display: inline-block;
+    padding-top: 15px;
+  }
+  #main-nav-logo {
+    display: none;
+  }
+  #second-map {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav > li > a {
+    font-size: 14px;
+  }
+  /* remove white bar*/
+  .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: transparent;
+  }
+  .navbar-toggle {
+    /* lower button*/
+    margin-top: 20px;
+    margin-right: 25px;
+  }
+  .navbar-default .navbar-collapse, .navbar-default {
+    border-color: #1F1A21;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav>li {
+    float: left;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .navbar-brand {
+    float: none;
+    padding: 0;
+  }
+  .navbar-toggle {
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+  #sm-nav-logo {
+    margin-left: 15px;
+    padding-top: 25px;
+  }
+}
+/******* End of Navbar ****** */
+
+/******* Carousel ****** */
+@media (max-width: 1023px) {
+  .carousel-inner > .item > img.first-slide {
+    height: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Bump up size of carousel content*/ 
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    height: 400px;
+  }
+  .carousel .item {
+    height: 400px;
+  }
+  .carousel-inner > .item > img {
+    height: 400px;
+  }
+  .carousel-inner > .item > img:not(.third-slide), .first-slide.img-responsive, .second-slide.img-responsive {
+    max-width: none !important;
+  } 
+}
+@media (max-width: 320px) {
+  .carousel-inner > .item > img.first-slide {
+    height: 400px;
+  }
+}
+/******* End of Carousel ****** */
+
+@media (min-width: 2048px) {
+  #forms .inner-picture {
+    max-width: 85%;
+  }
+}
+@media (min-width: 1920px) and (max-width: 2047px) {
+  #forms .inner-picture {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .parallax-window {
+    height: 500px;
+  }
+  .concierge-first {
+    margin-top: 60px;
+  }
+  .concierge-first, .second-par {
+    font-size: 20px;
+  }
+  .form-links {
+    padding-top: 80px;
+  }
+  .picture-text #pttext {
+    margin-top: 80px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1600px) {
+  p, #contact a, #contact-section a {
+    font-size: 18px;
+  }
+  #philosophy p {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .concierge-first {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .concierge-first, .second-par, .picture-text #pttext {
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 1280px) {
+   .picture-text #pttext {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 801px) {
+  .form-links {
+    padding-top: 30px; /*fix text pushing down section */
+  }
+}
+@media (max-width: 960px) {
+  .contact-info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .office-small {
+    visibility: visible;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    max-width: 60%;
+  }
+  /* concierge large picture */
+  .office-angled {
+    display: none;
+  }
+  #concierge .container-fluid {
+    max-height: initial;
+    background-color: #FBFDF9;
+  }
+  .concierge-first {
+    padding-top: 15px;
+  }
+  #concierge-angled p {
+  padding-right: initial;
+  }
+  #concierge .second-par {
+    padding-bottom: 20px;
+  }
+  #pt-small {
+    visibility: visible;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 60%;
+  }
+  #pt-large {
+    display: none;
+  }
+  #physical-therapy .container-fluid {
+  padding-top: 35px;
+  padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .office-angled {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  /* Concierge pictures*/
+  .concierge-first {
+    padding-top: 10px;
+  }
+}
+
+/* remove padding from section*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  #forms .container-fluid {
+    padding-bottom: 0;
+  }
+}
+
+/*contact page  */
+@media (max-width: 991px) {
+  #contact-section {
+  text-align: center;
+  }
+  #contact-section h3 {
+    margin-top: 0
+  }
+  .big-icon:not(.big-home), .second-icon {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 800px) {
+  .modalities-description {
+    padding-left: 10px;
+  }
+  .modalities-types {
+    padding-left: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  #forms .container-fluid {
+    max-height: 470px;
+  }
+}
+
+@media (max-width: 768px) {
+  .picture-text {
+    padding-top: 0;
+  }
+  #forms .inner-picture {
+    max-width: 60%;
+    margin-bottom: 25px;
+  }
+  .inner-picture.angled-picture {
+    display: none;
+  }
+  .inner-picture.small-picture {
+    visibility: visible;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+  .form-links {
+    padding-top: 20px;
+  }
+  #forms .inner-picture {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+  }
+  #justin-image, #joseph-img {
+    max-width: 40%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  /*form pictures */
+  .inner-picture.angled-picture {
+    display: none;
+  }
+  .inner-picture.small-picture {
+    visibility: visible;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+  #forms .inner-picture {
+    padding-top: 0;
+  }
+  .form-links {
+    padding-bottom: 20px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  /* manual-therapy image*/
+  #manual-img {
+    margin: 0 auto;
+    margin-bottom: 25px;
+    max-width: 60%;
+  }
+  #manual-therapies, .modalities {
+    text-align: center;
+    font-style: italic;
+  }
+  .modalities:first-child {
+    padding-top: 10px;
+  }
+  /*sport-specific image */
+  #sport-img {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 80%;
+  }
+  #full-logo-large {
+    display: none;
+  }
+  #full-logo-small {
+    visibility: visible;
+    display: block;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  #mission-col {
+    margin-top: initial;
+    padding-top: initial;
+  }
+  .picture-text {
+    margin: initial;
+    padding: 30px 10px 0 15px;
+  }
+  #physical-therapy {
+    margin-bottom: initial;
+  }
+  .paradigm-def {
+    height: 250px;
+  }
+  .paradigm-def h2 {
+    padding: 20px 0;
+    font-size: 22px;
+  }
+  #philosophy-img {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  /* reduce space btw secctions on smartphones*/
+  .cushion-top {
+    margin-top: 33px;
+    padding-top: 33px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 736px) {
+  #philosophy-img {
+    max-width: 60%;
+  }
+  #full-logo-small {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 667px) {
+  #full-logo-small {
+    max-width: 50%;
+  }
+  #sport-img {
+    max-width: 60%;
+  }
+}
+
+
